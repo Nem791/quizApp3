@@ -149,3 +149,17 @@ li i {
 ol, ul {
     padding-left: unset;
 }
+
+.main nav .main-navigation-inner .header .user-info .user-details button{
+    padding: 5px;
+    border-radius: 5px;
+    
+}
+.main nav .main-navigation-inner .header .user-info .user-details button:hover{
+    color: white;
+    background: #6c4298;
+}
+
+.main nav .main-navigation-inner .create-menu-wrapper button:hover {
+    background: #6c4298;
+}
