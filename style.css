@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main-header {
+    position: fixed;
+    width: 100%;
+    z-index: 997;
+    max-height: 56px;
+}
+
+.main-header .top-header {
+    color: white;
+    height: 56px;
+    background-color: #461A42;
+    box-shadow: 0 0 4px rgb(0 0 0 / 12%), 0 4px 4px rgb(0 0 0 / 24%);
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.main-header .top-header .nav-size-container {
+    width: 160px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.main-header .top-header .main-logo {
+    display: inline-block;
+}
+
+a, a:hover {
+    color: #7D72EC;
+    text-decoration: none;
+}
+
+.main-header .top-header .main-logo a img {
+    vertical-align: middle;
+    height: 26px;
+    margin-top: -4px;
+}
+
+.main-header .top-header .main-search-master-wrapper {
+    width: auto;
+    flex-grow: 1;
+}
+
+.main-header .top-header .main-search-master-wrapper .main-search-wrapper {
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.main-header .top-header .main-search {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.main-header .top-header .main-search .main-search-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 40px;
+    min-width: 240px;
+    border-radius: 8px;
+    position: relative;
+    background-color: rgba(255,255,255,0.1);
+    transition: 0.14s all ease-in-out;
+}
+
+.main-header .top-header .main-search .main-search-container input {
+    display: block;
+    border: none;
+    width: auto;
+    flex-grow: 1;
+    font-size: 16px;
+    color: #fff;
+    background-color: transparent;
+    width: 162px;
+    height: 40px;
+}
+
+.main-search-input input {
+    width: inherit;
+}
+
+.main-header .top-header .main-search .main-search-container .divider {
+    height: 24px;
+    width: 1px;
+    background-color: rgba(255,255,255,0.1);
+}
+
+.main-header .top-header .main-search .main-search-container .search-context {
+    width: 162px;
+    height: 40px;
+}
+
+.main-header .top-header .tray {
+    height: 56px;
+    padding: 0 12px;
+    display: flex;
+}
+
+.main-header .top-header .join-game-btn {
+    display: inline-flex;
+    align-items: center;
+    vertical-align: top;
+    font-size: 14px;
+    color: #fff;
+    height: 40px;
+    line-height: 36px;
+    padding: 0 16px;
+    margin: 8px 8px 8px 0px;
+    text-decoration: none;
+    border-radius: 8px;
+    background-color: rgba(255,255,255,0.2);
+    transition: all 0.14s ease-in-out;
+    flex: none;
+    font-weight: 600;
+}
+
+
+.join-game-btn {
+    cursor: pointer;
+}
+
+.join-game-btn:hover {
+    background-color: darkblue;
+}

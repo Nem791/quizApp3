@@ -1,0 +1,71 @@
+.quiz-recommendations-container {
+    margin-top: 18px;
+}
+
+.section-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: black;
+    opacity: 0.66;
+    margin-bottom: 8px;
+}
+
+.recomm-quizzes-list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+.quiz-item {
+    width: 50%;
+    max-width: 50%;
+    flex-shrink: 0;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    padding: 8px;
+    border-radius: 8px;
+    transition: background-color 0.1s ease;
+    cursor: pointer;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.quiz-item:hover {
+    background-color: rgb(184, 187, 187);
+}
+
+.quiz-image-wrapper {
+    width: 72px;
+    height: 72px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    margin-right: 16px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    /* background-image: url('https://agencyvn.com/wp-content/uploads/2019/04/Innovation-l%C3%A0-g%C3%AC.jpg'); */
+}
+
+.quiz-info-wrapper {
+    position: relative;
+    width: calc(100% - 88px);
+}
+
+.quiz-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #292A3A;
+    opacity: 0.66;
+}
+
+.quiz-num-questions {
+    color: #292A3A;
+    font-size: 12px;
+    font-weight: 600;
+    opacity: 0.66;
+}

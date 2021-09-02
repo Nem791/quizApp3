@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font Awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Bootstrap  -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous"> -->
+
+    <link rel="stylesheet" href="./css/test.css">
+    <link rel="stylesheet" href="./css/side-bar.css">
+    <link rel="stylesheet" href="./css/leaderboard.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="top-header">
+            <div class="nav-size-container">
+                <div class="main-logo">
+                    <a href="index.html">
+                        <img src="https://cf.quizizz.com/img/quizizz_logos/white-brandmark-600x164.png" alt="Quizizz">
+                    </a>
+                </div>
+            </div>
+            <div class="main-search-master-wrapper">
+                <div class="main-search-wrapper">
+                    <div class="main-search">
+                        <div class="main-search-container">
+                            <input type="text">
+                            <span class="divider"></span>
+                            <div class="search-content"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tray">
+                <a class="join-game-btn">Enter Code</a>
+                <a class="join-game-btn">Sign In</a>
+            </div>
+        </div>
+    </header>
+
+    <div id="main">
+        <article class="mt-5 article">
+            <div class="page-inner">
+                <div class="view-container">
+                    <div class="listing-header">
+                        <div class="filter-wrapper">
+                            <div class="dropdown">
+                                <button class="dropbtn d-flex justify-content-between align-items-center">Dropdown <i class="fas fa-caret-down"></i></button>
+                                <div class="dropdown-content">
+                                  <a href="#">Link 1</a>
+                                  <a href="#">Link 2</a>
+                                  <a href="#">Link 3</a>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                    <table>
+                        <thead class="table-head">
+                            <tr class="table-head-list">
+                                <th class="col-1">No.</th>
+                                <th class="col-2">Participant's name</th>
+                                <th class="col-3">Score</th>
+                                <th class="col-4">Accuracy</th>
+                                <th class="col-5"></th>
+                                <th class="col-6">Time</th>
+                            </tr>
+                        </thead>
+                        <tbody id="table-body" class="table-body">
+                            <tr class="table-body-list">
+                                <td class="number col-1">1</td>
+                                <td class="username col-2">
+                                    <div class="name-wrapper"> tét2 </div>
+                                </td>
+                                <td class="col-3 score">0</td>
+                                <td class="accuracy col-4">
+                                    <span class="accuracy-label"> 0% </span>
+                                </td>
+                                <td class="groups col-5"></td>
+                                <td class="groups col-6">
+                                    <div class="time-box">
+                                        12.2898s
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </article>
+
+        <nav class="main-navigation mt-5">
+            <div class="main-navigation-inner">
+                <div class="header">
+                    <div class="user-info">
+                        <button class="user-img" aria-label="Log in now">
+                            <i class="fas fa-user-circle"></i>
+                        </button>
+                        <div class="user-details">
+                            <div class="name">Have an account?</div>
+                            <button class="login-btn">Log in now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="create-menu-wrapper">
+                    <button class="create-btn">
+                        <i class="far fa-plus-circle"></i>
+                        <span class="create-btn-label">Create</span>
+                        <i class="fas fa-caret-down"></i>
+                    </button>
+                </div>
+                <div class="divider"></div>
+                <div class="main-navigation-list-wrapper">
+                    <ul class="main-navigation-list">
+                        <li id="explore" class="selected "><i aria-hidden="true" class="fas fa-map-marked-alt"></i><span
+                                role="link" tabindex="0">Explore</span>
+                        </li>
+                        <li id="my-quizzes" class=""><i class="fas fa-book-reader"></i><span role="link" tabindex="0">My
+                                library</span>
+                        </li>
+                        <li id="reports" class=""><i class="fas fa-flag"></i><span role="link"
+                                tabindex="0">Reports</span>
+                        </li>
+                        <li id="classes" class=""><i class="fas fa-book"></i><span role="link"
+                                tabindex="0">Classes</span>
+                        </li>
+                        <li class="divider"></li>
+                        <li id="memes" class=" "><i class="fas fa-person-booth"></i><span role="link" tabindex="0"
+                                aria-hidden="false">Memes</span>
+                        </li>
+                        <li id="collections" class=" "><i class="fas fa-bookmark"></i><span role="link" tabindex="0"
+                                aria-hidden="false">Collections</span>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </div>
+    <footer>Footer</footer>
+
+    <script>
+        const btn = document.querySelector('.dropbtn');
+        const content = document.querySelector('.dropdown-content');
+        btn.addEventListener('click', () => {
+            if (content.classList.contains('show')) {
+                content.classList.remove('show');
+            } else {
+                content.classList.add('show');
+            }
+            
+        })
+    </script>
+</body>
+<script type="module" src="./js/leaderboard.js"></script>
+
+</html>

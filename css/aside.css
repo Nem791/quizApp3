@@ -1,0 +1,39 @@
+.aside {
+    padding: 30px;
+}
+
+.ad-container {
+    position: fixed;
+}
+
+.ad-group-content {
+    border: solid;
+}
+
+.ad-image {
+    width: 336px;
+}
+
+.remove-ads-btn-container {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.remove-ads-btn {
+    border: solid;
+    color: white;
+    background-color: peru;
+    padding: 4px;
+    border-radius: 9px;
+}
+
+.remove-ads-btn:hover {
+    background-color: orange;
+    
+}
+
+
+
+
+

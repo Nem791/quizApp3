@@ -1,0 +1,35 @@
+.result {
+  /* height: 100px; */
+  padding: 15px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgb(0 0 0 / 10%), 0 1px 3px rgb(0 0 0 / 10%);
+  /* display: flex; */
+  /* align-items: center; */
+}
+
+.btn-container {
+  width: 100%;
+}
+
+.button {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+    background: rgb(145, 92, 182);
+    padding: 10px 30px;
+    border-radius: 4px;
+    font-weight: normal;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .glow-button:hover {
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+  }
+
+.result-title {
+  width: 100%;
+  font-size: 17px;
+  padding: 10px;
+}
+

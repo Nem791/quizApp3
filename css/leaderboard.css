@@ -1,0 +1,236 @@
+.page-inner {
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+}
+
+.view-container {
+    max-width: 1400px;
+    margin: auto;
+    min-height: 600px;
+    padding: 20px;
+    table-layout: fixed;
+}
+
+.listing-header {
+    display: flex;
+}
+
+.filter-wrapper {
+    position: relative;
+}
+
+.filter {
+    background-color: #fff;
+    width: 144px;
+    border-radius: 4px;
+    color: #393A68;
+    padding: 6px 12px;
+    
+    box-sizing: border-box;
+    box-shadow: 0 4px 6px 0 rgb(0 0 0 / 10%), 0 1px 3px 0 rgb(0 0 0 / 10%);
+    cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: relative;
+    padding-right: 20px;
+    font-size: 14px;
+    text-align: left;
+    position: relative;
+}
+
+
+/* Style The Dropdown Button */
+.dropbtn {
+    background-color: #fff;
+    width: 144px;
+    border-radius: 4px;
+    color: #393A68;
+    padding: 6px 12px;
+    
+    box-sizing: border-box;
+    box-shadow: 0 4px 6px 0 rgb(0 0 0 / 10%), 0 1px 3px 0 rgb(0 0 0 / 10%);
+    cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: relative;
+    padding-right: 20px;
+    font-size: 14px;
+    position: relative;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    position: absolute;
+    background-color: #fff;
+    z-index: 99;
+    border-radius: 4px;
+    top: calc(100% + 4px);
+    width: 200px;
+    height: fit-content;
+    box-shadow: 0 4px 6px 0 rgb(0 0 0 / 10%), 0 1px 3px 0 rgb(0 0 0 / 10%);
+    transition: 0.1s all ease-in-out;
+    transform: scale(0.0001);
+    transform-origin: top left;
+    max-height: 312px;
+    overflow-y: auto;
+  }
+
+.show {
+    transform: scale(1);
+}
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {
+    background-color: #bcc2bc;
+  }
+
+/* Table  */
+table {
+  width: 100%;
+}
+
+.table-head {
+  color: #6B7C93;
+  table-layout: fixed;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.table-head, .table-body {
+  display: block;
+  width: 100%;
+}
+
+.table-head-list, .table-body-list {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 65px;
+  box-sizing: border-box;
+}
+
+.col-1 {
+  justify-content: flex-start;
+  width: 120px;
+  padding-left: 16px;
+}
+
+th {
+  display: inline-flex;
+  vertical-align: middle;
+  padding: 8px;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+.col-2 {
+  width: calc(100% - 722px);
+  min-width: 200px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.col-3, .col-4 {
+  width: 100px;
+  justify-content: center;
+  text-align: center;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.col-5 {
+  width: 200px;
+  text-align: right;
+  padding-right: 0;
+}
+
+.col-6 {
+  width: 200px;
+}
+
+.table-body {
+  position: relative;
+  background-color: #fff;
+  color: #292A3A;
+  box-shadow: 0 4px 6px rgb(0 0 0 / 10%), 0 1px 3px rgb(0 0 0 / 10%);
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.table-body tr {
+  border-bottom: 1px solid #dedede;
+}
+
+tr .col-2 {
+  position: relative;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.name-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.accuracy-label {
+  padding: 4px 8px;
+  border-radius: 4px;
+  display: inline-block;
+  text-align: center;
+  box-sizing: border-box;
+  font-weight: 600;
+  color: #ec0b43;
+  background-color: #fcdbe3;
+}
+
+.time-box {
+  display: inline-block;
+  padding: 6px 12px;
+  text-align: left;
+  color: #6B7C93;
+  font-weight: 600;
+  background-color: #f2f2f2;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
