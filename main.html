@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" type="text/css" href="./slick-slider.css/slick.css">
+    <link rel="stylesheet" type="text/css" href="./slick-slider.css/slick-theme.css"> -->
+
+    <!-- Font Awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Bootstrap  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,900&display=swap" rel="stylesheet">
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="./css/test.css">
+    <link rel="stylesheet" href="./css/side-bar.css">
+    <link rel="stylesheet" href="./css/quiz-info-card.css">
+    <link rel="stylesheet" href="./css/questions-container.css">
+    <link rel="stylesheet" href="./css/aside.css">
+    <link rel="stylesheet" href="./css/result.css">
+    <link rel="stylesheet" href="./css/quizPageFooter.css">
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- Link framework -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="top-header">
+            <div class="top-header-box">
+                
+                <div class="logo"><a href="./quizPage.html">Quizz</a></div>
+                <form action="#">
+                    <input type="search" class="search-data" placeholder="Search..." required>
+                    <button type="submit" class="fas fa-search"></button>
+                </form>
+                <div class="tray">
+                    <a class="join-game-btn">Enter Code</a>
+                    
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="main" class="main">
+        
+
+        <nav class="main-navigation mt-5">
+            <div class="main-navigation-inner">
+                <div class="header">
+                    <div class="user-info">
+                        <button class="user-img" aria-label="Log in now">
+                            <i class="fas fa-user-circle"></i>
+                        </button>
+                        <div class="user-details">
+                            <div class="name">Have an account?</div>
+                            <button class="login-btn">Log in now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="create-menu-wrapper">
+                    <button class="create-btn">
+                        <i class="far fa-plus-circle"></i>
+                        <span class="create-btn-label">Create</span>
+                        <i class="fas fa-caret-down"></i>
+                    </button>
+                </div>
+                <div class="divider"></div>
+                <div class="main-navigation-list-wrapper">
+                    <ul class="main-navigation-list">
+                        <li id="explore" class="selected "><i aria-hidden="true" class="fas fa-map-marked-alt"></i><span
+                                role="link" tabindex="0">Explore</span>
+                        </li>
+                        <li id="my-quizzes" class=""><i class="fas fa-book-reader"></i><span role="link" tabindex="0">My
+                                library</span>
+                        </li>
+                        <li id="reports" class=""><i class="fas fa-flag"></i><span role="link"
+                                tabindex="0">Reports</span>
+                        </li>
+                        <li id="classes" class=""><i class="fas fa-book"></i><span role="link"
+                                tabindex="0">Classes</span>
+                        </li>
+                        <li class="divider"></li>
+                        <li id="memes" class=" "><i class="fas fa-person-booth"></i><span role="link" tabindex="0"
+                                aria-hidden="false">Memes</span>
+                        </li>
+                        <li id="collections" class=" "><i class="fas fa-bookmark"></i><span role="link" tabindex="0"
+                                aria-hidden="false">Collections</span>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="test">
+            <div id="welcome" class="welcome">
+                <h3>Hi, welcome  Cuong</h3>
+                <div class="content-text">
+                    <div class="navigation">
+                        <i class="fas fa-caret-right"></i>
+                        <span>HTML</span></div>
+                    <div class="container-box multiple-items" >
+                        
+                        <div class="box">
+                            <div class="slide-img"><img src="https://topicanative.edu.vn/wp-content/uploads/2020/08/nang-cap-von-tu-vung-tieng-anh-cuc-dinh-thong-qua-quiz-kiem-tra-2.jpg" alt=""></div>
+                            <div class="box-content">
+                                <div class="title">Quiz</div>
+                                <div class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                                <div class="numberOfQ">12 question</div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="slide-img"><img src="https://topicanative.edu.vn/wp-content/uploads/2020/08/nang-cap-von-tu-vung-tieng-anh-cuc-dinh-thong-qua-quiz-kiem-tra-2.jpg" alt=""></div>
+                            <div class="box-content">
+                                <div class="title">Quiz</div>
+                                <div class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                                <div class="numberOfQ">12 question</div>
+                            </div>
+                        </div>
+        
+                        <div class="box">
+                            <div class="slide-img"><img src="https://topicanative.edu.vn/wp-content/uploads/2020/08/nang-cap-von-tu-vung-tieng-anh-cuc-dinh-thong-qua-quiz-kiem-tra-2.jpg" alt=""></div>
+                            <div class="box-content">
+                                <div class="title">Quiz</div>
+                                <div class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                                <div class="numberOfQ">12 question</div>
+                            </div>
+                        </div>
+        
+                        <div class="box">
+                            <div class="slide-img"><img src="https://topicanative.edu.vn/wp-content/uploads/2020/08/nang-cap-von-tu-vung-tieng-anh-cuc-dinh-thong-qua-quiz-kiem-tra-2.jpg" alt=""></div>
+                            <div class="box-content">
+                                <div class="title">Quiz</div>
+                                <div class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                                <div class="numberOfQ">12 question</div>
+                            </div>
+                        </div>
+        
+                        <div class="box">
+                            <div class="slide-img"><img src="https://topicanative.edu.vn/wp-content/uploads/2020/08/nang-cap-von-tu-vung-tieng-anh-cuc-dinh-thong-qua-quiz-kiem-tra-2.jpg" alt=""></div>
+                            <div class="box-content">
+                                <div class="title">Quiz</div>
+                                <div class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                                <div class="numberOfQ">12 question</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-text">
+                    <div class="navigation">
+                        <i class="fas fa-caret-right"></i>
+                        <span>CSS</span></div>
+                    <div class="container-box multiple-items" >
+                        
+                        <div class="box">
+                            <div class="slide-img"><img src="https://topicanative.edu.vn/wp-content/uploads/2020/08/nang-cap-von-tu-vung-tieng-anh-cuc-dinh-thong-qua-quiz-kiem-tra-2.jpg" alt=""></div>
+                            <div class="box-content">
+                                <div class="title">Quiz</div>
+                                <div class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                                <div class="numberOfQ">12 question</div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="slide-img"><img src="https://topicanative.edu.vn/wp-content/uploads/2020/08/nang-cap-von-tu-vung-tieng-anh-cuc-dinh-thong-qua-quiz-kiem-tra-2.jpg" alt=""></div>
+                            <div class="box-content">
+                                <div class="title">Quiz</div>
+                                <div class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                                <div class="numberOfQ">12 question</div>
+                            </div>
+                        </div>
+        
+                        <div class="box">
+                            <div class="slide-img"><img src="https://topicanative.edu.vn/wp-content/uploads/2020/08/nang-cap-von-tu-vung-tieng-anh-cuc-dinh-thong-qua-quiz-kiem-tra-2.jpg" alt=""></div>
+                            <div class="box-content">
+                                <div class="title">Quiz</div>
+                                <div class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                                <div class="numberOfQ">12 question</div>
+                            </div>
+                        </div>
+        
+                        <div class="box">
+                            <div class="slide-img"><img src="https://topicanative.edu.vn/wp-content/uploads/2020/08/nang-cap-von-tu-vung-tieng-anh-cuc-dinh-thong-qua-quiz-kiem-tra-2.jpg" alt=""></div>
+                            <div class="box-content">
+                                <div class="title">Quiz</div>
+                                <div class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                                <div class="numberOfQ">12 question</div>
+                            </div>
+                        </div>
+        
+                        <div class="box">
+                            <div class="slide-img"><img src="https://topicanative.edu.vn/wp-content/uploads/2020/08/nang-cap-von-tu-vung-tieng-anh-cuc-dinh-thong-qua-quiz-kiem-tra-2.jpg" alt=""></div>
+                            <div class="box-content">
+                                <div class="title">Quiz</div>
+                                <div class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                                <div class="numberOfQ">12 question</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+        </div>  
+        
+    </div>
+    <footer >
+        <div class="footer_info">
+            <div class="footer_width about">
+                <h2>About</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe dolorem facilis assumenda. Iusto officiis eius sed dolorum ea eveniet quam ex iste, magni eos facilis, nam quia quas animi possimus.
+                </p>
+                <div class="social-media">
+                    <ul>
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer_width link">
+                <h2>Quick Link</h2>
+                <ul>
+                    <a href="#">Home</a>
+                    <a href="#">User</a>
+                    <a href="#">Service</a>
+                    <a href="#">Quizz</a>
+                    <a href="#">Contact</a>
+                </ul>
+            </div>
+            <div class="footer_width contact">
+                <h2>Contact</h2>
+                <ul>
+                    <li>
+                        <span>
+                            <i class="fas fa-map-marker-alt"></i>
+                        </span>
+                        <p>112 Phượng Trì, Thị Trấn Phùng, Đan Phượng, HN</p>
+                    </li>
+                    <li>
+                        <span><i class="fas fa-envelope"></i></span>
+                        <p>QuizzApp@gmail.com</p>
+                    </li>
+                    <li>
+                        <span><i class="fas fa-phone-volume"></i></span>
+                        <p>09 123 45678</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="copy-rigth">
+            <p>@ COPYRIGHT 2021 Quizz by team1</p>
+        </div>
+    </footer>
+</body>
+
+<!-- Thu vien sweet alert  -->
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script type="module" src="./js/createTest.js"></script>
+<script type="module" src="./js/report.js"></script>
+<script src="./js/likeAndShare.js"></script>
+<script type="module" src="./js/suggestion.js"></script>
+
+
+<!-- Slick -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="text/javascript">
+$('.multiple-items').slick({
+infinite: true,
+slidesToShow: 3,
+slidesToScroll: 1
+});
+</script>
+
+</html>

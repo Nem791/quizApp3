@@ -29,32 +29,22 @@
 <body>
     <header class="main-header">
         <div class="top-header">
-            <div class="nav-size-container">
-                <div class="main-logo">
-                    <a href="index.html">
-                        <img src="https://cf.quizizz.com/img/quizizz_logos/white-brandmark-600x164.png" alt="Quizizz">
-                    </a>
+            <div class="top-header-box">
+                
+                <div class="logo"><a href="./quizPage.html">Quizz</a></div>
+                <form action="#">
+                    <input type="search" class="search-data" placeholder="Search..." required>
+                    <button type="submit" class="fas fa-search"></button>
+                </form>
+                <div class="tray">
+                    <a class="join-game-btn">Enter Code</a>
+                    
                 </div>
-            </div>
-            <div class="main-search-master-wrapper">
-                <div class="main-search-wrapper">
-                    <div class="main-search">
-                        <div class="main-search-container">
-                            <input type="text">
-                            <span class="divider"></span>
-                            <div class="search-content"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="tray">
-                <a class="join-game-btn">Enter Code</a>
-                <a class="join-game-btn">Sign In</a>
             </div>
         </div>
     </header>
 
-    <div id="main">
+    <div id="main" class="main">
         <article class="mt-5 article">
             <div class="content-container">
                 <div class="quiz-header">
@@ -132,44 +122,7 @@
                         </div>
                         <div id="question-container" class="questions">
                             <div id="question-list" class="question-list">
-                                <!-- <div class="question">
-                                    <div class="question-header">
-                                        <div class="question-num">
-                                            <i class="far fa-dot-circle"></i>
-                                            
-                                        </div>
-                                        <div class="question-time "><i aria-hidden="true" class="far fa-clock"></i>  120 seconds </div>
-                                        <button class="report-ques-btn "><i aria-hidden="true" class="fas fa-exclamation-triangle"></i> Report an issue </button>
-                                    </div>
-                                    <div class="question-view">
-                                        <div class="query">
-                                            <div class="query-text">
-                                                <p class="placeholder-glow">
-                                                    <span class="placeholder col-12"></span>
-                                                  </p>
-                                            </div>
-                                        </div>
-                                        <div class="question-divider"></div>
-                                        <div class="question-options">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="radio" name="Câu 1">
-                                                <label class="form-check-label">A</label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="radio" name="Câu 1">
-                                                <label class="form-check-label">B</label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="radio" name="Câu 1">
-                                                <label class="form-check-label">C</label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="radio" name="Câu 1">
-                                                <label class="form-check-label">D</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div> -->
+                              
                             </div>
                         </div>
                     </div>
