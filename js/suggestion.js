@@ -23,10 +23,7 @@ function renderSuggestion() {
 
 
 
-export {renderSuggestion};
-
-
-
+export { renderSuggestion };
 
 
 
