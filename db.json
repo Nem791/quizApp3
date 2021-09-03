@@ -12,7 +12,7 @@
                     "D. longdesc"
                 ],
                 "rightAnswer": "A",
-                "quiz": "Thuộc tính HTML nào xác định một văn bản sẽ dùng thay thế cho hình ảnh, nếu hình ảnh không thể được hiển thị?",
+                "quiz": "Thuộc tính HTML nào xác định một văn bản sẽ dùng thay thế cho hình ảnh, nếu hình ảnh không thể được hiển thị?"
             },
             {
                 "quizNumber": "Câu 2",
@@ -1515,6 +1515,1010 @@
                 "c": "C. Gây ra một ngoại lệ",
                 "d": "D. Không có đáp án nào đúng"
             }
+        ],
+        
+
+        
+        "SQL": [
+            {
+                "questionTitle": "Bài kiểm tra trắc nghiệm về SQL",
+                "image": "https://greensql.net/wp-content/uploads/2020/04/word-image-3.png",
+                "quizNumber": "Câu 1",
+                "answers": [
+                    "A. Strong Question Language",
+                    "B. Structured Question Language",
+                    "C. Structured Query Language",
+                    "D. Structured Queen Language"
+                ],
+                "rightAnswer": "A",
+                "quiz": "SQL là từ viết tắt của:"
+            },
+            {
+                "quizNumber": "Câu 2",
+                "answers": [
+                    "A. Get",
+                    "B. Open",
+                    "C. Extract",
+                    "D. Select"
+                ],
+                "rightAnswer": "A",
+                "quiz": "Câu lệnh SQL nào được dùng để trích xuất dữ liệu từ database"
+            },
+            {
+                "quizNumber": "Câu 3",
+                "answers": [
+                    "A. Update",
+                    "B. Save as",
+                    "C. Modify",
+                    "D. Save"
+                ],
+                "rightAnswer": "A",
+                "quiz": "Câu lệnh SQL nào được dùng để cập nhật dữ liệu từ database?"
+            },
+            {
+                "quizNumber": "Câu 4",
+                "answers": [
+                    "A. Truncate",
+                    "B. Delete",
+                    "C. Modify",
+                    "D. Remove"
+                ],
+                "rightAnswer": "A",
+                "quiz": "Câu lệnh SQL nào được dùng để xóa dữ liệu từ database?"
+            },
+            {
+                "quizNumber": "Câu 5",
+                "answers": [
+                    "A. Add recrd",
+                    "B. Insert",
+                    "C. Add into",
+                    "D. Add new"
+                ],
+                "rightAnswer": "A",
+                "quiz": "Câu lệnh SQL nào được dùng để chèn thêm dữ liệu vào database:"
+            },
+            {
+                "quizNumber": "Câu 6",
+                "answers": [
+                    "A. Extract FirstName FROM Persons",
+                    "B. Select FirstName FROM Persons",
+                    "C. Slect Persons.FirstName",
+                    "D. Uncha FirstName FROM Persons"
+                ],
+                "rightAnswer": "C",
+                "quiz": "Trong SQL, làm thế nào để chọn cột dữ liệu có tên FirstName từ bảng Persons:"
+            },
+            {
+                "quizNumber": "Câu 6",
+                "answers": [
+                    "A. Select [all] FROM Persons",
+                    "B. Select All Persons",
+                    "C. Select *.Persons",
+                    "D. Select * FROM Personss"
+                ],
+                "rightAnswer": "C",
+                "quiz": "Trong SQL, làm thế nào để chọn tất cả các cột dữ liệu trong bảng Persons:"
+            },
+            {
+                "quizNumber": "Câu 7",
+                "answers": [
+                    "A. Select [all] FROM Persons WHERE FirstName=’Peter’",
+                    "B. Select * FROM Persons WHERE FirstName LIKE’Peter’",
+                    "C. Select [all] FROM Persons WHERE FirstName LIKE’Peter’",
+                    "D. Select * FROM Persons WHERE FirstName=’Peter’"
+                ],
+                "rightAnswer": "C",
+                "quiz": "Trong SQL làm thế nào để chọn tất cả các bản ghi từ bảng Persons với giá trị trong cột FirstName là Peter:"
+            },
+            {
+                "quizNumber": "Câu 8",
+                "answers": [
+                    "A. Select * From Persons WHERE FirstName='%a%'",
+                    "B. Select * From Persons WHERE FirstNameLIKE %",
+                    "C. Select * From Persons WHERE FirstName=’a’",
+                    "D. Select * From Persons WHERE FirstName='a%'"
+                ],
+                "rightAnswer": "A",
+                "quiz": "Trong SQL, làm thế nào để chọn tất cả các bản ghi từ bảng Persons với giá trị trong cột FirstName bắt đầu bằng giá trị a:"
+            },
+            {
+                "quizNumber": "Câu 9",
+                "answers": [
+                    "A. SELECT UNIQUE",
+                    "B. SELECT INDENTITY",
+                    "C. SELECT DIFFERNT",
+                    "D. SELECT DISTINCT"
+                ],
+                "rightAnswer": "D",
+                "quiz": "Cú pháp SQL nào được dùng để trả về những giá trị khác nhau:"
+            },
+            {
+                "quizNumber": "Câu 10",
+                "answers": [
+                    "A. SORT BY",
+                    "B. ORDER",
+                    "C. ORDER BY",
+                    "D. SORT"
+                ],
+                "rightAnswer": "D",
+                "quiz": "Từ khóa SQL nào được sử dụng để sắp xếp danh sách kết quả:"
+            },
+            {
+                "quizNumber": "Câu 11",
+                "answers": [
+                    "A. SELECT COLUMNS () FROM Persons",
+                    "B. SELECT COUNT (*) FROM Persons",
+                    "C. SELECT COLUMNS (*) FROM Persons",
+                    "D. SELECT COUNT () FROM Persons"
+                ],
+                "rightAnswer": "A",
+                "quiz": "Trong SQL, làm thế nào để trả về số lượng các bản ghi trong bảng Persons:"
+            },
+            {
+                "quizNumber": "Câu 12",
+                "answers": [
+                    "A. SELECT COLUMNS () FROM Persons",
+                    "B. SELECT COUNT (*) FROM Persons",
+                    "C. SELECT COLUMNS (*) FROM Persons",
+                    "D. SELECT COUNT () FROM Persons"
+                ],
+                "rightAnswer": "A",
+                "quiz": "Trong SQL, làm thế nào để trả về số lượng các bản ghi trong bảng Persons:"
+            },
+            {
+                "quizNumber": "Câu 13",
+                "answers": [
+                    "A. EXPLICIT",
+                    "B. IMPLICIT",
+                    "C. EXCLUSIVE",
+                    "D. READ ONLY"
+                ],
+                "rightAnswer": "D",
+                "quiz": "Kiểu khóa nào sau đây sẽ ngăn chặn bất kỳ người dùng nào truy cập vào bảng dữ liệu:"
+            },
+            {
+                "quizNumber": "Câu 14",
+                "answers": [
+                    "A. Right",
+                    "B. Full",
+                    "C. Right outer",
+                    "D. Tất cả đáp án trên"
+                ],
+                "rightAnswer": "D",
+                "quiz": "Left outer join là 1 dạng của outer join. 1 dạng khác là:"
+            },
+            {
+                "quizNumber": "Câu 14",
+                "answers": [
+                    "A. Right",
+                    "B. Full",
+                    "C. Right outer",
+                    "D. Tất cả đáp án trên"
+                ],
+                "rightAnswer": "D",
+                "quiz": "Left outer join là 1 dạng của outer join. 1 dạng khác là:"
+            }
+        ],
+        "javascript năng cao": [
+            {
+                "questionTitle": "Câu hỏi trắc nghiệm JS naang cao",
+                "image": "https://cms.kmin.edu.vn/uploads/JS_co_ban_f0fd9c1fa4.png",
+                "quizNumber": "Câu 1",
+                "answers": [
+                    "A. Chuyển một chuỗi thành số nguyên",
+                    "B. Chuyển một số nguyên thành chuỗi",
+                    "C. Chuyển một chuỗi thành số thực",
+                    "D. Chuyển một chuỗi thành số"
+                ],
+                "rightAnswer": "C",
+                "quiz": "Trọng JavaScript hàm parseFloat() dùng để làm gì?"
+            },
+            {
+                "quizNumber": "Câu 2",
+                "answers": [
+                    "A. if (i != 5)",
+                    "B. if i =! 5 then",
+                    "C. if i <> 5",
+                    "D. if (i <> 5)"
+                ],
+                "rightAnswer": "A",
+                "quiz": "Thực hiện kiểm tra nếu biến “i” không bằng 5, câu lệnh nào là đúng?"
+            },
+            {
+                "quizNumber": "Câu 2",
+                "answers": [
+                    "A. Viết trên một tệp riêng",
+                    "B.  Viết chung với HTML",
+                    "C. Cả hai dạng viết tệp riêng hoặc viết trong trang HTML",
+                    "D. Không thuộc dạng nào"
+                ],
+                "rightAnswer": "C",
+                "quiz": "Có những cách nào viết code JavaScript  để chạy trong trang web?"
+            },
+            {
+                "quizNumber": "Câu 3",
+                "answers": [
+                    "A. <script name='xxx.js'> ",
+                    "B. <script heft='xxx.js'>",
+                    "C. <script src='xxx.js'>",
+                    "D. <script type='xxx.js'>"
+                ],
+                "rightAnswer": "C",
+                "quiz": "Câu lệnh nào đúng thực hiện việc gọi một script từ bên ngoài có tên là “xxx.js”?"
+            },
+            {
+                "quizNumber": "Câu 4",
+                "answers": [
+                    "A. Khi kích chuột ",
+                    "B. Khi di chuyển chuột qua",
+                    "C. Khi kết thúc một chương trình",
+                    "D. Khi bắt đầu chạy chương trình"
+                ],
+                "rightAnswer": "C",
+                "quiz": "Trong JavaScript sự kiện OnUnload xảy ra khi nào?"
+            },
+            {
+                "quizNumber": "Câu 5",
+                "answers": [
+                    "A. browser.name ",
+                    "B. navigator.appName",
+                    "C. client.navName",
+                    "D. clientNavName"
+                ],
+                "rightAnswer": "B",
+                "quiz": "Dùng cách nào có thể biết được trình duyệt đang được sử dụng tại máy client?"
+            },
+            {
+                "quizNumber": "Câu 6",
+                "answers": [
+                    "A. for ( biến = Giá trị đầu; Điều kiện; Giá trị tăng)",
+                    "B. for ( biến = Giá trị đầu; Giá trị tăng; điều kiện)",
+                    "C. Tất cả các dạng trên.",
+                    "D. for ( biến = Điều kiện; Giá trị tăng; Giá trị cuối)"
+                ],
+                "rightAnswer": "A",
+                "quiz": "Câu lệnh lặp For trong JavaScript có dạng nào sau đây?"
+            },
+            {
+                "quizNumber": "Câu 7",
+                "answers": [
+                    "A. if i = 5 then",
+                    "B.  if (i == 5)",
+                    "C. if i = 5",
+                    "D. if i == 5 then"
+                ],
+                "rightAnswer": "B",
+                "quiz": "Cách viết câu lệnh IF nào sau đây là đúng?"
+            },
+            {
+                "quizNumber": "Câu 8",
+                "answers": [
+                    "A. Bạn có thể đặt trong phần <head> hoặc <body>",
+                    "B. Chỉ trong phần <body>)",
+                    "C. Chỉ trong phần <head>",
+                    "D. Tất cả đều sai"
+                ],
+                "rightAnswer": "A",
+                "quiz": "Nơi bạn có thể đặt code JavaScript trong trang web?"
+            },
+            {
+                "quizNumber": "Câu 10",
+                "answers": [
+                    "A. Khi bắt đầu chương trình chạy",
+                    "B. Khi click chuột)",
+                    "C. Khi kết thúc một chương trình",
+                    "D. Khi di chuyển chuột qua"
+                ],
+                "rightAnswer": "C",
+                "quiz": "Trong Javascript sự kiện Onblur thực hiện khi nào?"
+            },
+            {
+                "quizNumber": "Câu 11",
+                "answers": [
+                    "A. Khi một đối tượng trong form mất focus",
+                    "B. Khi một đối tượng trong form có focus",
+                    "C. Khi di chuyển con chuột qua form",
+                    "D. Khi click chuột vào nút lệnh"
+                ],
+                "rightAnswer": "A",
+                "quiz": "Trong Javascript sự kiện Onblur thực hiện khi nào?"
+            },
+            {
+                "quizNumber": "Câu 12",
+                "answers": [
+                    "A. Khi một đối tượng trong form mất focus",
+                    "B. Khi một đối tượng trong form có focus",
+                    "C. Khi di chuyển con chuột qua một đối tượng trong form",
+                    "D. Khi click chuột vào nút lệnh"
+                ],
+                "rightAnswer": "C",
+                "quiz": "Trong Javascript sự kiện OnMouseOver thực hiện khi nào?"
+            },
+            {
+                "quizNumber": "Câu 13",
+                "answers": [
+                    "A. Khi một đối tượng trong form mất focus",
+                    "B. Khi một đối tượng trong form có focus",
+                    "C. Khi di chuyển con chuột qua một đối tượng trong form",
+                    "D. Khi click chuột vào nút lệnh"
+                ],
+                "rightAnswer": "D",
+                "quiz": "TTrong Javascript sự kiện Onclick xảy ra khi nào?"
+            },
+            {
+                "quizNumber": "Câu 14",
+                "answers": [
+                    "A. Khi một đối tượng trong form mất focus",
+                    "B. Khi một đối tượng trong form có focus",
+                    "C. Xảy ra khi giá trị của một trường trong form được người dùng thay đổi",
+                    "D. Khi click chuột vào nút lệnh"
+                ],
+                "rightAnswer": "C",
+                "quiz": "Trong Javascript sự kiện Onchange thực hiện khi nào?"
+            },
+            {
+                "quizNumber": "Câu 15",
+                "answers": [
+                    "A. Tạo một ô text để nhập dữ liệu 1 dòng",
+                    "B. Tạo một ô password",
+                    "C. Tạo một  textbox cho phép nhập liệu nhiều dòng",
+                    "D. Tất cả các ý trên"
+                ],
+                "rightAnswer": "A",
+                "quiz": "Thẻ <input type='text'> dùng để làm gì?"
+            },
+            {
+                "quizNumber": "Câu 16",
+                "answers": [
+                    "A. Tạo một ô text để nhập dữ liệu 1 dòng",
+                    "B. Tạo một ô password",
+                    "C. Tạo một  textbox cho phép nhập liệu nhiều dòng",
+                    "D. Tất cả các ý trên"
+                ],
+                "rightAnswer": "B",
+                "quiz": "Thẻ <input type='Password'> dùng để làm gì?"
+            },
+            {
+                "quizNumber": "Câu 17",
+                "answers": [
+                    "A. Tạo một ô text để nhập dữ liệu 1 dòng",
+                    "B. Tạo một ô password",
+                    "C. Tạo một  textbox cho phép nhập liệu nhiều dòng",
+                    "D. Tất cả các ý trên"
+                ],
+                "rightAnswer": "C",
+                "quiz": "Thẻ <textarea ></texterea> dùng để làm gì?"
+            },
+            {
+                "quizNumber": "Câu 18",
+                "answers": [
+                    "A. Tạo một ô text để nhập dữ liệu",
+                    "B. Tạo một nút lệnh dùng để gửi tin trong form đi",
+                    "C. Tạo một nút lệnh dùng để xóa thông tin trong form",
+                    "D. Tất cả các ý trên"
+                ],
+                "rightAnswer": "B",
+                "quiz": "Thẻ <textarea ></texterea> dùng để làm gì?"
+            },
+            {
+                "quizNumber": "Câu 19",
+                "answers": [
+                    "A. Ngưng vòng lặp nếu gặp lệnh này",
+                    "B. Không có ý nghĩa gì trong vòng lặp",
+                    "C. Nhảy đến một tập lệnh khác",
+                    "D. Không thể kết hợp được"
+                ],
+                "rightAnswer": "A",
+                "quiz": "Câu lệnh break kết hợp với vòng lặp để làm gì"
+            },
+            {
+                "quizNumber": "Câu 20",
+                "answers": [
+                    "A. round(7.25)",
+                    "B. rnd(7.25)",
+                    "C. Math.round(7.25)",
+                    "D. Math.rnd(7.25)"
+                ],
+                "rightAnswer": "C",
+                "quiz": "Cách nào để làm tròn 7.25 tới số nguyên gần nhất trong JavaScript?"
+            }
+
+        ],
+        "C": [
+            {
+                "questionTitle": "Trắc nghiệm về lập trình C",
+                "image": "https://fasttrack.edu.vn/wp-content/uploads/2021/04/c.jpeg",
+                "quizNumber": "Câu 1",
+                "answers": [
+                    "A. Ngôn ngữ B",
+                    "B. Ngôn ngữ BCPL.",
+                    "C. Ngôn ngữ DEC PDP.",
+                    "D. Ngôn ngữ B và BCPL."
+                ],
+                "rightAnswer": "D",
+                "quiz": "Ngôn ngữ lập trình C được Dennish phát triển dựa trên ngôn ngữ lập trình nào:"
+            },
+            {
+                
+                "quizNumber": "Câu 2",
+                "answers": [
+                    "A. 1967.",
+                    "B. 1972.",
+                    "C. 1970.",
+                    "D. 1976."
+                ],
+                "rightAnswer": "B",
+                "quiz": "Ngôn ngữ lập trình được Dennish đưa ra vào năm nào?"
+            },
+            {
+                "quizNumber": "Câu 3",
+                "answers": [
+                    "A. Ngôn ngữ Assembler.",
+                    "B. Ngôn ngữ C và Pascal.",
+                    "C. Ngôn ngữ Cobol.",
+                    "D. a, b và c."
+                ],
+                "rightAnswer": "B",
+                "quiz": "Ngôn ngữ lập trình nào dưới đây là ngôn ngữ lập trình có cấu trúc?"
+            },
+            {
+                "quizNumber": "Câu 4",
+                "answers": [
+                    "A. diem toan",
+                    "B. 3diemtoan",
+                    "C. _diemtoan",
+                    "D. -diemtoan"
+                ],
+                "rightAnswer": "C",
+                "quiz": "Những tên biến nào dưới đây được viết đúng theo quy tắc đặt tên của ngôn ngữ lập trình C?"
+            },
+            {
+                "quizNumber": "Câu 5",
+                "answers": [
+                    "A. Nó được khai báo bên trong tất cả các hàm, ngoại trừ hàm main().",
+                    "B. Nó được khai báo ngoài tất cả các hàm kể cả hàm main().",
+                    "C. Nó được khai báo bên ngoài hàm main().",
+                    "D. Nó được khai báo bên trong hàm main()."
+                ],
+                "rightAnswer": "B",
+                "quiz": "Một biến được gọi là biến toàn cục nếu:"
+            },
+            {
+                "quizNumber": "Câu 6",
+                "answers": [
+                    "A. Nó được khai báo bên trong các hàm hoặc thủ tục, kể cả hàm main().",
+                    "B. Nó được khai báo ngoài tất cả các hàm kể cả hàm main().",
+                    "C. Nó được khai báo bên ngoài hàm main().",
+                    "D. Nó được khai báo bên trong hàm main()."
+                ],
+                "rightAnswer": "A",
+                "quiz": "Một biến được gọi là một biến địa phương nếu:"
+            },
+            {
+                "quizNumber": "Câu 7",
+                "answers": [
+                    "A. Miền nhớ dành cho x có thể thay đổi",
+                    "B.  Miền nhớ dành cho x chỉ có thay đổi",
+                    "C. Miền nhớ dành cho x sẽ thay đổi ",
+                    "D. Miền nhớ giành cho x không bị thay đổi."
+                ],
+                "rightAnswer": "D",
+                "quiz": "Nếu x là một biến toàn cục và x không phải là một con trỏ thì:"
+            },
+            {
+                "quizNumber": "Câu 8",
+                "answers": [
+                    "A. Kiểu double.",
+                    "B. Kiểu con trỏ.",
+                    "C. Kiểu hợp ",
+                    "D. Kiểu mảng"
+                ],
+                "rightAnswer": "A",
+                "quiz": "Kiểu dữ liệu nào dưới đây được coi là kiểu dữ liệu cơ bản trong ngôn ngữ lập trình C:"
+            },
+            {
+                "quizNumber": "Câu 9",
+                "answers": [
+                    "A. (a+=b).",
+                    "B. (a*=b).",
+                    "C. (a=b). ",
+                    "D. (a&=b)."
+                ],
+                "rightAnswer": "D",
+                "quiz": "Giả sử a, b là hai số thực. Biểu thức nào dưới đây viết không đúng theo cú pháp của ngôn ngữ lập trình C:"
+            },
+            {
+                "quizNumber": "Câu 10",
+                "answers": [
+                    "A. (ab).",
+                    "B. (a-=b).",
+                    "C. (a>>=b).",
+                    "D. (a*=b).."
+                ],
+                "rightAnswer": "C",
+                "quiz": "Giả sử a và b là hai số thực. Biểu thức nào dưới đây là không được phép theo cú pháp của ngôn ngữ lập trình C:"
+            },
+            {
+                "quizNumber": "Câu 11",
+                "answers": [
+                    "A. “%d”",
+                    "B. “%x”.",
+                    "C. “%i”.",
+                    "D. “%u”."
+                ],
+                "rightAnswer": "B",
+                "quiz": "Xâu định dạng nào dưới đây dùng để in ra một số nguyên hệ 16:"
+            },
+            {
+                "quizNumber": "Câu 12",
+                "answers": [
+                    "A. “%ld”.",
+                    "B. “%x”.",
+                    "C. “%i”.",
+                    "D. “%u”."
+                ],
+                "rightAnswer": "C",
+                "quiz": "Xâu định dạng nào dưới đây dùng để in ra một số nguyên ở hệ 8:"
+            },
+            {
+                "quizNumber": "Câu 13",
+                "answers": [
+                    "A. “%f”.",
+                    "B. “%x”.",
+                    "C. “%s”.",
+                    "D. “%c”."
+                ],
+                "rightAnswer": "D",
+                "quiz": "Xâu định dạng nào dưới đây dùng để in ra một kí tự:"
+            },
+            {
+                "quizNumber": "Câu 14",
+                "answers": [
+                    "A. “%ld”.",
+                    "B. “%x”.",
+                    "C. “%d”.",
+                    "D. “%o”."
+                ],
+                "rightAnswer": "A",
+                "quiz": "Xâu định dạng nào dưới đây dùng để in ra một số nguyên dài:"
+            },
+            {
+                "quizNumber": "Câu 15",
+                "answers": [
+                    "A. 6",
+                    "B. 7",
+                    "C. 8",
+                    "D. 9"
+                ],
+                "rightAnswer": "C",
+                "quiz": "Trong chế độ 256 màu, số bít cho mỗi pixel là:"
+            },
+            {
+                "quizNumber": "Câu 14",
+                "answers": [
+                    "A. “%u”.",
+                    "B. “%e”.",
+                    "C. “%o”.",
+                    "D. “%p”."
+                ],
+                "rightAnswer": "D",
+                "quiz": "Xâu định dạng nào dưới đây dùng để in ra địa chỉ của một biến:"
+            },
+            {
+                "quizNumber": "Câu 15",
+                "answers": [
+                    "A. “%u”.",
+                    "B. “%e”.",
+                    "C. “%o”.",
+                    "D. “%p”."
+                ],
+                "rightAnswer": "A",
+                "quiz": "Xâu định dạng nào dưới đây dùng để in ra địa chỉ của một biến:"
+            },
+            {
+                "quizNumber": "Câu 16",
+                "answers": [
+                    "A. “%u”.",
+                    "B. “%e”.",
+                    "C. “%o”.",
+                    "D. “%p”."
+                ],
+                "rightAnswer": "B",
+                "quiz": "Xâu định dạng nào dưới đây dùng để in ra một số thực có độ chính xác kép:"
+            },
+            {
+                "quizNumber": "Câu 17",
+                "answers": [
+                    "A. “%u”.",
+                    "B. “%e”.",
+                    "C. “%f”.",
+                    "D. “%p”."
+                ],
+                "rightAnswer": "C",
+                "quiz": "Xâu định dạng nào dưới đây dùng để in ra một số thực có độ chính xác kép:"
+            },
+            {
+                "quizNumber": "Câu 18",
+                "answers": [
+                    "A. 0…255.",
+                    "B. -32768…32767.",
+                    "C. -128…127.",
+                    "D. 0…65535."
+                ],
+                "rightAnswer": "B",
+                "quiz": "Kiểu dữ liệu int (kiểu số nguyên) có thể xử lí số nguyên nằm trong khoảng nào:"
+            },
+            {
+                "quizNumber": "Câu 19",
+                "answers": [
+                    "A. (c=a & b)",
+                    "B. (c=a && b)",
+                    "C. (c= a/b)",
+                    "D. (c= a<<b)."
+                ],
+                "rightAnswer": "A",
+                "quiz": "Cho a=3, b=2 và c là 3 biến nguyên. Biểu thức nào sau viết sai cú pháp trong ngôn ngữ lập trình C:"
+            },
+            {
+                "quizNumber": "Câu 20",
+                "answers": [
+                    "A. (a+=b)",
+                    "B. (a-=b)",
+                    "C. (a>>=b)",
+                    "D. (a*=b)"
+                ],
+                "rightAnswer": "C",
+                "quiz": "Giả sử a và b là 2 số thực. Biểu thức nào dưới đây là không được phép:"
+            }
+        ],
+        "Code": [
+            {
+                "questionTitle": "Trắc nghiệm về lập trình ",
+                "image": "https://anh.24h.com.vn/upload/4-2017/images/2017-10-14/1507983593-1-javascript.jpg",
+                "quizNumber": "Câu 1",
+                "answers": [
+                    "A. Có giá trị thay đổi trong quá trình thực hiện chương trình",
+                    "B. Có giá trị không thay đổi trong quá trình thực hiện chương trình",
+                    "C. Được đặt tên",
+                    "D. Có thể thay đổi giá trị hoặc không thay đổi giá trị tùy thuộc vào bài toán"
+                ],
+                "rightAnswer": "B",
+                "quiz": "Trong tin học, hằng là đại lượng"
+            },
+            {
+                "quizNumber": "Câu 2",
+                "answers": [
+                    "A. Chương trình thông dịch và chương trình biên dịch",
+                    "B. Chương trình dịch, bảng chữ cái, cú pháp, ngữ nghĩa",
+                    "C. Tên dành riêng, tên chuẩn và tên do người lập trình định nghĩa",
+                    "D. Bảng chữ cái, cú pháp, ngữ nghĩa"
+                ],
+                "rightAnswer": "D",
+                "quiz": "Các thành phần của ngôn ngữ lập trình là:"
+            },
+            {
+                "quizNumber": "Câu 3",
+                "answers": [
+                    "A. Const Pi = 3,14",
+                    "B. Const = Pi",
+                    "C. Const Pi = 3.1",
+                    "D. Pi = 3.14"
+                ],
+                "rightAnswer": "C",
+                "quiz": "Trong các cách khai báo Hằng sau đây, cách khai báo nào là đúng ?"
+            },
+            {
+                "quizNumber": "Câu 3",
+                "answers": [
+                    "A. Các biến đều phải được khai báo và mỗi biến chỉ khai báo một lần",
+                    "B. Một chương trình luôn luôn có hai phần: phần khai báo và phần thân",
+                    "C. Sau từ khóa var có thể khai báo nhiều danh sách biến khác nhau",
+                    "D. Chương trình dịch có hai loại: thông dịch và biên dịch"
+                ],
+                "rightAnswer": "B",
+                "quiz": "Hãy chọn phát biểu sai?"
+            },
+            {
+                "quizNumber": "Câu 4",
+                "answers": [
+                    "A. Tên chương trình",
+                    "B. Hằng",
+                    "C. Biến",
+                    "D. Thư viện"
+                ],
+                "rightAnswer": "B",
+                "quiz": "Trong ngôn ngữ Pascal, từ khóa CONST dùng để khai báo"
+            },
+            {
+                "quizNumber": "Câu 5",
+                "answers": [
+                    "A. Tên chương trình",
+                    "B. Hằng",
+                    "C. Biến",
+                    "D. Thư viện"
+                ],
+                "rightAnswer": "D",
+                "quiz": "Trong ngôn ngữ Pascal, từ khóa USES dùng để khai báo"
+            },
+            {
+                "quizNumber": "Câu 6",
+                "answers": [
+                    "A. abc_123",
+                    "B. _123abc",
+                    "C. 123_abc",
+                    "D. abc123"
+                ],
+                "rightAnswer": "C",
+                "quiz": "Tên nào không đúng trong ngôn ngữ Pascal"
+            },
+            {
+                "quizNumber": "Câu 7",
+                "answers": [
+                    "A. Biến dùng trong chương trình phải khai bá",
+                    "B. Biến được chương trình dịch bỏ qua",
+                    "C. Biến có thể lưu trữ nhiều loại giá trị khác nhau",
+                    "D. Biến là đại lượng nhận giá trị trước khi chương trình thực hiện"
+                ],
+                "rightAnswer": "A",
+                "quiz": "Phát biểu nào dưới đây là hợp lí nhất?"
+            },
+            {
+                "quizNumber": "Câu 8",
+                "answers": [
+                    "A. Begin",
+                    "B. 58,5",
+                    "C.‘65",
+                    "D. 1024"
+                ],
+                "rightAnswer": "A",
+                "quiz": "Hãy chọn biểu diễn hằng đúng trong các biểu diễn sau:"
+            },
+            {
+                "quizNumber": "Câu 9",
+                "answers": [
+                    "A. ‘*****’",
+                    "B. -tenkhongsai",
+                    "C.(bai_tap)",
+                    "D. Tensai"
+                ],
+                "rightAnswer": "D",
+                "quiz": "Hãy chọn biểu diễn tên đúng trong những biểu diễn sau"
+            },
+            {
+                "quizNumber": "Câu 10",
+                "answers": [
+                    "A. Dễ lập trình hơn so với ngôn ngữ bậc cao",
+                    "B. Tốc độ thực hiện nhanh hơn so với chương trình được viết bằng ngôn ngữ bậc cao",
+                    "C.Gần với ngôn ngữ máy",
+                    "D. Sử dụng trọn vẹn các khả năng của máy tính"
+                ],
+                "rightAnswer": "A",
+                "quiz": "Chương trình viết bằng hợp ngữ không có đặc điểm nào trong các đặc điểm sau:"
+            },
+            {
+                "quizNumber": "Câu 11",
+                "answers": [
+                    "A. puts().",
+                    "B. printf().",
+                    "C. scanf().",
+                    "D. gets()."
+                ],
+                "rightAnswer": "A",
+                "quiz": "Trong các hàm sau, hàm nào là hàm không định dạng để in một chuỗi kí tự ra màn hình:"
+            },
+            {
+                "quizNumber": "Câu 12",
+                "answers": [
+                    "A.Truyền bằng giá trị",
+                    "B. Truyền bằng giá trị địa chỉ của tham số",
+                    "C. Cả a và b đều đúng",
+                    "D. Cả a và b đều sai"
+                ],
+                "rightAnswer": "A",
+                "quiz": "Sử dụng cách truyền nào trong hàm sẽ không làm thay đổi giá trị của biến trong chương trình chính:"
+            },
+            {
+                "quizNumber": "Câu 13",
+                "answers": [
+                    "A. -1",
+                    "B. 0",
+                    "C. 1",
+                    "D. Không câu nào đúng "
+                ],
+                "rightAnswer": "B",
+                "quiz": "Cho biết giá trị của biểu thức 5>1"
+            },
+            {
+                "quizNumber": "Câu 14",
+                "answers": [
+                    "A. -1",
+                    "B. 0",
+                    "C. 1",
+                    "D. Không câu nào đúng "
+                ],
+                "rightAnswer": "A",
+                "quiz": "Cho biết giá trị của biểu thức 2+4>2&&4<2"
+            },
+            {
+                "quizNumber": "Câu 15",
+                "answers": [
+                    "A. Địa chỉ vùng nhớ của một biến khác",
+                    "B. Giá trị của một biến khác",
+                    "C. Cả a và b đều đúng",
+                    "D.Cả a và b đều sai"
+                ],
+                "rightAnswer": "A",
+                "quiz": "Biến con trỏ có thể chứa:"
+            },
+            {
+                "quizNumber": "Câu 16",
+                "answers": [
+                    "A. Các kí tự số chữ số",
+                    "B. Các kí tự chữ cái",
+                    "C. Các kí tự đặc biệt",
+                    "D. Tất cả đáp án trên "
+                ],
+                "rightAnswer": "A",
+                "quiz": "Dữ liệu kí tự bao gồm:"
+            },
+            {
+                "quizNumber": "Câu 17",
+                "answers": [
+                    "A. Kiểu trả về của hàm phải là kiểu void",
+                    "B. Kiểu đầu vào của hàm phải là kiểu void",
+                    "C. Trước khi gọi hàm nó phải được khai báo",
+                    "D. Hàm chỉ trả về kiểu dữ liệu boolean"
+                ],
+                "rightAnswer": "C",
+                "quiz": "Nếu hàm được gọi trước khi nó định nghĩa thì điều kiện là gì:"
+            },
+            {
+                "quizNumber": "Câu 18",
+                "answers": [
+                    "A. 3.4*10-38 đến 3.4*1038.",
+                    "B. -32768 đến 32767",
+                    "C. -128 đến 127",
+                    "D. 0…65535"
+                ],
+                "rightAnswer": "A",
+                "quiz": " Kiểu dữ liệu float có thể xử lí dữ liệu trong phạm vi nào:"
+            },
+            {
+                "quizNumber": "Câu 19",
+                "answers": [
+                    "A. Kiểu mảng",
+                    "B. Kiểu enum",
+                    "C.Kiểu short int",
+                    "D. Kiểu unsigned"
+                ],
+                "rightAnswer": "A",
+                "quiz": " Kiểu dữ liệu nào dưới đây không được coi là kiểu dữ liệu cơ bản trong ngôn ngữ lập trình C:"
+            },
+            {
+                "quizNumber": "Câu 20",
+                "answers": [
+                    "A.*",
+                    "B. !",
+                    "C. &",
+                    "D. Kết quả khác "
+                ],
+                "rightAnswer": "C",
+                "quiz": "Phép toán 1 ngôi nào dùng để xác định địa chỉ của đối tượng mà con trỏ chỉ tới:"
+            }
+        ],
+        "Networking Basic": [
+            {
+                "questionTitle": "Bài kiểm tra trắc nghiệm về Networking Basic ",
+                "image": "https://www.ampinc.com/wp-content/uploads/2021/03/ServerNetwork-scaled.jpg",
+                "quizNumber": "Câu 1",
+                "answers": [
+                    "A. Đúng",
+                    "B. Sai",
+                    "C. Không thể",
+                    "D. Có thể thay đổi giá trị hoặc không thay đổi giá trị tùy thuộc vào bài toán"
+                ],
+                "rightAnswer": "A",
+                "quiz": "Dây cáp mạng dùng để kết nối vật lý các máy tính lại với nhau?"
+            },
+            {
+                "quizNumber": "Câu 2",
+                "answers": [
+                    "A. My Computer",
+                    "B. My Network Places",
+                    "C. Entire Network",
+                    "D. Computers Near me"
+                ],
+                "rightAnswer": "B",
+                "quiz": "liệt kê các nguồn tài nguyên được chia sẻ trên mạng."
+            },
+            {
+                "quizNumber": "Câu 3",
+                "answers": [
+                    "A. Peer to Peer",
+                    "B. People to People",
+                    "C. Program to Program",
+                    "D. Plan to Program"
+                ],
+                "rightAnswer": "A",
+                "quiz": "P2P là viết tắt của?"
+            },
+            {
+                "quizNumber": "Câu 4",
+                "answers": [
+                    "A. Windows",
+                    "B. Linux",
+                    "C. Unix",
+                    "D. Apple"
+                ],
+                "rightAnswer": "A",
+                "quiz": "Các máy chủ của Microsoft làm việc trên hệ điều hành nào?"
+            },
+            {
+                "quizNumber": "Câu 5",
+                "answers": [
+                    "A. Đúng",
+                    "B. Sai",
+                    "C. Không thể",
+                    "D. không có truognwf hợp này"
+                ],
+                "rightAnswer": "A",
+                "quiz": "Địa chỉ IP thực sự chỉ (refer) tới một host?"
+            },
+            {
+                "quizNumber": "Câu 6",
+                "answers": [
+                    "A. Data Link",
+                    "B. Physical",
+                    "C. Network",
+                    "D. Application"
+                ],
+                "rightAnswer": "B",
+                "quiz": "Nhiệm vụ của lớp... là vận chuyển một luồng bit thô (raw) từ máy này sang máy khác."
+            },
+            {
+                "quizNumber": "Câu 7",
+                "answers": [
+                    "A. Access Nodes",
+                    "B. Access Points",
+                    "C. Access Hubs",
+                    "D. Không có đáp án đúng."
+                ],
+                "rightAnswer": "B",
+                "quiz": "... hoạt động như một máy phát và máy thu trung tâm trọng mạng LAN không dây."
+            },             
+            {
+                "quizNumber": "Câu 8",
+                "answers": [
+                    "A. Unacknowledged connectionless service",
+                    "B. Acknowledged connectionless service",
+                    "C. Acknowledged connection-oriented service",
+                    "D. Tất cả các service trên."
+                ],
+                "rightAnswer": "D",
+                "quiz": "Service được yêu cầu bởi tầng Data là?"
+            },             
+            {
+                "quizNumber": "Câu 9",
+                "answers": [
+                    "A. Cung cấp các interface dịch vụ được xác định trước cho tầng Network.",
+                    "B. Xử lý các lỗi truyền tải.",
+                    "C. Điều chỉnh luồng dữ liệu để bộ thu chậm (slow receiver) không bị tràn bởi bộ gửi nhanh (fast sende)",
+                    "D. Tất cả các service trên."
+                ],
+                "rightAnswer": "D",
+                "quiz": "Tầng Data Link: "
+            },             
+            {
+                "quizNumber": "Câu 10",
+                "answers": [
+                    "A. Routing",
+                    "B. Session",
+                    "C. Adaptive",
+                    "D. Nonadaptive"
+                ],
+                "rightAnswer": "A",
+                "quiz": "Thuật toán nào là một phần trong phần mềm của tầng Network, chịu trách nhiệm quyết định output line mà gói tin đến sẽ được truyền qua."
+            }             
         ]
     }
 }
