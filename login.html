@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./login.css">
+  <link rel="stylesheet" href="./components/loading/loading.css">
+  <!-- <link rel="stylesheet" href="./style.css"> -->
+  <title>Firebase Auth: Google - TechFerment</title>
+</head>
+
+<body>
+  <div id="app">
+    <div class="loader-wrapper">
+      <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+
+
+    <div class="logo"><a href="./main.html">Quizz</a></div>
+
+
+
+  </div>
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyB0vfv8ALEMBtssF8V0VPvTCLG4wYWHp3k",
+      authDomain: "quizzz-df723.firebaseapp.com",
+      projectId: "quizzz-df723",
+      storageBucket: "quizzz-df723.appspot.com",
+      messagingSenderId: "752429225308",
+      appId: "1:752429225308:web:261e48e8992615b35add99",
+      measurementId: "G-VR58GF5XCG"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+  <!-- <script>
+  
+  </script> -->
+
+  <script src="./index.js" type="module"></script>
+  <script src="./components/loading/loading.js"></script>
+</body>
+
+</html>
