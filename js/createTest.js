@@ -8,8 +8,7 @@ let questionList = document.getElementById('question-list');
 let quizNameText = document.querySelector('.quiz-name-text');
 let questionCount = document.getElementById('question-count');
 let quizData = [];
-
-function renderQuiz (quizId) {
+function renderQuiz(quizId) {
     console.log(window.location);
     fetch('http://localhost:3000/quizzes')
         .then(response => {
@@ -88,11 +87,18 @@ function renderQuiz (quizId) {
 }
 
 let id = localStorage.getItem("id");
-if(id) {
+if (id) {
+    // let idLink = window.location.search.split("=").pop();
     renderQuiz(JSON.parse(id));
+    // renderQuiz(idLink)
 } else {
     renderQuiz('css');
+    // window.location.search += '&param=42';
+    console.log(window.location.search)
+    
 }
+// let id = window.location.search.split('=').pop();
+// renderQuiz(id);
 
 
 export { quizData, renderQuiz };
