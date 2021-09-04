@@ -9,9 +9,11 @@ const createMenuWrapper = new MenuWrapper();
 const divider = new Divider();
 const navigationList = new NavigationList()
 
+function renderSideBar() {
+    mainNavigation.appendChild(header.render());
+    mainNavigation.appendChild(createMenuWrapper.render());
+    mainNavigation.appendChild(divider.render());
+    mainNavigation.appendChild(navigationList.render());
+}
 
-mainNavigation.appendChild(header.render());
-mainNavigation.appendChild(createMenuWrapper.render());
-mainNavigation.appendChild(divider.render());
-mainNavigation.appendChild(navigationList.render());
-
+export {renderSideBar};
