@@ -31,6 +31,8 @@
     <link rel="stylesheet" href="./css/result.css">
     <link rel="stylesheet" href="./css/quizPageFooter.css">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/loading.css">
+
 
     <!-- Link framework -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
@@ -45,6 +47,9 @@
 </head>
 
 <body>
+    <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
     <header class="main-header">
         <div class="top-header">
             <div class="top-header-box">
@@ -69,13 +74,13 @@
             <div class="main-navigation-inner">
                 <div class="header">
                     <div class="user-info">
-                        <button class="user-img" aria-label="Log in now">
+                        <!-- <button class="user-img" aria-label="Log in now">
                             <i class="fas fa-user-circle"></i>
                         </button>
                         <div class="user-details">
                             <div class="name">Have an account?</div>
                             <button class="login-btn">Log in now</button>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
                 <div class="create-menu-wrapper">
@@ -94,8 +99,8 @@
                         <li id="my-quizzes" class=""><i class="fas fa-book-reader"></i><span role="link" tabindex="0">My
                                 library</span>
                         </li>
-                        <li id="reports" class=""><i class="fas fa-flag"></i><span role="link"
-                                tabindex="0">Reports</span>
+                        <li id="profile" class=""><i class="fas fa-user"></i><span role="link"
+                                tabindex="0">Profile</span>
                         </li>
                         <li id="classes" class=""><i class="fas fa-book"></i><span role="link"
                                 tabindex="0">Classes</span>
@@ -115,7 +120,7 @@
 
         <div class="test">
             <div id="welcome" class="welcome">
-                <h3>Hi, welcome Cuong</h3>
+                <h3 class="welcome-name"></h3>
                 <div class="content-text">
                     <div class="navigation">
                         <i class="fas fa-caret-right"></i>
@@ -245,6 +250,24 @@
     </footer>
 </body>
 
+<script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
+<script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyB0vfv8ALEMBtssF8V0VPvTCLG4wYWHp3k",
+        authDomain: "quizzz-df723.firebaseapp.com",
+        projectId: "quizzz-df723",
+        storageBucket: "quizzz-df723.appspot.com",
+        messagingSenderId: "752429225308",
+        appId: "1:752429225308:web:261e48e8992615b35add99",
+        measurementId: "G-VR58GF5XCG"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+</script>
+
 <!-- Thu vien sweet alert  -->
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
@@ -256,5 +279,9 @@
     integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script type="module" src="./js/renderSlider.js"></script>
+<script src="./js/user-info.js"></script>
+<script src="./js/loading.js"></script>
+<script src="./index.js"></script>
+
 
 </html>
