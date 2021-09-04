@@ -4,6 +4,7 @@
             {
                 "questionTitle": "Trắc nghiệm HTML cơ bản",
                 "image": "https://codelearn.io/Upload/Blog/html-la-gi-no-co-quan-trong-khong-63715266434.3958.jpg",
+                "category": "basic",
                 "quizNumber": "Câu 1",
                 "answers": [
                     "A. alt",
@@ -304,6 +305,7 @@
             {
                 "questionTitle": "Trắc nghiệm CSS cơ bản",
                 "image": "https://tltvietnam.vn/upload/images/css-la-gi-4.jpg",
+                "category": "basic",
                 "quizNumber": "Câu 1",
                 "answers": [
                     "A. Creative Style Sheets",
@@ -608,6 +610,7 @@
             {
                 "questionTitle": "Trắc nghiệm Javascript cơ bản",
                 "image": "https://tuandc.com/wp-content/uploads/2017/07/laptrinh-javascript.jpg",
+                "category": "basic",
                 "quizNumber": "Câu 1",
                 "answers": [
                     "A. Client",
@@ -908,10 +911,11 @@
                 "d": "D. Tất cả đáp án trên đều đúng"
             }
         ],
-        "Java": [
+        "java": [
             {
                 "questionTitle": "Trắc nghiệm Java cơ bản",
                 "image": "https://codefresher.vn/wp-content/uploads/2019/12/core-java-1.jpg",
+                "category": "basic",
                 "quizNumber": "Câu 1",
                 "answers": [
                     "A. Ngôn ngữ Java có phân biệt chữ hoa - chữ thường",
@@ -1216,6 +1220,7 @@
             {
                 "questionTitle": "20 câu hỏi trắc nghiệm lập trình Python",
                 "image": "https://vsudo.net/blog/wp-content/uploads/2020/11/python-696x533.jpg",
+                "category": "basic",
                 "quizNumber": "Câu 1",
                 "answers": [
                     "A. Python là một ngôn ngữ lập trình cấp cao",
@@ -1519,10 +1524,11 @@
         
 
         
-        "SQL": [
+        "sql": [
             {
                 "questionTitle": "Bài kiểm tra trắc nghiệm về SQL",
                 "image": "https://greensql.net/wp-content/uploads/2020/04/word-image-3.png",
+                "category": "other",
                 "quizNumber": "Câu 1",
                 "answers": [
                     "A. Strong Question Language",
@@ -1699,10 +1705,11 @@
                 "quiz": "Left outer join là 1 dạng của outer join. 1 dạng khác là:"
             }
         ],
-        "javascript năng cao": [
+        "javascriptnc": [
             {
-                "questionTitle": "Câu hỏi trắc nghiệm JS naang cao",
+                "questionTitle": "Câu hỏi trắc nghiệm JS nâng cao",
                 "image": "https://cms.kmin.edu.vn/uploads/JS_co_ban_f0fd9c1fa4.png",
+                "category": "other",
                 "quizNumber": "Câu 1",
                 "answers": [
                     "A. Chuyển một chuỗi thành số nguyên",
@@ -1928,6 +1935,7 @@
             {
                 "questionTitle": "Trắc nghiệm về lập trình C",
                 "image": "https://fasttrack.edu.vn/wp-content/uploads/2021/04/c.jpeg",
+                "category": "other",
                 "quizNumber": "Câu 1",
                 "answers": [
                     "A. Ngôn ngữ B",
@@ -2171,10 +2179,11 @@
                 "quiz": "Giả sử a và b là 2 số thực. Biểu thức nào dưới đây là không được phép:"
             }
         ],
-        "Code": [
+        "code": [
             {
                 "questionTitle": "Trắc nghiệm về lập trình ",
                 "image": "https://anh.24h.com.vn/upload/4-2017/images/2017-10-14/1507983593-1-javascript.jpg",
+                "category": "other",
                 "quizNumber": "Câu 1",
                 "answers": [
                     "A. Có giá trị thay đổi trong quá trình thực hiện chương trình",
@@ -2406,10 +2415,11 @@
                 "quiz": "Phép toán 1 ngôi nào dùng để xác định địa chỉ của đối tượng mà con trỏ chỉ tới:"
             }
         ],
-        "Networking Basic": [
+        "networkingbasic": [
             {
                 "questionTitle": "Bài kiểm tra trắc nghiệm về Networking Basic ",
                 "image": "https://www.ampinc.com/wp-content/uploads/2021/03/ServerNetwork-scaled.jpg",
+                "category": "other",
                 "quizNumber": "Câu 1",
                 "answers": [
                     "A. Đúng",

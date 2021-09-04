@@ -1,5 +1,5 @@
 import { inputText } from "../components/inputText.js";
-import { URL_add_parameter } from "./suggestion.js";
+import { URL_add_parameter } from "../components/url_add_parameter.js";
 
 const joinGameBtn = document.querySelector('.join-game-btn');
 
