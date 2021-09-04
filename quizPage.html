@@ -30,7 +30,7 @@
     <header class="main-header">
         <div class="top-header">
             <div class="top-header-box">
-                
+
                 <div class="logo"><a href="./main.html">Quizz</a></div>
                 <form action="#">
                     <input type="search" class="search-data" placeholder="Search..." required>
@@ -38,7 +38,7 @@
                 </form>
                 <div class="tray">
                     <a class="join-game-btn">Enter Code</a>
-                    
+
                 </div>
             </div>
         </div>
@@ -51,8 +51,7 @@
                     <div class="main-row">
                         <div class="quiz-image">
                             <div class="quiz-image-inner">
-                                <img src=""
-                                    aria-hidden="true">
+                                <img src="" aria-hidden="true">
                             </div>
                         </div>
                         <div class="quiz-details">
@@ -122,7 +121,7 @@
                         </div>
                         <div id="question-container" class="questions">
                             <div id="question-list" class="question-list">
-                              
+
                             </div>
                         </div>
                     </div>
@@ -183,13 +182,13 @@
             <div class="main-navigation-inner">
                 <div class="header">
                     <div class="user-info">
-                        <button class="user-img" aria-label="Log in now">
+                        <!-- <button class="user-img" aria-label="Log in now">
                             <i class="fas fa-user-circle"></i>
                         </button>
                         <div class="user-details">
                             <div class="name">Have an account?</div>
                             <button class="login-btn">Log in now</button>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
                 <div class="create-menu-wrapper">
@@ -205,8 +204,8 @@
                         <li id="explore" class="selected "><i aria-hidden="true" class="fas fa-map-marked-alt"></i><span
                                 role="link" tabindex="0">Explore</span>
                         </li>
-                        <li id="my-quizzes" class=""><i class="fas fa-book-reader"></i><span role="link" tabindex="0">My
-                                library</span>
+                        <li id="profile" class=""><i class="fas fa-user"></i><span role="link"
+                                tabindex="0">Profile</span>
                         </li>
                         <li id="reports" class=""><i class="fas fa-flag"></i><span role="link"
                                 tabindex="0">Reports</span>
@@ -248,25 +247,27 @@
     <footer></footer>
 </body>
 
-<!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
 
+<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
 <script>
     // Your web app's Firebase configuration
-    const firebaseConfig = {
-        apiKey: "AIzaSyBl9UJGF3wXsZBghJqXvEalhZIMWZFsNXU",
-        authDomain: "quizapp-965ab.firebaseapp.com",
-        projectId: "quizapp-965ab",
-        storageBucket: "quizapp-965ab.appspot.com",
-        messagingSenderId: "911742713047",
-        appId: "1:911742713047:web:0ca805430894d72ece8492"
+    var firebaseConfig = {
+        apiKey: "AIzaSyB0vfv8ALEMBtssF8V0VPvTCLG4wYWHp3k",
+        authDomain: "quizzz-df723.firebaseapp.com",
+        projectId: "quizzz-df723",
+        storageBucket: "quizzz-df723.appspot.com",
+        messagingSenderId: "752429225308",
+        appId: "1:752429225308:web:261e48e8992615b35add99",
+        measurementId: "G-VR58GF5XCG"
     };
-
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
-    const db = firebase.firestore();
 </script>
+
+<!-- Thu vien sweet alert  -->
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 
 <!-- Thu vien sweet alert  -->
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
@@ -276,5 +277,7 @@
 <script src="./js/likeAndShare.js"></script>
 <script type="module" src="./js/entercode.js"></script>
 <script type="module" src="./js/suggestion.js"></script>
+<script src="./js/user-info.js"></script>
+<script src="./js/loaduser.js"></script>
 
 </html>

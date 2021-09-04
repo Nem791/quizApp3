@@ -1,0 +1,105 @@
+.select {
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 10%), 0 4px 6px 0 rgb(0 0 0 / 11%);
+  padding: 24px;
+  width: 98%;
+  box-sizing: border-box;
+  margin: 10px auto 100px;
+  border-top: 6px solid #461a42;
+  background-color: #fff;
+}
+.signup-header {
+  margin-bottom: 30px;
+}
+.signup-header .title {
+  color: #393a68;
+  font-size: 24px;
+  margin-left: 30px;
+  vertical-align: middle;
+}
+.settings-control-wrapper {
+  padding: 0 24px;
+}
+.category-label {
+  margin-bottom: 10px;
+  font-weight: 600;
+  padding: 0 14px;
+  color: #393a68;
+}
+.category-label .cat-user {
+  background-color: #393a68;
+  color: #fff;
+  border-radius: 50%;
+}
+.category-label .cat-icon {
+  display: inline-block;
+  margin-right: 12px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+}
+
+.field label {
+  display: block;
+  padding-left: 14px;
+  font-size: 14px;
+  color: #393a86;
+  margin-top: 16px;
+}
+
+.field .text-box {
+  display: block;
+  font-size: 14px;
+  height: 48px;
+  padding: 0 14px;
+  width: 100%;
+  border-radius: 4px;
+  box-shadow: none;
+  margin: 8px 0;
+  border: 1px solid #cad2dc;
+  color: #393a68;
+  outline: none;
+}
+.btn-update {
+  padding: 0;
+  margin: 24px 0;
+  height: 48px;
+  width: 100%;
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 16px;
+  background-color: #7d72ec;
+  box-shadow: 0 0 8px 0 rgb(0 0 0 / 10%);
+  border: none;
+  opacity: 0.9;
+  color: #fff;
+}
+.btn-update:hover {
+  opacity: 1;
+}
+.delete-acc-msg {
+  color: #ec0b43;
+  font-size: 14px;
+  margin-bottom: 6px;
+  margin-top: 14px;
+}
+.btn-delete {
+  padding: 0;
+  margin: 24px 0;
+  height: 48px;
+  width: 100%;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #fff;
+  color: #ec0b43;
+  border: 2px solid #ec0b43;
+  font-weight: 600;
+  margin: 0;
+  transition: all 0.2s ease;
+}
+.btn-delete:hover {
+  background-color: #ec0b43;
+  color: #fff;
+}

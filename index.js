@@ -19,7 +19,3 @@ setScreen(login);
 //     setScreen(login);
 //   }
 // });
-const welcomename = document.querySelector(".welcome-name");
-firebase.auth().onAuthStateChanged((user) => {
-  welcomename.innerHTML = `Wellcome ${user.displayName}`;
-});
