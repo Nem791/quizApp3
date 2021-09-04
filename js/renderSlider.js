@@ -33,7 +33,9 @@ fetch('http://localhost:3000/quizzes')
         box.forEach(element => {
             element.addEventListener('click', () => {
                 localStorage.setItem('id', JSON.stringify(element.dataset.id));
-                location.href = './quizPage.html';
+                // location.href = './quizPage.html';
+                location.href = `./quizPage.html?id=${element.dataset.id}`;
+
                 // location.search = '$id=24';
             })
         })

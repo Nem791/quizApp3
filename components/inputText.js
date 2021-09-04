@@ -1,6 +1,6 @@
-async function inputText(inputTitle, inputText, notifyText, fireFunction) {
+async function inputText(inputType, inputTitle, inputText, notifyText, fireFunction) {
     const { value: text } = await Swal.fire({
-        input: 'text',
+        input: inputType,
         inputLabel: inputTitle,
         inputPlaceholder: inputText,
         inputAttributes: {
