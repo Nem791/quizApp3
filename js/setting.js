@@ -48,20 +48,23 @@ firebase.auth().onAuthStateChanged((user) => {
 
 
 `;
-  const updateEmail = document.getElementById("update-email");
-  updateEmail.addEventListener("click", () => {
-    const updateEmail = document.querySelector('input[name="email"]').value;
-    const user = firebase.auth().currentUser;
-    console.log(user);
+  // const updateEmail = document.getElementById("update-email");
+  // updateEmail.addEventListener("click", () => {
+  //   const valueEmail = document.querySelector('input[name="email"]').value;
+  //   const user = firebase.auth().currentUser;
+  //   const credential = promptForCredentials();
 
-    user
-      .updateEmail("mama@gmail.com")
-      .then(() => {
-        alert("Đổi thành công");
-        // ...
-      })
-      .catch((error) => {
-        alert("Lỗi rồi");
-      });
-  });
+  //   user
+  //     .reauthenticateWithCredential(credential)
+  //     .then(() => {
+  //       user.updateEmail("mama@gmail.com").then(() => {
+  //         alert("Đổi thành công");
+  //         // ...
+  //       });
+  //     })
+  //     .catch((error) => {
+  //       alert("loi");
+  //       // ...
+  //     });
+  // });
 });
