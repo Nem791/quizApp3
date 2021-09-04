@@ -21,7 +21,7 @@ function loading(loadingTitle, loadingHTML) {
         /* Read more about handling dismissals below */
         if (result.dismiss === Swal.DismissReason.timer) {
             console.log('I was closed by the timer');
-            notify('Đã lưu form');
+            notify('Đã lưu');
         }
     })
 }

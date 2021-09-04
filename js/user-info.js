@@ -1,3 +1,6 @@
+import { renderSideBar } from "../components/sideBar.js";
+
+renderSideBar();
 const userInfo = document.querySelector(".user-info");
 
 console.log(userInfo);

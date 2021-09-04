@@ -236,7 +236,7 @@ a, a:hover {
     overflow: hidden;
     margin: 20px 20px;
     cursor: pointer;
-    
+    min-height: 347px !important;
     
 }
 

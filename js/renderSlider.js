@@ -1,20 +1,39 @@
 import { SliderCard } from "../components/sliderCard.js";
 
+// Render theo tung` slider 
+function renderSlideByCategory(myArray, slider) {
+    myArray.forEach(() => {
+        const cardItem = new SliderCard();
+        slider.appendChild(cardItem.render());
+    })
+}
+
 fetch('http://localhost:3000/quizzes')
     .then(response => {
         return response.json();
     })
     .then((data) => {
-        const firstSlider = document.querySelector('.container-box');
+        const firstSlider = document.querySelectorAll('.container-box')[0];
+        const secondSlider = document.querySelectorAll('.container-box')[1];
+        let basicArray = [];
+        let otherArray = [];
         
-        Object.keys(data).forEach(() => {
-            const cardItem = new SliderCard();
-            firstSlider.appendChild(cardItem.render())
+        // Phan loai slider 
+        Object.keys(data).forEach((element) => {
+            if (data[element][0].category == 'basic') {
+                basicArray.push(element);
+            } else if (data[element][0].category == 'other') {
+                otherArray.push(element);
+            }
         });
 
+        renderSlideByCategory(basicArray, firstSlider);
+        renderSlideByCategory(otherArray, secondSlider);
+
         const box = document.querySelectorAll('.box');
-        let content = firstSlider.querySelectorAll('.content');
-        let cardImage = firstSlider.querySelectorAll('.card-image');
+        let content = document.querySelectorAll('.content');
+        console.log(content);
+        let cardImage = document.querySelectorAll('.card-image');
         console.log(cardImage)
         content.forEach((element, index) => {
 
@@ -33,7 +52,9 @@ fetch('http://localhost:3000/quizzes')
         box.forEach(element => {
             element.addEventListener('click', () => {
                 localStorage.setItem('id', JSON.stringify(element.dataset.id));
-                location.href = './quizPage.html';
+                // location.href = './quizPage.html';
+                location.href = `./quizPage.html?id=${element.dataset.id}`;
+
                 // location.search = '$id=24';
             })
         })

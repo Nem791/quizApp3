@@ -86,19 +86,19 @@ function renderQuiz(quizId) {
         })
 }
 
-let id = localStorage.getItem("id");
-if (id) {
-    // let idLink = window.location.search.split("=").pop();
-    renderQuiz(JSON.parse(id));
-    // renderQuiz(idLink)
-} else {
-    renderQuiz('css');
-    // window.location.search += '&param=42';
-    console.log(window.location.search)
+// let id = localStorage.getItem("id");
+// if (id) {
+//     // let idLink = window.location.search.split("=").pop();
+//     renderQuiz(JSON.parse(id));
+//     // renderQuiz(idLink)
+// } else {
+//     renderQuiz('css');
+//     // window.location.search += '&param=42';
+//     console.log(window.location.search)
     
-}
-// let id = window.location.search.split('=').pop();
-// renderQuiz(id);
+// }
+let id = window.location.search.split('=').pop();
+renderQuiz(id);
 
 
 export { quizData, renderQuiz };

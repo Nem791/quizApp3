@@ -72,49 +72,7 @@
 
         <nav class="main-navigation mt-5">
             <div class="main-navigation-inner">
-                <div class="header">
-                    <div class="user-info">
-                        <!-- <button class="user-img" aria-label="Log in now">
-                            <i class="fas fa-user-circle"></i>
-                        </button>
-                        <div class="user-details">
-                            <div class="name">Have an account?</div>
-                            <button class="login-btn">Log in now</button>
-                        </div> -->
-                    </div>
-                </div>
-                <div class="create-menu-wrapper">
-                    <button class="create-btn">
-                        <i class="far fa-plus-circle"></i>
-                        <span class="create-btn-label">Create</span>
-                        <i class="fas fa-caret-down"></i>
-                    </button>
-                </div>
-                <div class="divider"></div>
-                <div class="main-navigation-list-wrapper">
-                    <ul class="main-navigation-list">
-                        <li id="explore" class="selected "><i aria-hidden="true" class="fas fa-map-marked-alt"></i><span
-                                role="link" tabindex="0">Explore</span>
-                        </li>
-                        <li id="my-quizzes" class=""><i class="fas fa-book-reader"></i><span role="link" tabindex="0">My
-                                library</span>
-                        </li>
-                        <li id="profile" class=""><i class="fas fa-user"></i><span role="link"
-                                tabindex="0">Profile</span>
-                        </li>
-                        <li id="classes" class=""><i class="fas fa-book"></i><span role="link"
-                                tabindex="0">Classes</span>
-                        </li>
-                        <li class="divider"></li>
-                        <li id="memes" class=" "><i class="fas fa-person-booth"></i><span role="link" tabindex="0"
-                                aria-hidden="false">Memes</span>
-                        </li>
-                        <li id="collections" class=" "><i class="fas fa-bookmark"></i><span role="link" tabindex="0"
-                                aria-hidden="false">Collections</span>
-                        </li>
 
-                    </ul>
-                </div>
             </div>
         </nav>
 
@@ -138,59 +96,6 @@
                     </div>
                     <div class="container-box multiple-items">
 
-                        <div class="box">
-                            <div class="slide-img"><img
-                                    src="https://topicanative.edu.vn/wp-content/uploads/2020/08/nang-cap-von-tu-vung-tieng-anh-cuc-dinh-thong-qua-quiz-kiem-tra-2.jpg"
-                                    alt=""></div>
-                            <div class="box-content">
-                                <div class="title">Quiz</div>
-                                <div class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-                                <div class="numberOfQ">12 question</div>
-                            </div>
-                        </div>
-                        <div class="box">
-                            <div class="slide-img"><img
-                                    src="https://topicanative.edu.vn/wp-content/uploads/2020/08/nang-cap-von-tu-vung-tieng-anh-cuc-dinh-thong-qua-quiz-kiem-tra-2.jpg"
-                                    alt=""></div>
-                            <div class="box-content">
-                                <div class="title">Quiz</div>
-                                <div class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-                                <div class="numberOfQ">12 question</div>
-                            </div>
-                        </div>
-
-                        <div class="box">
-                            <div class="slide-img"><img
-                                    src="https://topicanative.edu.vn/wp-content/uploads/2020/08/nang-cap-von-tu-vung-tieng-anh-cuc-dinh-thong-qua-quiz-kiem-tra-2.jpg"
-                                    alt=""></div>
-                            <div class="box-content">
-                                <div class="title">Quiz</div>
-                                <div class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-                                <div class="numberOfQ">12 question</div>
-                            </div>
-                        </div>
-
-                        <div class="box">
-                            <div class="slide-img"><img
-                                    src="https://topicanative.edu.vn/wp-content/uploads/2020/08/nang-cap-von-tu-vung-tieng-anh-cuc-dinh-thong-qua-quiz-kiem-tra-2.jpg"
-                                    alt=""></div>
-                            <div class="box-content">
-                                <div class="title">Quiz</div>
-                                <div class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-                                <div class="numberOfQ">12 question</div>
-                            </div>
-                        </div>
-
-                        <div class="box">
-                            <div class="slide-img"><img
-                                    src="https://topicanative.edu.vn/wp-content/uploads/2020/08/nang-cap-von-tu-vung-tieng-anh-cuc-dinh-thong-qua-quiz-kiem-tra-2.jpg"
-                                    alt=""></div>
-                            <div class="box-content">
-                                <div class="title">Quiz</div>
-                                <div class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-                                <div class="numberOfQ">12 question</div>
-                            </div>
-                        </div>
                     </div>
                 </div>
 
@@ -250,6 +155,7 @@
     </footer>
 </body>
 
+
 <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
 
 <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
@@ -278,10 +184,14 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
     integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script type="module" src="./js/renderSlider.js"></script>
-<script src="./js/user-info.js"></script>
+
 <script src="./js/loading.js"></script>
 <script src="./js/loaduser.js"></script>
+
+<script type="module" src="./components/sideBar.js"></script>
+<script type="module" src="./js/renderSlider.js"></script>
+<script type="module" src="./js/user-info.js"></script>
+<script type="module" src="./js/entercode.js"></script>
 
 
 </html>
