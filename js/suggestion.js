@@ -49,7 +49,7 @@ function renderSuggestion() {
 
 
 
-export { renderSuggestion };
+export { renderSuggestion, URL_add_parameter };
 
 
 
