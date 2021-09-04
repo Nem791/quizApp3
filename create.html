@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./create.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container-app">
+        <div class="header">
+            <div class="header-box">
+                <div class="nav">
+                    <button><i class="fas fa-chevron-left"></i></button>
+                    <div class="nav-text">Quiz Editor</div>
+                </div>
+                <div class="change-status">
+                    <i class="fas fa-check green"></i>
+                    <div class="text"> All changes saved </div>
+                </div>
+                <div class="btn-tray">
+                    <button class="header-tray-btn">Publish</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="editor-body">
+            <div class="questions-header">
+                <div class="question-header-box">
+                    <div class="title">
+                        <h3>Create a question</h3>
+                        <i class="fas fa-info-circle "></i>
+                    </div>
+                    <button class="new-question">
+                        <span>New question</span>
+                        <i class="fas fa-plus-circle"></i>
+                    </button>
+                </div>
+            </div> 
+            <div class="questions-body">
+                <div class="questions">
+                    <div class="question">
+                        <div class="question-header">
+                            <div class="title">Question</div>
+                            <div class="btn-delete"><i class="fas fa-trash-alt"></i></div>
+                        </div>
+                        <div class="body">
+                            <div class="body-full">
+                                <div class="title">Ahihi</div>
+                                <div class="divider">
+                                    <div class="divider-text">answer choices</div>
+                                </div>
+                                <div class="answer">
+                                    <div class="text-option">
+                                        <div class="option-market"></div>
+                                        <div class="option-text"><p>A</p></div>
+                                    </div>
+                                    <div class="text-option">
+                                        <div class="option-market"></div>
+                                        <div class="option-text"><p>B</p></div>
+                                    </div>
+                                    <div class="text-option">
+                                        <div class="option-market"></div>
+                                        <div class="option-text"><p>C</p></div>
+                                    </div>
+                                    <div class="text-option">
+                                        <div class="option-market"></div>
+                                        <div class="option-text"><p>D</p></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <div class="quiz-info">
+                <div class="quiz-info-wrapper">
+                    <div class="quiz-image">
+                        <button>
+                            <div class="icon"><img src="https://cf.quizizz.com/img/editor/picture_frame.png" alt=""></div>
+                            <i class="fas fa-plus"></i>
+                            Add quiz image 
+                        </button>
+                    </div>
+                    <div class="quiz-name">
+                        <div class="name">Question</div>
+                        <button><i class="fas fa-pencil-alt"></i></button>
+                    </div>
+                    <div class="quiz-data">
+                        <button><i class="fas fa-eye"></i> public</button>
+                    </div>
+                   
+                </div>
+            </div> 
+        </div>
+    </div>
+</body>
+</html>
