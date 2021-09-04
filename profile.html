@@ -19,11 +19,9 @@
     <link rel="stylesheet" href="./css/test.css">
     <link rel="stylesheet" href="./css/side-bar.css">
     <link rel="stylesheet" href="./css/quiz-info-card.css">
-    <link rel="stylesheet" href="./css/questions-container.css">
-    <link rel="stylesheet" href="./css/aside.css">
-    <link rel="stylesheet" href="./css/result.css">
     <link rel="stylesheet" href="./style2.css">
     <link rel="stylesheet" href="./css/loading.css">
+    <link rel="stylesheet" href="./css/setting.css">
 
     <title>Profile</title>
 </head>
@@ -70,92 +68,13 @@
 
             </div>
             <div class="select">
-                <div class="signup-header"><img class="settings-logo" src="https://cf.quizizz.com/img/gears_icon.png"
-                        alt="">
-                    <h1 class="title">Settings</h1>
-                </div>
-                <div class="settings-control-wrapper">
-                    <div class="category-label"><span class="cat-icon cat-user"><i class="fas fa-user"></i></span><span
-                            class="cat-name">Account</span></div>
-                </div>
-                <hr class="hr-section" aria-hidden="true">
-                <div class="field email">
-                    <label>Email</label>
-                    <input type="email" name="" id="email">
-                </div>
-                <button class="savebtn">Save Changes</button>
 
-                <div class="category-label">
-                    <span class="cat-icon">
-                        <i class="fas fa-lock" aria-hidden="true">
-                        </i>
-                    </span>
-                    <span class="cat-name">Password</span>
-                </div>
-                <hr class="hr-section" aria-hidden="true">
-
-                <div class="field new-password">
-                    <label>New password</label>
-                    <input type="password" name="" id="new-password">
-                </div>
-                <div class="field new-password">
-                    <label>New password agin</label>
-                    <input type="password" name="" id="new-password">
-                </div>
-                <button class="savepassword">Update Password</button>
-
-
-                <div class="category-label"><span class="cat-icon"><i class="fas fa-trash-alt"
-                            aria-hidden="true"></i></span><span class="cat-name">Delete Account</span></div>
             </div>
-            <hr class="hr-section" aria-hidden="true">
 
         </div>
         <nav class="main-navigation mt-5">
             <div class="main-navigation-inner">
-                <div class="header">
-                    <div class="user-info">
-                        <div class="user-img">
-                            <img src="" alt="">
-                        </div>
-                        <div class="user-details">
-                            <div class="name">Have an account?</div>
-                            <button class="login-btn">Log in now</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="create-menu-wrapper">
-                    <button class="create-btn">
-                        <i class="far fa-plus-circle"></i>
-                        <span class="create-btn-label">Create</span>
-                        <i class="fas fa-caret-down"></i>
-                    </button>
-                </div>
-                <div class="divider"></div>
-                <div class="main-navigation-list-wrapper">
-                    <ul class="main-navigation-list">
-                        <li id="explore" class="selected "><i aria-hidden="true" class="fas fa-map-marked-alt"></i><span
-                                role="link" tabindex="0">Explore</span>
-                        </li>
-                        <li id="my-quizzes" class=""><i class="fas fa-book-reader"></i><span role="link" tabindex="0">My
-                                library</span>
-                        </li>
-                        <li id="reports" class=""><i class="fas fa-user"></i><span role="link"
-                                tabindex="0">Profile</span>
-                        </li>
-                        <li id="classes" class=""><i class="fas fa-book"></i><span role="link"
-                                tabindex="0">Classes</span>
-                        </li>
-                        <li class="divider"></li>
-                        <li id="memes" class=" "><i class="fas fa-person-booth"></i><span role="link" tabindex="0"
-                                aria-hidden="false">Memes</span>
-                        </li>
-                        <li id="collections" class=" "><i class="fas fa-bookmark"></i><span role="link" tabindex="0"
-                                aria-hidden="false">Collections</span>
-                        </li>
 
-                    </ul>
-                </div>
             </div>
         </nav>
 
@@ -188,8 +107,10 @@
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 <script type="module" src="./js/profile.js"></script>
+<script src="./js/setting.js"></script>
+
 <script src="./components/Profile/Formchangeuser.js"></script>
-<script src="./js/user-info.js"></script>
+<script src="./js/user-info.js" type="module"></script>
 <script src="./js/loading.js"></script>
 
 
