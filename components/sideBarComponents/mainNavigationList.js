@@ -32,9 +32,10 @@ class NavigationList {
         tabindex="0">Profile</span>`;
 
         this.$classes = document.createElement('li');
-        this.$classes.id = 'classes';
-        this.$classes.innerHTML = `<i class="fas fa-book"></i><span role="link"
-        tabindex="0">Classes</span>`;
+        this.$classes.id = 'leaderboard';
+        this.$classes.innerHTML = `<i class="fas fa-university"></i><span role="link"
+        tabindex="0">Leaderboard</span>`;
+        this.$classes.addEventListener('click', () => { location.href = './leaderboard.html?id=html' })
 
         this.$divider = document.createElement('li');
         this.$divider.classList.add('divider');
@@ -64,4 +65,4 @@ class NavigationList {
     }
 }
 
-export {NavigationList};
+export { NavigationList };

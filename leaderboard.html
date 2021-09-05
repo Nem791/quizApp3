@@ -58,6 +58,7 @@
                                 </div>
                             </div>
                         </div>
+                        <div id="quiz-title">ABC DEF</div>
                     </div>
                     <table>
                         <thead class="table-head">
@@ -71,22 +72,7 @@
                             </tr>
                         </thead>
                         <tbody id="table-body" class="table-body">
-                            <tr class="table-body-list">
-                                <td class="number col-1">1</td>
-                                <td class="username col-2">
-                                    <div class="name-wrapper"> tét2 </div>
-                                </td>
-                                <td class="col-3 score">0</td>
-                                <td class="accuracy col-4">
-                                    <span class="accuracy-label"> 0% </span>
-                                </td>
-                                <td class="groups col-5"></td>
-                                <td class="groups col-6">
-                                    <div class="time-box">
-                                        12.2898s
-                                    </div>
-                                </td>
-                            </tr>
+                            
                         </tbody>
                     </table>
                 </div>
@@ -95,49 +81,7 @@
 
         <nav class="main-navigation mt-5">
             <div class="main-navigation-inner">
-                <div class="header">
-                    <div class="user-info">
-                        <div class="user-img">
-                            <img src="https://cdn.icon-icons.com/icons2/1378/PNG/512/avatardefault_92824.png" alt="">
-                        </div>
-                        <div class="user-details">
-                            <div class="name">nam</div>
-                            <button class="logout-btn">Log out</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="create-menu-wrapper">
-                    <button class="create-btn">
-                        <i class="far fa-plus-circle"></i>
-                        <span class="create-btn-label">Create</span>
-                        <i class="fas fa-caret-down"></i>
-                    </button>
-                </div>
-                <div class="divider"></div>
-                <div class="main-navigation-list-wrapper">
-                    <ul class="main-navigation-list">
-                        <li id="explore" class="selected "><i aria-hidden="true" class="fas fa-map-marked-alt"></i><span
-                                role="link" tabindex="0">Explore</span>
-                        </li>
-                        <li id="my-quizzes" class=""><i class="fas fa-book-reader"></i><span role="link" tabindex="0">My
-                                library</span>
-                        </li>
-                        <li id="profile" class=""><i class="fas fa-user"></i><span role="link"
-                                tabindex="0">Profile</span>
-                        </li>
-                        <li id="classes" class=""><i class="fas fa-book"></i><span role="link"
-                                tabindex="0">Classes</span>
-                        </li>
-                        <li class="divider"></li>
-                        <li id="memes" class=" "><i class="fas fa-person-booth"></i><span role="link" tabindex="0"
-                                aria-hidden="false">Memes</span>
-                        </li>
-                        <li id="collections" class=" "><i class="fas fa-bookmark"></i><span role="link" tabindex="0"
-                                aria-hidden="false">Collections</span>
-                        </li>
-
-                    </ul>
-                </div>
+                
             </div>
         </nav>
     </div>
@@ -157,10 +101,46 @@
     </script>
 </body>
 
+<script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-firestore.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
+
+<script>
+    // Your first web app's Firebase configuration: Auth
+    var firebaseConfig = {
+        apiKey: "AIzaSyB0vfv8ALEMBtssF8V0VPvTCLG4wYWHp3k",
+        authDomain: "quizzz-df723.firebaseapp.com",
+        projectId: "quizzz-df723",
+        storageBucket: "quizzz-df723.appspot.com",
+        messagingSenderId: "752429225308",
+        appId: "1:752429225308:web:261e48e8992615b35add99",
+        measurementId: "G-VR58GF5XCG"
+    };
+
+    // Your second web app's Firebase configuration: Data
+    const secondFirebaseConfig = {
+      apiKey: "AIzaSyBl9UJGF3wXsZBghJqXvEalhZIMWZFsNXU",
+      authDomain: "quizapp-965ab.firebaseapp.com",
+      projectId: "quizapp-965ab",
+      storageBucket: "quizapp-965ab.appspot.com",
+      messagingSenderId: "911742713047",
+      appId: "1:911742713047:web:0ca805430894d72ece8492"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+
+    // Initialize Firebase
+    let secondaryApp = firebase.initializeApp(secondFirebaseConfig, "secondary");
+    let db = secondaryApp.firestore();
+</script>
+
 <!-- Thu vien sweet alert  -->
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script type="module" src="./js/user-info.js"></script>
 <script type="module" src="./js/leaderboard.js"></script>
 <script src="./js/loading.js"></script>
 <script type="module" src="./js/entercode.js"></script>

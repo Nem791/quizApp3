@@ -63,10 +63,8 @@ function renderQuiz(quizId) {
                     answer.firstChild.addEventListener('click', () => {
                         if (answer.lastChild.innerText[0] == quizData[quizId][index].rightAnswer) {
                             element.dataset.point = 1;
-                            console.log(element)
                         } else {
                             element.dataset.point = 0;
-                            console.log(element)
                         }
                     })
 

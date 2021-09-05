@@ -20,14 +20,14 @@
                 "answers": [
                     "A. Hoàn toàn giống nhau",
                     "B. Chỉ khác ở cái tên nhưng đều chứa thẻ con &lt;li>",
-                    "C. &lt;ul> dùng để tạo menu còn < ol > thì ít ai dùng",
+                    "C. &lt;ul> dùng để tạo menu còn &lt;ol > thì ít ai dùng",
                     "D. &lt;ul> định nghĩa các &lt;li> không thứ tự còn &lt;ol> thì có thứ tự"
                 ],
                 "rightAnswer": "D",
                 "quiz": "Thẻ `&lt;ol>` và '&lt;ul>' khác nhau chỗ nào?",
                 "a": "A. Hoàn toàn giống nhau",
                 "b": "B. Chỉ khác ở cái tên nhưng đều chứa thẻ con &lt;li>",
-                "c": "C. &lt;ul> dùng để tạo menu còn < ol > thì ít ai dùng",
+                "c": "C. &lt;ul> dùng để tạo menu còn &lt;ol > thì ít ai dùng",
                 "d": "D. &lt;ul> định nghĩa các &lt;li> không thứ tự còn &lt;ol> thì có thứ tự"
             },
             {

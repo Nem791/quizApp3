@@ -112,8 +112,16 @@
                 <div class="questions-container">
                     <div class="questions-header">
                         <div class="num-questions">
-                            <i class="far fa-question-circle"></i>
-                            <span id="question-count">17 </span> questions
+                            <div>
+                                <i class="far fa-question-circle"></i>
+                                <span id="question-count">17 </span> questions
+                            </div>
+
+                            <div class="timer">
+                                <span id="minutes"></span>:<span id="seconds"></span>
+                            </div>
+
+
                             <button class="show-answers-btn">
                                 <i class="far fa-eye"></i>
                                 <span>Show answers</span>
@@ -180,49 +188,7 @@
 
         <nav class="main-navigation mt-5">
             <div class="main-navigation-inner">
-                <div class="header">
-                    <div class="user-info">
-                        <!-- <button class="user-img" aria-label="Log in now">
-                            <i class="fas fa-user-circle"></i>
-                        </button>
-                        <div class="user-details">
-                            <div class="name">Have an account?</div>
-                            <button class="login-btn">Log in now</button>
-                        </div> -->
-                    </div>
-                </div>
-                <div class="create-menu-wrapper">
-                    <button class="create-btn">
-                        <i class="far fa-plus-circle"></i>
-                        <span class="create-btn-label">Create</span>
-                        <i class="fas fa-caret-down"></i>
-                    </button>
-                </div>
-                <div class="divider"></div>
-                <div class="main-navigation-list-wrapper">
-                    <ul class="main-navigation-list">
-                        <li id="explore" class="selected "><i aria-hidden="true" class="fas fa-map-marked-alt"></i><span
-                                role="link" tabindex="0">Explore</span>
-                        </li>
-                        <li id="profile" class=""><i class="fas fa-user"></i><span role="link"
-                                tabindex="0">Profile</span>
-                        </li>
-                        <li id="reports" class=""><i class="fas fa-flag"></i><span role="link"
-                                tabindex="0">Reports</span>
-                        </li>
-                        <li id="classes" class=""><i class="fas fa-book"></i><span role="link"
-                                tabindex="0">Classes</span>
-                        </li>
-                        <li class="divider"></li>
-                        <li id="memes" class=" "><i class="fas fa-person-booth"></i><span role="link" tabindex="0"
-                                aria-hidden="false">Memes</span>
-                        </li>
-                        <li id="collections" class=" "><i class="fas fa-bookmark"></i><span role="link" tabindex="0"
-                                aria-hidden="false">Collections</span>
-                        </li>
 
-                    </ul>
-                </div>
             </div>
         </nav>
 
@@ -247,11 +213,13 @@
     <footer></footer>
 </body>
 
-<script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-firestore.js"></script>
 
 <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
+
 <script>
-    // Your web app's Firebase configuration
+    // Your first web app's Firebase configuration: Auth
     var firebaseConfig = {
         apiKey: "AIzaSyB0vfv8ALEMBtssF8V0VPvTCLG4wYWHp3k",
         authDomain: "quizzz-df723.firebaseapp.com",
@@ -261,23 +229,39 @@
         appId: "1:752429225308:web:261e48e8992615b35add99",
         measurementId: "G-VR58GF5XCG"
     };
+
+    // Your second web app's Firebase configuration: Data
+    const secondFirebaseConfig = {
+        apiKey: "AIzaSyBl9UJGF3wXsZBghJqXvEalhZIMWZFsNXU",
+        authDomain: "quizapp-965ab.firebaseapp.com",
+        projectId: "quizapp-965ab",
+        storageBucket: "quizapp-965ab.appspot.com",
+        messagingSenderId: "911742713047",
+        appId: "1:911742713047:web:0ca805430894d72ece8492"
+    };
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
+
+    // Initialize Firebase
+    let secondaryApp = firebase.initializeApp(secondFirebaseConfig, "secondary");
+    let db = secondaryApp.firestore();
 </script>
 
-<!-- Thu vien sweet alert  -->
-<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
 
 <!-- Thu vien sweet alert  -->
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
+
+<!-- Thu vien sweet alert  -->
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script type="module" src="./components/sideBar.js"></script>
 <script type="module" src="./js/createTest.js"></script>
 <script type="module" src="./js/report.js"></script>
 <script src="./js/likeAndShare.js"></script>
 <script type="module" src="./js/entercode.js"></script>
 <script type="module" src="./js/suggestion.js"></script>
-<script src="./js/user-info.js"></script>
-<script src="./js/loaduser.js"></script>
+<script type="module" src="./js/user-info.js"></script>
+<!-- <script src="./js/loaduser.js"></script> -->
 
 </html>
