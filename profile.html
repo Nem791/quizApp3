@@ -19,7 +19,8 @@
     <link rel="stylesheet" href="./css/test.css">
     <link rel="stylesheet" href="./css/side-bar.css">
     <link rel="stylesheet" href="./css/quiz-info-card.css">
-    <link rel="stylesheet" href="./style2.css">
+    <link rel="stylesheet" href="./style.css">
+
     <link rel="stylesheet" href="./css/loading.css">
     <link rel="stylesheet" href="./css/setting.css">
 
@@ -36,27 +37,17 @@
     </div>
     <header class="main-header">
         <div class="top-header">
-            <div class="nav-size-container">
-                <div class="main-logo">
-                    <a href="./main.html">
-                        <img src="https://cf.quizizz.com/img/quizizz_logos/white-brandmark-600x164.png" alt="Quizizz">
-                    </a>
+            <div class="top-header-box">
+
+                <div class="logo"><a href="./main.html">Quizz</a></div>
+                <form action="#">
+                    <input type="search" class="search-data" id="search-bar">
+                    <button type="submit" class="fas fa-search"></button>
+                </form>
+                <div class="tray">
+                    <a class="join-game-btn">Enter Code</a>
+
                 </div>
-            </div>
-            <div class="main-search-master-wrapper">
-                <div class="main-search-wrapper">
-                    <div class="main-search">
-                        <div class="main-search-container">
-                            <input type="text">
-                            <span class="divider"></span>
-                            <div class="search-content"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="tray">
-                <a class="join-game-btn">Enter Code</a>
-                <a class="join-game-btn">Sign In</a>
             </div>
         </div>
     </header>
@@ -112,6 +103,7 @@
 <script src="./components/Profile/Formchangeuser.js"></script>
 <script src="./js/user-info.js" type="module"></script>
 <script src="./js/loading.js"></script>
+<script src="./js/setting.js" type="module"></script>
 
 
 </html>

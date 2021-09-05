@@ -53,45 +53,9 @@ firebase.auth().onAuthStateChanged((user) => {
                         </div>
                     </div>
                 </div>
-                <div class="row-bottom">
-                    <div class="profile-tabs-container tab-container">
-                        <div class="tabs" role="tablist"><button class="tab tab-quizzes selected" data-tab="quizzes"
-                                role="tab" aria-selected="true">Quizzes</button><button class="tab tab-collections "
-                                data-tab="collections" role="tab" aria-selected="false">Collections</button><button
-                                class="tab tab-memesets " data-tab="memesets" role="tab" aria-selected="false">Meme
-                                sets</button><span class="tab-selection quizizz"></span></div>
-                    </div>
-                </div>
+                
             </div>
-            <!-- <div class="row-profile-header-loading hidden">
-                                <div class="row-top row-top-loading">
-                                    <div class="col-left col-left-loading">
-                                        <div class="profile-image img-loading"></div>
-                                    </div>
-                                    <div class="col-middle col-middle-loading"><span class="shine"></span>
-                                        <div class="profile-user profile-user-loading">
-                                            <div class="line"></div>
-                                            <div class="profile-info profile-info-loading">
-                                                <div class="username username-loading line-1"></div>
-                                                <div class="line-2"></div>
-                                                <div class="line-4"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row-bottom">
-                                    <div class="profile-tabs-container tab-container">
-                                        <div class="tabs" role="tablist"><button class="tab tab-quizzes selected"
-                                                data-tab="quizzes" role="tab"
-                                                aria-selected="true">Quizzes</button><button
-                                                class="tab tab-collections " data-tab="collections" role="tab"
-                                                aria-selected="false">Collections</button><button
-                                                class="tab tab-memesets " data-tab="memesets" role="tab"
-                                                aria-selected="false">Meme sets</button><span
-                                                class="tab-selection quizizz"></span></div>
-                                    </div>
-                                </div>
-                            </div> -->
+   
         </div>
     </div>
 
@@ -116,25 +80,6 @@ firebase.auth().onAuthStateChanged((user) => {
   });
   clickclose.addEventListener("click", () => {
     profile.classList.remove("active");
-  });
-
-  tabquizzes.addEventListener("click", () => {
-    tabquizzes.classList.add("selected");
-    tabcollections.classList.remove("selected");
-    tabmemesets.classList.remove("selected");
-    tabselection.style.left = "0px";
-  });
-  tabcollections.addEventListener("click", () => {
-    tabquizzes.classList.remove("selected");
-    tabcollections.classList.add("selected");
-    tabmemesets.classList.remove("selected");
-    tabselection.style.left = "150px";
-  });
-  tabmemesets.addEventListener("click", () => {
-    tabquizzes.classList.remove("selected");
-    tabcollections.classList.remove("selected");
-    tabmemesets.classList.add("selected");
-    tabselection.style.left = "300px";
   });
 });
 

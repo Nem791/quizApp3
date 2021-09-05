@@ -36,7 +36,7 @@ class LoginGoogle {
       .signInWithPopup(provider)
       .then((res) => {
         console.log(res.user);
-        window.location.href = "./userlogin.html";
+        window.location.href = "./main.html";
       });
   };
   render() {
