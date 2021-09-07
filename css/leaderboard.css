@@ -226,7 +226,12 @@ tr .col-2 {
   cursor: pointer;
 }
 
-
+#quiz-title {
+  display: inline-flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+}
 
 
 

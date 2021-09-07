@@ -19,7 +19,6 @@ class Option {
 
     setDataResult = () => {
         // Luu ket qua nguoi dung chon vao parentNode
-        console.log('stack 1');
         this.$formCheckInput.closest('.question-options').dataset.result = this.$formCheckInput.nextElementSibling.innerText[0];
     }
 

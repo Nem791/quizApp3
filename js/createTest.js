@@ -1,5 +1,6 @@
 import { Placeholder } from "../components/placeholder.js";
 import { QuestionCard } from "../components/question-card.js";
+import { checkLogin } from "./checkUserLogin.js";
 import { calculateScore } from "./result.js";
 import { showResults } from "./showResults.js";
 import { renderSuggestion } from "./suggestion.js";
@@ -63,10 +64,8 @@ function renderQuiz(quizId) {
                     answer.firstChild.addEventListener('click', () => {
                         if (answer.lastChild.innerText[0] == quizData[quizId][index].rightAnswer) {
                             element.dataset.point = 1;
-                            console.log(element)
                         } else {
                             element.dataset.point = 0;
-                            console.log(element)
                         }
                     })
 
@@ -80,6 +79,7 @@ function renderQuiz(quizId) {
             calculateScore();
             showResults();
             renderSuggestion();
+            checkLogin();
         })
         .catch(error => {
             console.log(error);

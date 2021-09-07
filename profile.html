@@ -19,11 +19,17 @@
     <link rel="stylesheet" href="./css/test.css">
     <link rel="stylesheet" href="./css/side-bar.css">
     <link rel="stylesheet" href="./css/quiz-info-card.css">
+<<<<<<< HEAD
     <link rel="stylesheet" href="./css/questions-container.css">
     <link rel="stylesheet" href="./css/aside.css">
     <link rel="stylesheet" href="./css/result.css">
     <link rel="stylesheet" href="./css/style2.css">
+=======
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style2.css">
+>>>>>>> d9de9ee8f33585a645e0e2281f1cbcb7c97e5266
     <link rel="stylesheet" href="./css/loading.css">
+    <link rel="stylesheet" href="./css/setting.css">
 
     <title>Profile</title>
 </head>
@@ -38,27 +44,17 @@
     </div>
     <header class="main-header">
         <div class="top-header">
-            <div class="nav-size-container">
-                <div class="main-logo">
-                    <a href="./main.html">
-                        <img src="https://cf.quizizz.com/img/quizizz_logos/white-brandmark-600x164.png" alt="Quizizz">
-                    </a>
+            <div class="top-header-box">
+
+                <div class="logo"><a href="./main.html">Quizz</a></div>
+                <form action="#">
+                    <input type="search" class="search-data" placeholder="Search..." required>
+                    <button type="submit" class="fas fa-search"></button>
+                </form>
+                <div class="tray">
+                    <a class="join-game-btn">Enter Code</a>
+
                 </div>
-            </div>
-            <div class="main-search-master-wrapper">
-                <div class="main-search-wrapper">
-                    <div class="main-search">
-                        <div class="main-search-container">
-                            <input type="text">
-                            <span class="divider"></span>
-                            <div class="search-content"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="tray">
-                <a class="join-game-btn">Enter Code</a>
-                <a class="join-game-btn">Sign In</a>
             </div>
         </div>
     </header>
@@ -66,57 +62,20 @@
     <div id="main">
         <div class="page-inner">
 
+            <div class="profile-view">
 
+            </div>
+            <div class="select">
 
+            </div>
 
         </div>
         <nav class="main-navigation mt-5">
             <div class="main-navigation-inner">
-                <div class="header">
-                    <div class="user-info">
-                        <div class="user-img">
-                            <img src="" alt="">
-                        </div>
-                        <div class="user-details">
-                            <div class="name">Have an account?</div>
-                            <button class="login-btn">Log in now</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="create-menu-wrapper">
-                    <button class="create-btn">
-                        <i class="far fa-plus-circle"></i>
-                        <span class="create-btn-label">Create</span>
-                        <i class="fas fa-caret-down"></i>
-                    </button>
-                </div>
-                <div class="divider"></div>
-                <div class="main-navigation-list-wrapper">
-                    <ul class="main-navigation-list">
-                        <li id="explore" class="selected "><i aria-hidden="true" class="fas fa-map-marked-alt"></i><span
-                                role="link" tabindex="0">Explore</span>
-                        </li>
-                        <li id="my-quizzes" class=""><i class="fas fa-book-reader"></i><span role="link" tabindex="0">My
-                                library</span>
-                        </li>
-                        <li id="reports" class=""><i class="fas fa-user"></i><span role="link"
-                                tabindex="0">Profile</span>
-                        </li>
-                        <li id="classes" class=""><i class="fas fa-book"></i><span role="link"
-                                tabindex="0">Classes</span>
-                        </li>
-                        <li class="divider"></li>
-                        <li id="memes" class=" "><i class="fas fa-person-booth"></i><span role="link" tabindex="0"
-                                aria-hidden="false">Memes</span>
-                        </li>
-                        <li id="collections" class=" "><i class="fas fa-bookmark"></i><span role="link" tabindex="0"
-                                aria-hidden="false">Collections</span>
-                        </li>
 
-                    </ul>
-                </div>
             </div>
         </nav>
+
 
     </div>
 </body>
@@ -146,9 +105,12 @@
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 <script type="module" src="./js/profile.js"></script>
+<script src="./js/setting.js"></script>
+
 <script src="./components/Profile/Formchangeuser.js"></script>
-<script src="./js/user-info.js"></script>
+<script src="./js/user-info.js" type="module"></script>
 <script src="./js/loading.js"></script>
+<script type="module" src="./js/entercode.js"></script>
 
 
 </html>

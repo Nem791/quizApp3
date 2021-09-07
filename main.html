@@ -72,7 +72,7 @@
 
         <nav class="main-navigation mt-5">
             <div class="main-navigation-inner">
-                
+
             </div>
         </nav>
 
@@ -156,11 +156,13 @@
 </body>
 
 
-<script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-firestore.js"></script>
 
 <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
+
 <script>
-    // Your web app's Firebase configuration
+    // Your first web app's Firebase configuration: Auth
     var firebaseConfig = {
         apiKey: "AIzaSyB0vfv8ALEMBtssF8V0VPvTCLG4wYWHp3k",
         authDomain: "quizzz-df723.firebaseapp.com",
@@ -170,8 +172,22 @@
         appId: "1:752429225308:web:261e48e8992615b35add99",
         measurementId: "G-VR58GF5XCG"
     };
+
+    // Your second web app's Firebase configuration: Data
+    const secondFirebaseConfig = {
+        apiKey: "AIzaSyBl9UJGF3wXsZBghJqXvEalhZIMWZFsNXU",
+        authDomain: "quizapp-965ab.firebaseapp.com",
+        projectId: "quizapp-965ab",
+        storageBucket: "quizapp-965ab.appspot.com",
+        messagingSenderId: "911742713047",
+        appId: "1:911742713047:web:0ca805430894d72ece8492"
+    };
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
+
+    // Initialize Firebase
+    let secondaryApp = firebase.initializeApp(secondFirebaseConfig, "secondary");
+    let db = secondaryApp.firestore();
 </script>
 
 <!-- Thu vien sweet alert  -->
@@ -186,12 +202,17 @@
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 <script src="./js/loading.js"></script>
-    
-<script type="module" src="./components/sideBar.js"></script>   
+<script src="./js/loaduser.js"></script>
+
+<script type="module" src="./components/sideBar.js"></script>
 <script type="module" src="./js/renderSlider.js"></script>
 <script type="module" src="./js/user-info.js"></script>
 <script type="module" src="./js/entercode.js"></script>
-<script type="module" src="./index.js"></script>
+
+<script type="module" src="./components/sideBar.js"></script>
+<script type="module" src="./js/renderSlider.js"></script>
+<script type="module" src="./js/user-info.js"></script>
+<script type="module" src="./js/entercode.js"></script>
 
 
 </html>

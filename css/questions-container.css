@@ -1,6 +1,9 @@
 .num-questions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     font-size: 16px;
-    height: 30px;
+    height: 50px;
     line-height: 30px;
     margin-bottom: 6px;
     font-weight: 600;
@@ -96,7 +99,55 @@
     font-size: 14px;
 }
 
-
+.timer {
+    display: block;
+    width: 150px;
+    line-height: 40px;
+    background: #8854c0;
+    text-align: center;
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+  
+.timer:before,
+.timer:after {
+    position: absolute;
+    content: "";
+    transition: all .25s;
+  }
+  
+.timer:before {
+    border-bottom: 2px solid #0d51e6;
+    border-left: 2px solid #0d51e6;
+    width: 10%;
+    height: 33%;
+    left: -10px;
+    bottom: -10px;
+  }
+  
+.timer:after {
+    border-top: 2px solid rgb(248, 0, 153);
+    border-right: 2px solid rgb(248, 0, 153);
+    width: 10%;
+    height: 33%;
+    top: -10px;
+    right: -10px;
+}
+  
+.timer:hover:before {
+    width: 112%;
+    height: 140%;
+}
+  
+.timer:hover:after {
+    width: 112%;
+    height: 140%;
+}
 
 
 
