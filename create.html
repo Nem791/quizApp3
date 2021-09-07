@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./create.css">
+    <link rel="stylesheet" href="./css/create.css">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -39,10 +39,12 @@
                         <h3>Create a question</h3>
                         <i class="fas fa-info-circle "></i>
                     </div>
-                    <button class="new-question">
-                        <span>New question</span>
-                        <i class="fas fa-plus-circle"></i>
-                    </button>
+                    <a href="#modal">
+                        <button class="new-question">
+                            <span>New question</span>
+                            <i class="fas fa-plus-circle"></i>
+                        </button>
+                    </a>
                 </div>
             </div> 
             <div class="questions-body">
@@ -102,5 +104,80 @@
             </div> 
         </div>
     </div>
+
+    <!-- Thêm câu hỏi -->
+    <div class="modal" id="modal">
+        <div class="modal_overlay"></div>
+        <a href="#" class="overlay"></a>
+        <div class="modal_body">
+            <div class="modal_inner">
+                
+                <div class="modal-header">
+                    <div class="modal-title">Question 1</div>
+                </div>
+
+                <div class="modal-content">
+                    <div class="modal_question">
+                        <input type="text" id="question" class="form__input" autocomplete="off" placeholder=" ">
+                        <label for="question" class="form__label">Question</label>
+                    </div>
+
+                    <div class="modal_answer">
+                        <div class="answer1">
+                            <button><i class="fas fa-check "></i></button>
+                            <div class="input-answer">
+                                <input type="text" id="question" class="form__input" autocomplete="off" placeholder=" Answer option 1">
+
+                            </div>
+                        </div>
+                        <div class="answer1">
+                            <button><i class="fas fa-check "></i></button>
+                            <div class="input-answer">
+                                <input type="text" id="question" class="form__input" autocomplete="off" placeholder=" Answer option 2">
+
+                            </div>
+                        </div>
+
+                        <div class="answer1">
+                            <button><i class="fas fa-check "></i></button>
+                            <div class="input-answer">
+                                <input type="text" id="question" class="form__input" autocomplete="off" placeholder=" Answer option 3">
+
+                            </div>
+                        </div>
+
+                        <div class="answer1">
+                            <button><i class="fas fa-check "></i></button>
+                            <div class="input-answer">
+                                <input type="text" id="question" class="form__input" autocomplete="off" placeholder=" Answer option 4">
+
+                            </div>
+                        </div>
+
+                      
+
+                    </div>
+
+                    
+                </div>
+
+                <div class="modal-footer">
+                    <div class="footer-box">
+                        <a href="#"><button class="cancel">CANCEL</button></a>
+                        <button class="ad"><i class="fas fa-save"></i> SAVE</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
 </body>
+
+<script>
+    // var btnModal = document.querySelector(".new-question")
+    // var modalBg = document.querySelector(".modal")
+    // btnModal.addEventListener('click', function() {
+    //     modalBg.classList.add(".modal-active");
+    // })
+</script>
 </html>
