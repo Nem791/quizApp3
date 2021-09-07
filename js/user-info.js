@@ -37,6 +37,7 @@ firebase.auth().onAuthStateChanged((user) => {
 
   function handleLogout() {
     firebase.auth().signOut();
+    localStorage.removeItem('tempUserInfo');
     window.location.href = "./main.html";
   }
 });

@@ -57,6 +57,7 @@ function calculateScore() {
             const quizNameText = document.querySelector('.quiz-name-text');
             const name = document.querySelector('.name').innerText;
 
+            // Luu score 
             db.collection(quizNameText.innerText).add({
                 username: name,
                 score: sum,
@@ -69,6 +70,15 @@ function calculateScore() {
                     console.error("Error adding document: ", error);
                 });
 
+            let userObject = JSON.parse(localStorage.getItem('tempUserInfo'));
+            let userSavedQuiz = db.collection("userQuizInfo").doc(userObject.email);
+
+            // Atomically add a new id to the array field
+            // Luu id quiz da lam` 
+            let id = window.location.search.split('=').pop();
+            userSavedQuiz.update({
+                savedQuiz: firebase.firestore.FieldValue.arrayUnion(id)
+            });
         }
     })
 }

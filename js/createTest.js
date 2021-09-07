@@ -1,5 +1,6 @@
 import { Placeholder } from "../components/placeholder.js";
 import { QuestionCard } from "../components/question-card.js";
+import { checkLogin } from "./checkUserLogin.js";
 import { calculateScore } from "./result.js";
 import { showResults } from "./showResults.js";
 import { renderSuggestion } from "./suggestion.js";
@@ -78,6 +79,7 @@ function renderQuiz(quizId) {
             calculateScore();
             showResults();
             renderSuggestion();
+            checkLogin();
         })
         .catch(error => {
             console.log(error);
