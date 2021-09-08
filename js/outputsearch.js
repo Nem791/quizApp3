@@ -42,7 +42,8 @@ renderSearch(valueSearch);
 /// click vào bộ câu hỏi từ trang tìm kiếm
 const click = document.querySelectorAll(".search-results-item");
 click.forEach((value) => {
+  console.log(value.dataset);
   value.addEventListener("click", () => {
-    console.log(value);
+    location.href = `./quizPage.html?id=${value.dataset.id}`;
   });
 });
