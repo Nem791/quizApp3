@@ -6,6 +6,7 @@
         "image": "https://codelearn.io/Upload/Blog/html-la-gi-no-co-quan-trong-khong-63715266434.3958.jpg",
         "category": "basic",
         "quizNumber": "Câu 1",
+        "search": "html",
         "answers": ["A. alt", "B. src", "C. title", "D. longdesc"],
         "rightAnswer": "A",
         "quiz": "Thuộc tính HTML nào xác định một văn bản sẽ dùng thay thế cho hình ảnh, nếu hình ảnh không thể được hiển thị?"
@@ -15,14 +16,14 @@
         "answers": [
           "A. Hoàn toàn giống nhau",
           "B. Chỉ khác ở cái tên nhưng đều chứa thẻ con &lt;li>",
-          "C. &lt;ul> dùng để tạo menu còn < ol > thì ít ai dùng",
+          "C. &lt;ul> dùng để tạo menu còn &lt;ol > thì ít ai dùng",
           "D. &lt;ul> định nghĩa các &lt;li> không thứ tự còn &lt;ol> thì có thứ tự"
         ],
         "rightAnswer": "D",
         "quiz": "Thẻ `&lt;ol>` và '&lt;ul>' khác nhau chỗ nào?",
         "a": "A. Hoàn toàn giống nhau",
         "b": "B. Chỉ khác ở cái tên nhưng đều chứa thẻ con &lt;li>",
-        "c": "C. &lt;ul> dùng để tạo menu còn < ol > thì ít ai dùng",
+        "c": "C. &lt;ul> dùng để tạo menu còn &lt;ol > thì ít ai dùng",
         "d": "D. &lt;ul> định nghĩa các &lt;li> không thứ tự còn &lt;ol> thì có thứ tự"
       },
       {

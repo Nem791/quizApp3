@@ -1,4 +1,5 @@
 import { renderSideBar } from "../components/sideBar.js";
+// import { displayCharacters } from "./renderSlider.js";
 
 renderSideBar();
 const userInfo = document.querySelector(".user-info");

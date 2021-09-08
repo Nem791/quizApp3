@@ -7,18 +7,22 @@ function renderSlideByCategory(myArray, slider) {
     slider.appendChild(cardItem.render());
   });
 }
-
-const searchBar = document.getElementById("search-bar");
 let basicArray = [];
 let otherArray = [];
+let contentSearch = [];
+const searchBar = document.getElementById("search");
+searchBar.addEventListener("submit", (e) => {
+  e.preventDefault();
+  const valuesearch = document
+    .querySelector('input[name="search"]')
+    .value.toLowerCase();
 
-searchBar.addEventListener("keyup", (e) => {
-  const searchString = e.target.value.toLowerCase();
-
-  const firstfilter = basicArray.filter((value) => {
-    console.log(value[0].questionTitle);
+  const filtersearch = contentSearch.filter((value) => {
+    return value.questionTitle.toLowerCase().includes(valuesearch);
   });
-  renderSlideByCategory(firstfilter);
+  localStorage.setItem("search", JSON.stringify(filtersearch));
+  console.log(filtersearch);
+  window.location.href = "./search.html";
 });
 
 fetch("http://localhost:3000/quizzes")
@@ -26,15 +30,16 @@ fetch("http://localhost:3000/quizzes")
     return response.json();
   })
   .then((data) => {
+    console.log(data);
     const firstSlider = document.querySelectorAll(".container-box")[0];
     const secondSlider = document.querySelectorAll(".container-box")[1];
 
     // Phan loai slider
-    Object.keys(data).map((element) => {
-      console.log(element);
+    Object.keys(data).forEach((element) => {
+      contentSearch.push(data[element][0]);
+      // console.log(contentSearch);
       if (data[element][0].category == "basic") {
-        basicArray.push(data[element][0]);
-        console.log(basicArray);
+        basicArray.push(element);
       } else if (data[element][0].category == "other") {
         otherArray.push(element);
       }
@@ -44,6 +49,7 @@ fetch("http://localhost:3000/quizzes")
     renderSlideByCategory(otherArray, secondSlider);
 
     const box = document.querySelectorAll(".box");
+    console.log(box);
     let content = document.querySelectorAll(".content");
     console.log(content);
     let cardImage = document.querySelectorAll(".card-image");
@@ -60,9 +66,12 @@ fetch("http://localhost:3000/quizzes")
       cardImage[index].src = data[`${Object.keys(data)[index]}`][0].image;
 
       box[index].dataset.id = Object.keys(data)[index];
+      console.log(Object.keys(data)[index]);
     });
 
     box.forEach((element) => {
+      console.log(element);
+
       element.addEventListener("click", () => {
         localStorage.setItem("id", JSON.stringify(element.dataset.id));
         // location.href = './quizPage.html';
