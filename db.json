@@ -1595,7 +1595,7 @@
                 "quiz": "Trong SQL, làm thế nào để chọn cột dữ liệu có tên FirstName từ bảng Persons:"
             },
             {
-                "quizNumber": "Câu 7",
+                "quizNumber": "Câu 6",
                 "answers": [
                     "A. Select [all] FROM Persons",
                     "B. Select All Persons",
@@ -1606,7 +1606,7 @@
                 "quiz": "Trong SQL, làm thế nào để chọn tất cả các cột dữ liệu trong bảng Persons:"
             },
             {
-                "quizNumber": "Câu 8",
+                "quizNumber": "Câu 7",
                 "answers": [
                     "A. Select [all] FROM Persons WHERE FirstName=’Peter’",
                     "B. Select * FROM Persons WHERE FirstName LIKE’Peter’",
@@ -1617,7 +1617,7 @@
                 "quiz": "Trong SQL làm thế nào để chọn tất cả các bản ghi từ bảng Persons với giá trị trong cột FirstName là Peter:"
             },
             {
-                "quizNumber": "Câu 9",
+                "quizNumber": "Câu 8",
                 "answers": [
                     "A. Select * From Persons WHERE FirstName='%a%'",
                     "B. Select * From Persons WHERE FirstNameLIKE %",
@@ -1628,7 +1628,7 @@
                 "quiz": "Trong SQL, làm thế nào để chọn tất cả các bản ghi từ bảng Persons với giá trị trong cột FirstName bắt đầu bằng giá trị a:"
             },
             {
-                "quizNumber": "Câu 10",
+                "quizNumber": "Câu 9",
                 "answers": [
                     "A. SELECT UNIQUE",
                     "B. SELECT INDENTITY",
@@ -1639,7 +1639,7 @@
                 "quiz": "Cú pháp SQL nào được dùng để trả về những giá trị khác nhau:"
             },
             {
-                "quizNumber": "Câu 11",
+                "quizNumber": "Câu 10",
                 "answers": [
                     "A. SORT BY",
                     "B. ORDER",
@@ -1648,6 +1648,17 @@
                 ],
                 "rightAnswer": "D",
                 "quiz": "Từ khóa SQL nào được sử dụng để sắp xếp danh sách kết quả:"
+            },
+            {
+                "quizNumber": "Câu 11",
+                "answers": [
+                    "A. SELECT COLUMNS () FROM Persons",
+                    "B. SELECT COUNT (*) FROM Persons",
+                    "C. SELECT COLUMNS (*) FROM Persons",
+                    "D. SELECT COUNT () FROM Persons"
+                ],
+                "rightAnswer": "A",
+                "quiz": "Trong SQL, làm thế nào để trả về số lượng các bản ghi trong bảng Persons:"
             },
             {
                 "quizNumber": "Câu 12",
@@ -1663,17 +1674,6 @@
             {
                 "quizNumber": "Câu 13",
                 "answers": [
-                    "A. SELECT COLUMNS () FROM Persons",
-                    "B. SELECT COUNT (*) FROM Persons",
-                    "C. SELECT COLUMNS (*) FROM Persons",
-                    "D. SELECT COUNT () FROM Persons"
-                ],
-                "rightAnswer": "A",
-                "quiz": "Trong SQL, làm thế nào để trả về số lượng các bản ghi trong bảng Persons:"
-            },
-            {
-                "quizNumber": "Câu 14",
-                "answers": [
                     "A. EXPLICIT",
                     "B. IMPLICIT",
                     "C. EXCLUSIVE",
@@ -1683,7 +1683,7 @@
                 "quiz": "Kiểu khóa nào sau đây sẽ ngăn chặn bất kỳ người dùng nào truy cập vào bảng dữ liệu:"
             },
             {
-                "quizNumber": "Câu 15",
+                "quizNumber": "Câu 14",
                 "answers": [
                     "A. Right",
                     "B. Full",
@@ -1694,7 +1694,7 @@
                 "quiz": "Left outer join là 1 dạng của outer join. 1 dạng khác là:"
             },
             {
-                "quizNumber": "Câu 16",
+                "quizNumber": "Câu 14",
                 "answers": [
                     "A. Right",
                     "B. Full",
@@ -1732,7 +1732,7 @@
                 "quiz": "Thực hiện kiểm tra nếu biến “i” không bằng 5, câu lệnh nào là đúng?"
             },
             {
-                "quizNumber": "Câu 3",
+                "quizNumber": "Câu 2",
                 "answers": [
                     "A. Viết trên một tệp riêng",
                     "B.  Viết chung với HTML",
@@ -1743,7 +1743,7 @@
                 "quiz": "Có những cách nào viết code JavaScript  để chạy trong trang web?"
             },
             {
-                "quizNumber": "Câu 4",
+                "quizNumber": "Câu 3",
                 "answers": [
                     "A. <script name='xxx.js'> ",
                     "B. <script heft='xxx.js'>",
@@ -1754,7 +1754,7 @@
                 "quiz": "Câu lệnh nào đúng thực hiện việc gọi một script từ bên ngoài có tên là “xxx.js”?"
             },
             {
-                "quizNumber": "Câu 5",
+                "quizNumber": "Câu 4",
                 "answers": [
                     "A. Khi kích chuột ",
                     "B. Khi di chuyển chuột qua",
@@ -1765,7 +1765,7 @@
                 "quiz": "Trong JavaScript sự kiện OnUnload xảy ra khi nào?"
             },
             {
-                "quizNumber": "Câu 6",
+                "quizNumber": "Câu 5",
                 "answers": [
                     "A. browser.name ",
                     "B. navigator.appName",
@@ -1776,7 +1776,7 @@
                 "quiz": "Dùng cách nào có thể biết được trình duyệt đang được sử dụng tại máy client?"
             },
             {
-                "quizNumber": "Câu 7",
+                "quizNumber": "Câu 6",
                 "answers": [
                     "A. for ( biến = Giá trị đầu; Điều kiện; Giá trị tăng)",
                     "B. for ( biến = Giá trị đầu; Giá trị tăng; điều kiện)",
@@ -1787,7 +1787,7 @@
                 "quiz": "Câu lệnh lặp For trong JavaScript có dạng nào sau đây?"
             },
             {
-                "quizNumber": "Câu 8",
+                "quizNumber": "Câu 7",
                 "answers": [
                     "A. if i = 5 then",
                     "B.  if (i == 5)",
@@ -1798,7 +1798,7 @@
                 "quiz": "Cách viết câu lệnh IF nào sau đây là đúng?"
             },
             {
-                "quizNumber": "Câu 9",
+                "quizNumber": "Câu 8",
                 "answers": [
                     "A. Bạn có thể đặt trong phần <head> hoặc <body>",
                     "B. Chỉ trong phần <body>)",
@@ -1872,7 +1872,7 @@
                     "D. Tất cả các ý trên"
                 ],
                 "rightAnswer": "A",
-                "quiz": "Thẻ &lt;input type='text'> dùng để làm gì?"
+                "quiz": "Thẻ <input type='text'> dùng để làm gì?"
             },
             {
                 "quizNumber": "Câu 16",
@@ -1883,7 +1883,7 @@
                     "D. Tất cả các ý trên"
                 ],
                 "rightAnswer": "B",
-                "quiz": "Thẻ &lt;input type='Password'> dùng để làm gì?"
+                "quiz": "Thẻ <input type='Password'> dùng để làm gì?"
             },
             {
                 "quizNumber": "Câu 17",
@@ -1894,7 +1894,7 @@
                     "D. Tất cả các ý trên"
                 ],
                 "rightAnswer": "C",
-                "quiz": "Thẻ &lt;textarea ></texterea> dùng để làm gì?"
+                "quiz": "Thẻ <textarea ></texterea> dùng để làm gì?"
             },
             {
                 "quizNumber": "Câu 18",
@@ -1905,7 +1905,7 @@
                     "D. Tất cả các ý trên"
                 ],
                 "rightAnswer": "B",
-                "quiz": "Thẻ &lt;textarea ></texterea> dùng để làm gì?"
+                "quiz": "Thẻ <textarea ></texterea> dùng để làm gì?"
             },
             {
                 "quizNumber": "Câu 19",
@@ -2102,7 +2102,7 @@
                 "quiz": "Trong chế độ 256 màu, số bít cho mỗi pixel là:"
             },
             {
-                "quizNumber": "Câu 16",
+                "quizNumber": "Câu 14",
                 "answers": [
                     "A. “%u”.",
                     "B. “%e”.",
@@ -2113,7 +2113,7 @@
                 "quiz": "Xâu định dạng nào dưới đây dùng để in ra địa chỉ của một biến:"
             },
             {
-                "quizNumber": "Câu 17",
+                "quizNumber": "Câu 15",
                 "answers": [
                     "A. “%u”.",
                     "B. “%e”.",
@@ -2124,7 +2124,7 @@
                 "quiz": "Xâu định dạng nào dưới đây dùng để in ra địa chỉ của một biến:"
             },
             {
-                "quizNumber": "Câu 18",
+                "quizNumber": "Câu 16",
                 "answers": [
                     "A. “%u”.",
                     "B. “%e”.",
@@ -2135,7 +2135,7 @@
                 "quiz": "Xâu định dạng nào dưới đây dùng để in ra một số thực có độ chính xác kép:"
             },
             {
-                "quizNumber": "Câu 19",
+                "quizNumber": "Câu 17",
                 "answers": [
                     "A. “%u”.",
                     "B. “%e”.",
@@ -2146,7 +2146,7 @@
                 "quiz": "Xâu định dạng nào dưới đây dùng để in ra một số thực có độ chính xác kép:"
             },
             {
-                "quizNumber": "Câu 20",
+                "quizNumber": "Câu 18",
                 "answers": [
                     "A. 0…255.",
                     "B. -32768…32767.",
@@ -2157,7 +2157,7 @@
                 "quiz": "Kiểu dữ liệu int (kiểu số nguyên) có thể xử lí số nguyên nằm trong khoảng nào:"
             },
             {
-                "quizNumber": "Câu 21",
+                "quizNumber": "Câu 19",
                 "answers": [
                     "A. (c=a & b)",
                     "B. (c=a && b)",
@@ -2168,7 +2168,7 @@
                 "quiz": "Cho a=3, b=2 và c là 3 biến nguyên. Biểu thức nào sau viết sai cú pháp trong ngôn ngữ lập trình C:"
             },
             {
-                "quizNumber": "Câu 22",
+                "quizNumber": "Câu 20",
                 "answers": [
                     "A. (a+=b)",
                     "B. (a-=b)",
@@ -2217,7 +2217,7 @@
                 "quiz": "Trong các cách khai báo Hằng sau đây, cách khai báo nào là đúng ?"
             },
             {
-                "quizNumber": "Câu 4",
+                "quizNumber": "Câu 3",
                 "answers": [
                     "A. Các biến đều phải được khai báo và mỗi biến chỉ khai báo một lần",
                     "B. Một chương trình luôn luôn có hai phần: phần khai báo và phần thân",
@@ -2228,7 +2228,7 @@
                 "quiz": "Hãy chọn phát biểu sai?"
             },
             {
-                "quizNumber": "Câu 5",
+                "quizNumber": "Câu 4",
                 "answers": [
                     "A. Tên chương trình",
                     "B. Hằng",
@@ -2239,7 +2239,7 @@
                 "quiz": "Trong ngôn ngữ Pascal, từ khóa CONST dùng để khai báo"
             },
             {
-                "quizNumber": "Câu 6",
+                "quizNumber": "Câu 5",
                 "answers": [
                     "A. Tên chương trình",
                     "B. Hằng",
@@ -2250,18 +2250,18 @@
                 "quiz": "Trong ngôn ngữ Pascal, từ khóa USES dùng để khai báo"
             },
             {
-                "quizNumber": "Câu 7",
+                "quizNumber": "Câu 6",
                 "answers": [
                     "A. abc_123",
                     "B. _123abc",
                     "C. 123_abc",
                     "D. abc123"
                 ],
-                "rightAnswer": "8",
+                "rightAnswer": "C",
                 "quiz": "Tên nào không đúng trong ngôn ngữ Pascal"
             },
             {
-                "quizNumber": "Câu 9",
+                "quizNumber": "Câu 7",
                 "answers": [
                     "A. Biến dùng trong chương trình phải khai bá",
                     "B. Biến được chương trình dịch bỏ qua",
@@ -2272,7 +2272,7 @@
                 "quiz": "Phát biểu nào dưới đây là hợp lí nhất?"
             },
             {
-                "quizNumber": "Câu 10",
+                "quizNumber": "Câu 8",
                 "answers": [
                     "A. Begin",
                     "B. 58,5",
@@ -2283,7 +2283,7 @@
                 "quiz": "Hãy chọn biểu diễn hằng đúng trong các biểu diễn sau:"
             },
             {
-                "quizNumber": "Câu 11",
+                "quizNumber": "Câu 9",
                 "answers": [
                     "A. ‘*****’",
                     "B. -tenkhongsai",
@@ -2294,7 +2294,7 @@
                 "quiz": "Hãy chọn biểu diễn tên đúng trong những biểu diễn sau"
             },
             {
-                "quizNumber": "Câu 12",
+                "quizNumber": "Câu 10",
                 "answers": [
                     "A. Dễ lập trình hơn so với ngôn ngữ bậc cao",
                     "B. Tốc độ thực hiện nhanh hơn so với chương trình được viết bằng ngôn ngữ bậc cao",
@@ -2305,7 +2305,7 @@
                 "quiz": "Chương trình viết bằng hợp ngữ không có đặc điểm nào trong các đặc điểm sau:"
             },
             {
-                "quizNumber": "Câu 13",
+                "quizNumber": "Câu 11",
                 "answers": [
                     "A. puts().",
                     "B. printf().",
@@ -2316,7 +2316,7 @@
                 "quiz": "Trong các hàm sau, hàm nào là hàm không định dạng để in một chuỗi kí tự ra màn hình:"
             },
             {
-                "quizNumber": "Câu 14",
+                "quizNumber": "Câu 12",
                 "answers": [
                     "A.Truyền bằng giá trị",
                     "B. Truyền bằng giá trị địa chỉ của tham số",
@@ -2327,7 +2327,7 @@
                 "quiz": "Sử dụng cách truyền nào trong hàm sẽ không làm thay đổi giá trị của biến trong chương trình chính:"
             },
             {
-                "quizNumber": "Câu 15",
+                "quizNumber": "Câu 13",
                 "answers": [
                     "A. -1",
                     "B. 0",
@@ -2338,7 +2338,7 @@
                 "quiz": "Cho biết giá trị của biểu thức 5>1"
             },
             {
-                "quizNumber": "Câu 16",
+                "quizNumber": "Câu 14",
                 "answers": [
                     "A. -1",
                     "B. 0",
@@ -2349,7 +2349,7 @@
                 "quiz": "Cho biết giá trị của biểu thức 2+4>2&&4<2"
             },
             {
-                "quizNumber": "Câu 17",
+                "quizNumber": "Câu 15",
                 "answers": [
                     "A. Địa chỉ vùng nhớ của một biến khác",
                     "B. Giá trị của một biến khác",
@@ -2360,7 +2360,7 @@
                 "quiz": "Biến con trỏ có thể chứa:"
             },
             {
-                "quizNumber": "Câu 18",
+                "quizNumber": "Câu 16",
                 "answers": [
                     "A. Các kí tự số chữ số",
                     "B. Các kí tự chữ cái",
@@ -2371,7 +2371,7 @@
                 "quiz": "Dữ liệu kí tự bao gồm:"
             },
             {
-                "quizNumber": "Câu 19",
+                "quizNumber": "Câu 17",
                 "answers": [
                     "A. Kiểu trả về của hàm phải là kiểu void",
                     "B. Kiểu đầu vào của hàm phải là kiểu void",
@@ -2382,7 +2382,7 @@
                 "quiz": "Nếu hàm được gọi trước khi nó định nghĩa thì điều kiện là gì:"
             },
             {
-                "quizNumber": "Câu 20",
+                "quizNumber": "Câu 18",
                 "answers": [
                     "A. 3.4*10-38 đến 3.4*1038.",
                     "B. -32768 đến 32767",
@@ -2393,7 +2393,7 @@
                 "quiz": " Kiểu dữ liệu float có thể xử lí dữ liệu trong phạm vi nào:"
             },
             {
-                "quizNumber": "Câu 21",
+                "quizNumber": "Câu 19",
                 "answers": [
                     "A. Kiểu mảng",
                     "B. Kiểu enum",
@@ -2404,7 +2404,7 @@
                 "quiz": " Kiểu dữ liệu nào dưới đây không được coi là kiểu dữ liệu cơ bản trong ngôn ngữ lập trình C:"
             },
             {
-                "quizNumber": "Câu 22",
+                "quizNumber": "Câu 20",
                 "answers": [
                     "A.*",
                     "B. !",
