@@ -35,12 +35,12 @@ class ViewItem {
         this.$details.classList.add('details');
 
         this.$questionLength = document.createElement('div');
-        this.$questionLength.classList.add('question-length');
-        this.$questionLength.innerHTML = `<i class="fas fa-list no-absolute"></i> 1 Qs`;
+        this.$questionLength.classList.add('questions-length');
+        this.$questionLength.innerHTML = `<i class="fas fa-list no-absolute"></i>`;
 
         this.$played = document.createElement('div');
         this.$played.classList.add('played');
-        this.$played.innerHTML = `<i class="fas fa-play no-absolute"></i> Played 0 times`;
+        this.$played.innerHTML = `<i class="fas fa-play no-absolute"></i> Already played`;
 
         this.$createdBy = document.createElement('div');
         this.$createdBy.classList.add('created-by');
