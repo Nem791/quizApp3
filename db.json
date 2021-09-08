@@ -288,6 +288,7 @@
         "image": "https://tltvietnam.vn/upload/images/css-la-gi-4.jpg",
         "category": "basic",
         "quizNumber": "Câu 1",
+        "search": "css",
         "answers": [
           "A. Creative Style Sheets",
           "B. Computer Style Sheets",
@@ -578,6 +579,7 @@
         "image": "https://tuandc.com/wp-content/uploads/2017/07/laptrinh-javascript.jpg",
         "category": "basic",
         "quizNumber": "Câu 1",
+        "search": "javascript",
         "answers": [
           "A. Client",
           "B. Server",
@@ -883,6 +885,7 @@
         "image": "https://codefresher.vn/wp-content/uploads/2019/12/core-java-1.jpg",
         "category": "basic",
         "quizNumber": "Câu 1",
+        "search": "java",
         "answers": [
           "A. Ngôn ngữ Java có phân biệt chữ hoa - chữ thường",
           "B. Java là ngôn ngữ lập trình hướng đối tượng",
@@ -1123,6 +1126,7 @@
         "image": "https://vsudo.net/blog/wp-content/uploads/2020/11/python-696x533.jpg",
         "category": "basic",
         "quizNumber": "Câu 1",
+        "search": "python",
         "answers": [
           "A. Python là một ngôn ngữ lập trình cấp cao",
           "B. Python là một ngôn ngữ thông dịch",
@@ -1409,6 +1413,7 @@
         "image": "https://greensql.net/wp-content/uploads/2020/04/word-image-3.png",
         "category": "other",
         "quizNumber": "Câu 1",
+        "search": "sql",
         "answers": [
           "A. Strong Question Language",
           "B. Structured Question Language",
@@ -1565,6 +1570,7 @@
         "image": "https://cms.kmin.edu.vn/uploads/JS_co_ban_f0fd9c1fa4.png",
         "category": "other",
         "quizNumber": "Câu 1",
+        "search": "javascriptnc",
         "answers": [
           "A. Chuyển một chuỗi thành số nguyên",
           "B. Chuyển một số nguyên thành chuỗi",
@@ -1790,6 +1796,7 @@
         "image": "https://fasttrack.edu.vn/wp-content/uploads/2021/04/c.jpeg",
         "category": "other",
         "quizNumber": "Câu 1",
+        "search": "C",
         "answers": [
           "A. Ngôn ngữ B",
           "B. Ngôn ngữ BCPL.",
@@ -1972,6 +1979,7 @@
         "image": "https://anh.24h.com.vn/upload/4-2017/images/2017-10-14/1507983593-1-javascript.jpg",
         "category": "other",
         "quizNumber": "Câu 1",
+        "search": "code",
         "answers": [
           "A. Có giá trị thay đổi trong quá trình thực hiện chương trình",
           "B. Có giá trị không thay đổi trong quá trình thực hiện chương trình",
@@ -2168,6 +2176,7 @@
         "image": "https://www.ampinc.com/wp-content/uploads/2021/03/ServerNetwork-scaled.jpg",
         "category": "other",
         "quizNumber": "Câu 1",
+        "search": "networkingbasic",
         "answers": [
           "A. Đúng",
           "B. Sai",

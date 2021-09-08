@@ -42,6 +42,7 @@ renderSearch(valueSearch);
 /// click vào bộ câu hỏi từ trang tìm kiếm
 const click = document.querySelectorAll(".search-results-item");
 click.forEach((value) => {
+  console.log(value);
   value.addEventListener("click", () => {
     console.log(value);
   });
