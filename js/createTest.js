@@ -2,6 +2,7 @@ import { Placeholder } from "../components/placeholder.js";
 import { QuestionCard } from "../components/question-card.js";
 import { checkLogin } from "./checkUserLogin.js";
 import { checkSavedQuiz, getInfoSavedQuiz } from "./checkUserSavedQuiz.js";
+import { checkLikedQuiz } from "./likeAndShare.js";
 import { calculateScore } from "./result.js";
 import { showResults } from "./showResults.js";
 import { renderSuggestion } from "./suggestion.js";
@@ -82,6 +83,7 @@ function renderQuiz(quizId) {
             renderSuggestion();
             checkLogin();
             getInfoSavedQuiz();
+            checkLikedQuiz();
         })
         .catch(error => {
             console.log(error);

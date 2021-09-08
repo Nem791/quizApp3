@@ -12,14 +12,16 @@ function calculateScore() {
     }, 1000);
 
     let scoreArray = [];
+    let resultObject = {};
     let submitScore = document.getElementById('submit-score');
     let questionOptions = document.querySelectorAll('.question-options');
     let resultTitle = document.querySelector('.result-title');
 
     submitScore.addEventListener('click', (evt) => {
         evt.preventDefault();
-        questionOptions.forEach(element => {
+        questionOptions.forEach((element, index) => {
             scoreArray.push(Number(element.dataset.point));
+            resultObject[index + 1] = element.dataset.result;
 
         })
         if (scoreArray.includes(undefined) || scoreArray.includes(NaN)) { // Neu chua lam het cau hoi
@@ -61,7 +63,8 @@ function calculateScore() {
             db.collection(quizNameText.innerText).add({
                 username: name,
                 score: sum,
-                time: innerTextTimer.innerText
+                time: innerTextTimer.innerText,
+                result: resultObject
             })
                 .then((docRef) => {
                     console.log("Document written with ID: ", docRef.id);
@@ -76,8 +79,10 @@ function calculateScore() {
             // Atomically add a new id to the array field
             // Luu id quiz da lam` 
             let id = window.location.search.split('=').pop();
+
             userSavedQuiz.update({
-                savedQuiz: firebase.firestore.FieldValue.arrayUnion(id)
+                savedQuiz: firebase.firestore.FieldValue.arrayUnion(id),
+                [id]: resultObject
             });
         }
     })

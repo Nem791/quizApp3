@@ -7,7 +7,21 @@ function getInfoSavedQuiz() {
         if (doc.exists) {
             let saved = doc.data().savedQuiz;
             let id = window.location.search.split('=').pop();
+
+            // Kiem tra neu nguoi dung da lam` quiz nay` roi` 
             if (saved.includes(id)) {
+                let savedResult = doc.data()[id];
+                savedResult = Object.values(savedResult);
+                let questionOption = document.querySelectorAll('.question-options');
+                
+    
+                savedResult.forEach((element, index) => {
+                    questionOption[index].childNodes.forEach(formCheck => {
+                        if(formCheck.lastElementChild.innerText[0] == element) {
+                            formCheck.firstElementChild.click();
+                        }
+                    })
+                })
                 checkSavedQuiz();
             }
         } else {
