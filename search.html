@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font Awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Bootstrap  -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous"> -->
+
+    <link rel="stylesheet" href="./css/test.css">
+    <link rel="stylesheet" href="./css/side-bar.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/loading.css">
+    <link rel="stylesheet" href="./css/myLibrary.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+    <header class="main-header">
+        <div class="top-header">
+            <div class="top-header-box">
+
+                <div class="logo"><a href="./main.html">Quizz</a></div>
+                <form action="#">
+                    <input type="search" class="search-data" placeholder="Search..." required>
+                    <button type="submit" class="fas fa-search"></button>
+                </form>
+                <div class="tray">
+                    <a class="join-game-btn">Enter Code</a>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom-header-wrapper">
+            <div class="bottom-header-container">
+                <div class="bottom-header">
+                    <div class="bottom-header-inner">
+                        <div class="title"> My library (10)</div>
+                        <div class="order-container">
+                            <span class="text">Order:</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="main">
+        <article id="page-container" class="article">
+            <div class="page-inner">
+                <div class="my-quizizz view-container">
+                    <div class="my-quizizz-container">
+                        <div class="search-results-list">
+                            <li class="search-results-item">
+                                <div class="image"
+                                    style="background-image:url(https://cf.quizizz.com/img/logos/new/logo_placeholder_sm.png?w=90&amp;h=90);background-size: 70%;">
+                                </div>
+                                <div class="data">
+                                    <div class="content-type-title"> QUIZ </div>
+                                    <div class="name"> a </div>
+                                    <div class="details">
+                                        <div class="questions-length"><i class="fas fa-list no-absolute"></i> 1 Qs
+                                        </div>
+                                        <div class="played"><i class="fas fa-play no-absolute"></i> Played 0 times
+                                        </div>
+                                    </div>
+                                    <div class="created-by">
+                                        <div class="user-img"
+                                            style="background-image: url(https://lh3.googleusercontent.com/a-/AOh14Gggzvqn-YiHEPtNfu6BPdWmAjxQQGthaXK0E1c6FQ=s96-c?w=90&amp;h=90)">
+                                        </div>
+                                        <div class="user-data">
+                                            <a href="./profile.html" class="username">
+                                                phuongnam131201
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </div>
+                    </div>
+                    <div class="collections-container">
+                        <div class="collections">
+                            <div class="collections-section">
+                                <div class="collections-title">
+                                    <div class="collection-title-img"></div>
+                                    Collections
+                                </div>
+                                <div class="collections-inner">
+                                    <ul class="collections-list">
+                                        <li class="right-bar-list">
+                                            <button class="tag">
+                                                <i class="far fa-folder-open" aria-hidden="true"></i>
+                                                My library
+                                            </button>
+                                        </li>
+                                        <li class="right-bar-list">
+                                            <button class="tag">
+                                                <i class="fas fa-folder" aria-hidden="true"></i>
+                                                Created by me
+                                            </button>
+                                        </li>
+                                        <li class="right-bar-list">
+                                            <button class="tag">
+                                                <i class="fas fa-heart" aria-hidden="true"></i>
+                                                Liked
+                                            </button>
+                                        </li>
+                                        <div aria-hidden="true" class="divider "></div>
+                                    </ul>
+                                    <div class="no-collections">
+                                        <div class="msg ">You don't have any collections yet!</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <nav class="main-navigation mt-5">
+            <div class="main-navigation-inner">
+
+            </div>
+        </nav>
+    </div>
+    <footer>Footer</footer>
+</body>
+
+<script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-firestore.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
+
+<script>
+    // Your first web app's Firebase configuration: Auth
+    var firebaseConfig = {
+        apiKey: "AIzaSyB0vfv8ALEMBtssF8V0VPvTCLG4wYWHp3k",
+        authDomain: "quizzz-df723.firebaseapp.com",
+        projectId: "quizzz-df723",
+        storageBucket: "quizzz-df723.appspot.com",
+        messagingSenderId: "752429225308",
+        appId: "1:752429225308:web:261e48e8992615b35add99",
+        measurementId: "G-VR58GF5XCG"
+    };
+
+    // Your second web app's Firebase configuration: Data
+    const secondFirebaseConfig = {
+        apiKey: "AIzaSyBl9UJGF3wXsZBghJqXvEalhZIMWZFsNXU",
+        authDomain: "quizapp-965ab.firebaseapp.com",
+        projectId: "quizapp-965ab",
+        storageBucket: "quizapp-965ab.appspot.com",
+        messagingSenderId: "911742713047",
+        appId: "1:911742713047:web:0ca805430894d72ece8492"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+
+    // Initialize Firebase
+    let secondaryApp = firebase.initializeApp(secondFirebaseConfig, "secondary");
+    let db = secondaryApp.firestore();
+</script>
+
+<!-- Thu vien sweet alert  -->
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script type="module" src="./js/user-info.js"></script>
+<script src="./js/loading.js"></script>
+<script type="module" src="./js/outputsearch.js"></script>
+<script type="module" src="./js/createTest.js"></script>
+<script type="module" src="./js/entercode.js"></script>
+
+</html>
