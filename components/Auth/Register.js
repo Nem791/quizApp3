@@ -4,6 +4,7 @@ import { Login } from "./Login.js";
 import { LoginGoogle } from "./LoginGoogle.js";
 
 class Register {
+  $main;
   $container;
   $title;
   $desctitle;
@@ -24,6 +25,9 @@ class Register {
   $linkhrepSingup;
 
   constructor() {
+    this.$main = document.createElement("div");
+    this.$main.classList.add("main");
+
     this.$container = document.createElement("div");
     this.$container.classList.add("container");
 
@@ -128,6 +132,8 @@ class Register {
   };
 
   render() {
+    this.$main.appendChild(this.$container)
+
     this.$container.appendChild(this.$title);
     this.$container.appendChild(this.$desctitle);
     this.$container.appendChild(this.$btnGroupGoogle.render());
@@ -147,7 +153,7 @@ class Register {
 
     this.$container.appendChild(this.$singuplink);
 
-    return this.$container;
+    return this.$main;
   }
 }
 export { Register };

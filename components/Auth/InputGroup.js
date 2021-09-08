@@ -11,6 +11,7 @@ class InputGroup {
     this.$input = document.createElement("input");
     this.$input.type = type;
     this.$input.name = name;
+  
 
     this.$label = document.createElement("label");
     this.$label.innerHTML = label;

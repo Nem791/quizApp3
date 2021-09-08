@@ -1,4 +1,6 @@
 * {
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
 
@@ -7,40 +9,62 @@ body {
   font-family: "Open Sans", sans-serif;
   text-decoration: none;
 
-  background-color: #461a42;
+  background-image: url(./img/bg.jpg);
+  width: 100%;
+  object-fit: cover;
 }
 /* CSS AUTH */
+
+.main {
+  position:relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo a{
+  position: absolute;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0 20px;
+  font-size: 40px;
+  color: #461A42;
+  font-weight: 800;
+  padding-left: 20px;
+  text-decoration: none;
+  padding-top: 20px;
+  cursor: pointer;
+  z-index: 1;
+}
 .container {
-  background-color: white;
-  /* text-align: center; */
-  width: 480px;
+  background-color: rgba(17, 17, 17, 0.672);
+  width: 460px;
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
-  margin: 0 auto;
-  margin-top: 152px;
+  justify-content: center;
   border-radius: 12px;
   padding: 32px 42px;
+  
 }
 .title {
   text-align: center;
 
   font-weight: 700;
   font-size: 20px;
-  color: #424242;
+  color: #ff652f;
   padding: 0;
   margin: 0;
 }
 .desctitle {
   text-align: center;
-
   font-size: 12px;
   font-weight: 400;
-  color: #6d6d6d;
+  color: #ff652f;
+  margin-bottom: 10px;
+
 }
 .btn-login {
   color: #6d6d6d;
-
   width: 100%;
   display: flex;
   align-items: center;
@@ -88,15 +112,15 @@ body {
 .divideror {
   font-size: 12px;
   font-weight: 600;
-  color: #b6b6b6;
+  color: #fff;
   text-align: center;
 }
 .input-container > label {
   display: flex;
   flex-direction: column;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 600;
-  color: #6d6d6d;
+  color: #fff;
   margin-bottom: 8px;
 }
 .input-container > label > input {
@@ -128,10 +152,11 @@ body {
   border: none;
   transition: all 0.2s ease-out;
   margin-bottom: 20px;
+  cursor: pointer;
 }
 .btn-submit:hover {
-  background-color: #8854c0;
-  box-shadow: 0 4px 0 0 rgb(0 0 0 / 10%), 0 4px 0 0 #8854c0;
+  background-color: #ff652f;
+  box-shadow: 0 4px 0 0 rgb(0 0 0 / 10%), 0 4px 0 0 rgba(255, 255, 255, 0.227);
   color: #fff;
 }
 .feedbackmessage {
@@ -153,14 +178,6 @@ body {
   cursor: pointer;
 }
 .linkSignup {
-  color: orange;
+  color: #ff652f;
 }
-.logo {
-  font-size: 50px;
-  margin: 0 60px;
-}
-.logo a {
-  text-decoration: none;
-  color: #fff;
-  cursor: pointer;
-}
+
