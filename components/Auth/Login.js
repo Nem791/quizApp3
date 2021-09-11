@@ -52,7 +52,6 @@ class Login {
       "email"
     );
 
-
     this.$inputGroupPassword = new InputGroup(
       "Password",
       "password",
@@ -102,8 +101,15 @@ class Login {
         }
 
         console.log(user);
+        // Hien thong bao
+        Swal.fire({
+          icon: "success",
+          title: "Thông báo",
+          text: "Đăng nhập thành công",
+        }).then(() => {
+          window.location.href = "./main.html";
+        });
 
-        window.location.href = "./main.html";
         // ...
       })
       .catch((error) => {
@@ -113,7 +119,7 @@ class Login {
   };
 
   render() {
-    this.$main.appendChild(this.$container)
+    this.$main.appendChild(this.$container);
     this.$container.appendChild(this.$title);
     this.$container.appendChild(this.$desctitle);
     this.$container.appendChild(this.$btnGroupGoogle.render());

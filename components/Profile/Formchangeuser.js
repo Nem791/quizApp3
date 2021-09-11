@@ -30,6 +30,11 @@ firebase.auth().onAuthStateChanged((user) => {
         <input type="text" name="avatar" value=${user.photoURL}>
 
       </div>
+      <div class="field-fb">
+        <label>Link FB</label>
+        <input type="text" name="fb">
+
+      </div>
     </div>
     <hr class="hr-section" aria-hidden="true">
     <div class="action-btn-wrapper">
@@ -48,23 +53,35 @@ firebase.auth().onAuthStateChanged((user) => {
 
   const btnseve = document.querySelector(".btn-save");
   btnseve.addEventListener("click", handleSave);
+  const profile = document.querySelector(".profile-edit");
+  console.log(profile);
 
   function handleSave() {
+    profile.classList.remove("active");
     const user = firebase.auth().currentUser;
     const fullname = document.querySelector('input[name="fullname"]').value;
     const photoURL = document.querySelector('input[name="avatar"]').value;
+    const fb = document.querySelector('input[name="fb"]').value;
 
+    localStorage.setItem("fb", JSON.stringify(fb));
     user
       .updateProfile({
         displayName: fullname,
         photoURL: photoURL,
+        phoneNumber: "033333",
       })
       .then(() => {
-        alert("Sửa thành cồng");
-        window.location.href = "./profile.html";
+        Swal.fire({
+          icon: "success",
+          title: "Thông báo",
+          text: " Đổi  Thành Công",
+        }).then(() => {
+          window.location.href = "./profile.html";
+        });
       })
       .catch((error) => {
         alert("loi");
       });
+    console.log(user);
   }
 });

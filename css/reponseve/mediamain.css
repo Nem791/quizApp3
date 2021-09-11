@@ -1,0 +1,24 @@
+@media (max-width: 768px) {
+  .menu-bar {
+    display: block;
+    padding-left: 10px;
+    font-size: 30px;
+  }
+  .main-header .top-header .top-header-box {
+    width: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .main-header .top-header .logo a {
+    font-family: "Montserrat", sans-serif;
+    margin: 0 20px;
+    font-size: 30px;
+    color: #ffffff;
+    font-weight: 800;
+    padding-left: 0px;
+  }
+  .main-navigation .main-navigation-inner {
+    display: none;
+  }
+}

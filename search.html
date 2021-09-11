@@ -14,12 +14,18 @@
     <!-- Bootstrap  -->
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous"> -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
 
     <link rel="stylesheet" href="./css/test.css">
     <link rel="stylesheet" href="./css/side-bar.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/quiz-info-card.css">
+    <link rel="stylesheet" href="style2.css">
     <link rel="stylesheet" href="./css/loading.css">
-    <link rel="stylesheet" href="./css/myLibrary.css">
+    <link rel="stylesheet" href="./css/search.css">
     <title>Document</title>
 </head>
 
@@ -32,8 +38,9 @@
             <div class="top-header-box">
 
                 <div class="logo"><a href="./main.html">Quizz</a></div>
-                <form action="#">
-                    <input type="search" class="search-data" placeholder="Search..." required>
+                <form id="search">
+                    <input type="search" class="search-data" name="search" id="search-bar" placeholder="Search..."
+                        required>
                     <button type="submit" class="fas fa-search"></button>
                 </form>
                 <div class="tray">
@@ -47,7 +54,7 @@
             <div class="bottom-header-container">
                 <div class="bottom-header">
                     <div class="bottom-header-inner">
-                        <div class="title"> My library (10)</div>
+                        <div class="title"></div>
                         <div class="order-container">
                             <span class="text">Order:</span>
                         </div>
@@ -136,7 +143,56 @@
             </div>
         </nav>
     </div>
-    <footer>Footer</footer>
+    <footer>
+        <div class="footer_info">
+            <div class="footer_width about">
+                <h2>About</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe dolorem facilis assumenda. Iusto
+                    officiis eius sed dolorum ea eveniet quam ex iste, magni eos facilis, nam quia quas animi possimus.
+                </p>
+                <div class="social-media">
+                    <ul>
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer_width link">
+                <h2>Quick Link</h2>
+                <ul>
+                    <a href="#">Home</a>
+                    <a href="#">User</a>
+                    <a href="#">Service</a>
+                    <a href="#">Quizz</a>
+                    <a href="#">Contact</a>
+                </ul>
+            </div>
+            <div class="footer_width contact">
+                <h2>Contact</h2>
+                <ul>
+                    <li>
+                        <span>
+                            <i class="fas fa-map-marker-alt"></i>
+                        </span>
+                        <p>112 Phượng Trì, Thị Trấn Phùng, Đan Phượng, HN</p>
+                    </li>
+                    <li>
+                        <span><i class="fas fa-envelope"></i></span>
+                        <p>QuizzApp@gmail.com</p>
+                    </li>
+                    <li>
+                        <span><i class="fas fa-phone-volume"></i></span>
+                        <p>09 123 45678</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="copy-rigth">
+            <p>@ COPYRIGHT 2021 Quizz by team1</p>
+        </div>
+    </footer>
 </body>
 
 <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
@@ -180,8 +236,9 @@
 
 <script type="module" src="./js/user-info.js"></script>
 <script src="./js/loading.js"></script>
+
 <script type="module" src="./js/outputsearch.js"></script>
-<script type="module" src="./js/createTest.js"></script>
+<script type="module" src="./js/search.js"></script>
 <script type="module" src="./js/entercode.js"></script>
 
 </html>

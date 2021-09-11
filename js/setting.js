@@ -1,4 +1,8 @@
+// import { Login } from "../components/Auth/Login.js";
+
 const setting = document.querySelector(".select");
+const user = firebase.auth().currentUser;
+
 firebase.auth().onAuthStateChanged((user) => {
   setting.innerHTML = `
 <div class="signup-header"><img class="settings-logo" src="https://cf.quizizz.com/img/gears_icon.png" alt="">
@@ -12,6 +16,8 @@ firebase.auth().onAuthStateChanged((user) => {
 <div class="field email">
   <label>Email</label>
   <input type="email" name="email" id="email" class="text-box" value="${user.email}">
+  <label>Confirm Password</label>
+  <input type="password" name="confirmPassword" id="confirm-password" class="text-box">
 </div>
 <button class="btn-update" id="update-email">Save Changes</button>
 
@@ -25,14 +31,18 @@ firebase.auth().onAuthStateChanged((user) => {
 <hr class="hr-section" aria-hidden="true">
 
 <div class="field new-password">
+  <label>Old password</label>
+  <input type="password" name="oldpassword" id="new-password" class="text-box">
+</div>
+<div class="field new-password">
   <label>New password</label>
-  <input type="password" name="" id="new-password" class="text-box">
+  <input type="password" name="password" id="new-password" class="text-box">
 </div>
 <div class="field new-password">
   <label>New password agin</label>
-  <input type="password" name="" id="new-password" class="text-box">
+  <input type="password" name="aginpassword" id="new-password" class="text-box">
 </div>
-<button class="btn-update">Update Password</button>
+<button class="btn-update" id="update-password">Update Password</button>
 
 
 <div class="category-label">
@@ -48,23 +58,109 @@ firebase.auth().onAuthStateChanged((user) => {
 
 
 `;
-  // const updateEmail = document.getElementById("update-email");
-  // updateEmail.addEventListener("click", () => {
-  //   const valueEmail = document.querySelector('input[name="email"]').value;
-  //   const user = firebase.auth().currentUser;
-  //   const credential = promptForCredentials();
+  //// Change Email Người dùng
+  const updateEmail = document.getElementById("update-email");
+  updateEmail.addEventListener("click", () => {
+    const user = firebase.auth().currentUser;
+    const newEmail = document.querySelector('input[name ="email"]').value;
+    const confirmPassword = document.querySelector(
+      'input[name ="confirmPassword"]'
+    ).value;
+    const credential = firebase.auth.EmailAuthProvider.credential(
+      user.email,
+      confirmPassword
+    );
+    console.log(credential);
 
-  //   user
-  //     .reauthenticateWithCredential(credential)
-  //     .then(() => {
-  //       user.updateEmail("mama@gmail.com").then(() => {
-  //         alert("Đổi thành công");
-  //         // ...
-  //       });
-  //     })
-  //     .catch((error) => {
-  //       alert("loi");
-  //       // ...
-  //     });
-  // });
+    // TODO(you): prompt the user to re-provide their sign-in credential
+
+    user
+      .reauthenticateWithCredential(credential)
+      .then(() => {
+        // User re-authenticated.
+        user
+          .updateEmail(newEmail)
+          .then(() => {
+            // Update successful
+            Swal.fire({
+              icon: "success",
+              title: "Thông báo",
+              text: "Đổi thành công",
+            }).then(() => {
+              window.location.href = "./profile.html";
+            });
+
+            // alert("Đổi thành công");
+            // window.location.href = "./profile.html";
+            // ...
+          })
+          .catch((error) => {
+            // An error occurred
+            // ...
+            alert("loi");
+          });
+      })
+      .catch((error) => {
+        Swal.fire({
+          icon: "error",
+          title: "Oh Có Lỗi Xảy Ra",
+          text: `${error}`,
+        });
+      });
+  });
+
+  //// Change Password người dùng
+
+  const updatePassword = document.getElementById("update-password");
+  updatePassword.addEventListener("click", () => {
+    const user = firebase.auth().currentUser;
+    const newPassword = document.querySelector('input[name="password"]').value;
+    const aginPassword = document.querySelector(
+      'input[name ="aginpassword"]'
+    ).value;
+    const confirmPassword = document.querySelector(
+      'input[name ="oldpassword"]'
+    ).value;
+    const credential = firebase.auth.EmailAuthProvider.credential(
+      user.email,
+      confirmPassword
+    );
+    console.log(credential);
+
+    // TODO(you): prompt the user to re-provide their sign-in credential
+
+    user
+      .reauthenticateWithCredential(credential)
+      .then(() => {
+        // User re-authenticated.
+        if (newPassword === aginPassword) {
+          user
+            .updatePassword(newPassword)
+            .then(() => {
+              Swal.fire({
+                icon: "success",
+                title: "Thông báo",
+                text: "Đổi thành công",
+              }).then(() => {
+                window.location.href = "./profile.html";
+              });
+              // ...
+            })
+            .catch((error) => {
+              // An error occurred
+              // ...
+              alert("Mật khẩu mới không được để trống");
+            });
+        } else {
+          alert("Mật khẩu chưa trùng khớp");
+        }
+      })
+      .catch((error) => {
+        Swal.fire({
+          icon: "error",
+          title: "Oh Có Lỗi Xảy Ra",
+          text: `${error}`,
+        });
+      });
+  });
 });

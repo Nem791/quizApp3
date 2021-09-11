@@ -153,6 +153,7 @@
 .played {
   display: inline-block;
   margin-right: 14px;
+  text-transform: uppercase;
 }
 
 .questions-length i {
