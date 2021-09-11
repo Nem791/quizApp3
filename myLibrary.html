@@ -47,7 +47,7 @@
             <div class="bottom-header-container">
                 <div class="bottom-header">
                     <div class="bottom-header-inner">
-                        <div class="title"> My library (<span class="count"></span>)</div>
+                        <div class="title"> <span id="category"> My library </span>(<span class="count"></span>)</div>
                         <div class="order-container">
                             <span class="text">Order:</span>
                         </div>
@@ -75,7 +75,7 @@
                                 </div>
                                 <div class="collections-inner">
                                     <ul class="collections-list">
-                                        <li class="right-bar-list">
+                                        <li class="right-bar-list" data-category="savedQuiz">
                                             <button class="tag">
                                                 <i class="far fa-folder-open" aria-hidden="true"></i>
                                                 My library
@@ -87,7 +87,7 @@
                                                 Created by me
                                             </button>
                                         </li>
-                                        <li class="right-bar-list">
+                                        <li class="right-bar-list" data-category="likedQuiz">
                                             <button class="tag">
                                                 <i class="fas fa-heart" aria-hidden="true"></i>
                                                 Liked
@@ -157,6 +157,7 @@
 <script type="module" src="./js/user-info.js"></script>
 <script src="./js/loading.js"></script>
 <script type="module" src="./js/showDoneQuiz.js"></script>
+<script type="module" src="./js/renderCategory.js"></script>
 <script type="module" src="./js/entercode.js"></script>
 
 </html>

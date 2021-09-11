@@ -82,8 +82,8 @@ function renderQuiz(quizId) {
             showResults();
             renderSuggestion();
             checkLogin();
-            getInfoSavedQuiz();
             checkLikedQuiz();
+            getInfoSavedQuiz();
         })
         .catch(error => {
             console.log(error);

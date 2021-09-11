@@ -5,26 +5,33 @@ let userObject = JSON.parse(localStorage.getItem('tempUserInfo'));
 
 var docRef = db.collection("userQuizInfo").doc(userObject.email);
 
-docRef.get()
-    .then((doc) => {
-        if (doc.exists) {
-            let savedQuizArray = doc.data().savedQuiz;
-            console.log(doc.data())
-            savedQuizArray.forEach(element => {
-                const viewItem = new ViewItem();
-                resultList.appendChild(viewItem.render());
-            })
+function renderList(category) {
+    docRef.get()
+        .then((doc) => {
+            if (doc.exists) {
+                let savedQuizArray = doc.data()[category];
+                console.log(doc.data());
+                resultList.innerHTML = '';
+                savedQuizArray.forEach(element => {
+                    const viewItem = new ViewItem();
+                    resultList.appendChild(viewItem.render());
+                })
 
-            renderSavedQuiz(savedQuizArray)
+                renderSavedQuiz(savedQuizArray)
 
 
-        } else {
-            // doc.data() will be undefined in this case
-            console.log("No such document!");
-        }
-    }).catch((error) => {
-        console.log("Error getting document:", error);
-    });
+            } else {
+                // doc.data() will be undefined in this case
+                console.log("No such document!");
+            }
+        }).catch((error) => {
+            console.log("Error getting document:", error);
+            resultList.innerText = 'Đã có lỗi truy xuất. Có thể bạn chưa tạo collections!';
+            // Count 
+            document.querySelector('.count').innerText = 0;
+        });
+}
+
 
 function renderSavedQuiz(idArray) {
     fetch('http://localhost:3000/quizzes')
@@ -34,7 +41,7 @@ function renderSavedQuiz(idArray) {
         .then((data) => {
             idArray.forEach((element, index) => {
                 let resultItems = document.querySelectorAll('.search-results-item');
-                
+
                 // Count 
                 document.querySelector('.count').innerText = resultItems.length;
 
@@ -52,3 +59,4 @@ function renderSavedQuiz(idArray) {
         })
 }
 
+export {renderList};

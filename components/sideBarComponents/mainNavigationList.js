@@ -24,7 +24,8 @@ class NavigationList {
         this.$myQuizzes = document.createElement('li');
         this.$myQuizzes.id = 'my-quizzes';
         this.$myQuizzes.innerHTML = `<i class="fas fa-book-reader"></i><span role="link" tabindex="0">My
-        library</span>`;
+        collections</span>`;
+        this.$myQuizzes.addEventListener('click', () => { location.href = './myLibrary.html' })
 
         this.$profile = document.createElement('li');
         this.$profile.id = 'profile';

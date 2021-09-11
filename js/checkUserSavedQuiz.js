@@ -36,6 +36,7 @@ function getInfoSavedQuiz() {
 
 function checkSavedQuiz() {
     if (tempInfo) {
+        document.getElementById('submit-score').hidden = true;
         Swal.fire({
             icon: 'warning',
             title: 'Thông báo',

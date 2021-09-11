@@ -149,10 +149,92 @@
     height: 140%;
 }
 
+@media screen and (max-width: 1250px) {
+    .main-navigation {
+        display: none;
+    }
+    .main {
+        padding-left: 65px;
+    }
+  }
+  
+@media screen and (max-width: 634px) {
+    .main-navigation {
+        display: none;
+    }
+    .main {
+        padding-left: 5px;
+    }
 
-
-
-
+  }
+  
+@media screen and (max-width: 800px) {
+    .main-navigation {
+        display: none;
+    }
+    .aside {
+        display: none;
+    }
+    .main {
+        padding-left: 5px;
+    }
+  }
+  
+@media screen and (max-width: 320px) {
+    .article {
+        max-width: 320px;
+    }
+    .main {
+        padding-left: 0px;
+    }
+    .main-row {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        min-width: 100%;
+    }
+    .quiz-image {
+        margin: auto;
+    }
+    .quiz-details {
+        margin: auto;
+        width: 100%;
+    }
+    .content-type-header {
+        margin: auto;
+        text-align: left;
+    }
+    .quiz-name {
+        font-size: 17px;
+        width: 100%;
+        max-width: 100%;
+    }
+    .quiz-name-text {
+        width: 100%;
+    }
+    .actions-row {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .created-by {
+        padding-bottom: 20px;
+    }
+    .show-answers-btn span {
+        display: none;
+    }
+    .form-check {
+        width: 100%;
+        display: block !important;
+    }
+    .recomm-quizzes-list {
+        flex-direction: column;
+    }
+    .quiz-item {
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+}
 
 
 
