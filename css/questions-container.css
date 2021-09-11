@@ -180,9 +180,10 @@
     }
   }
   
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 400px) {
     .article {
         max-width: 320px;
+        margin: auto;
     }
     .main {
         padding-left: 0px;
@@ -198,11 +199,16 @@
     }
     .quiz-details {
         margin: auto;
+        text-align: center;
+        padding-left: initial;
         width: 100%;
     }
     .content-type-header {
         margin: auto;
-        text-align: left;
+        text-align: center;
+    }
+    .row-1, .row-2 {
+        justify-content: center;
     }
     .quiz-name {
         font-size: 17px;
@@ -233,6 +239,17 @@
     .quiz-item {
         max-width: 100% !important;
         width: 100% !important;
+    }
+    .action-btns {
+        justify-content: space-around;
+    }
+    .count-set-questions {
+        font-size: 12px;
+        width: 50px;
+    }
+    .timer {
+        width: 120px;
+        font-size: 12px;
     }
 }
 
