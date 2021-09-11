@@ -9,33 +9,18 @@ function renderSlideByCategory(myArray, slider) {
 }
 let basicArray = [];
 let otherArray = [];
-let contentSearch = [];
-const searchBar = document.getElementById("search");
-searchBar.addEventListener("submit", (e) => {
-  e.preventDefault();
-  const valuesearch = document
-    .querySelector('input[name="search"]')
-    .value.toLowerCase();
-
-  const filtersearch = contentSearch.filter((value) => {
-    return value.questionTitle.toLowerCase().includes(valuesearch);
-  });
-  localStorage.setItem("search", JSON.stringify(filtersearch));
-  console.log(filtersearch);
-  window.location.href = "./search.html";
-});
 
 fetch("http://localhost:3000/quizzes")
   .then((response) => {
     return response.json();
   })
   .then((data) => {
+    console.log(data);
     const firstSlider = document.querySelectorAll(".container-box")[0];
     const secondSlider = document.querySelectorAll(".container-box")[1];
 
     // Phan loai slider
     Object.keys(data).forEach((element) => {
-      contentSearch.push(data[element][0]);
       if (data[element][0].category == "basic") {
         basicArray.push(element);
       } else if (data[element][0].category == "other") {

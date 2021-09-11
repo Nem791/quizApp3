@@ -138,11 +138,15 @@ a:hover {
   padding: 4px 8px;
   border-radius: 8px;
 }
-.logout-btn {
+/* .logout-btn {
   font-size: 12px;
   font-weight: 600;
   background-color: #e7e7e7;
   display: inline-block;
   padding: 4px 8px;
   border-radius: 8px;
-}
+} */
+/* .login-btn:hover {
+  color: white;
+  background: #6c4298;
+} */

@@ -73,13 +73,15 @@ hr.hr-section {
 }
 
 .field-fullname label,
-.field-email label {
+.field-email label,
+.field-fb label {
   font-size: 14px;
-  width: 120px;
+  width: 140px;
   color: #393a68;
 }
 .field-fullname input,
-.field-email input {
+.field-email input,
+.field-fb input {
   background-color: #fff;
   border: 1px solid #ededed;
   color: #393a68;
@@ -89,7 +91,8 @@ hr.hr-section {
   width: 50%;
   outline: none;
 }
-.field-fullname {
+.field-fullname,
+.field-email {
   margin-bottom: 10px;
 }
 .section-icon {

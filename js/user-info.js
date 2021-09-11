@@ -14,7 +14,7 @@ firebase.auth().onAuthStateChanged((user) => {
     </div>
 <div class="user-details">
     <div class="name">${user.displayName}</div>
-    <button class="logout-btn">Log out</button>
+    <button class="logout-btn">Log out <i class="fas fa-sign-out-alt"></i></button>
 </div>
    `;
     const btnLogout = document.querySelector(".logout-btn");
@@ -37,11 +37,15 @@ firebase.auth().onAuthStateChanged((user) => {
 
   function handleLogout() {
     firebase.auth().signOut();
-    localStorage.removeItem('tempUserInfo');
+    localStorage.removeItem("tempUserInfo");
     window.location.href = "./main.html";
   }
 });
 const profile = document.getElementById("profile");
 profile.addEventListener("click", () => {
   window.location.href = "./profile.html";
+});
+const mylibrary = document.getElementById("leaderboard");
+mylibrary.addEventListener("click", () => {
+  window.location.href = "./myLibrary.html";
 });

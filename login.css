@@ -16,19 +16,19 @@ body {
 /* CSS AUTH */
 
 .main {
-  position:relative;
+  position: relative;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.logo a{
+.logo a {
   position: absolute;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   margin: 0 20px;
   font-size: 40px;
-  color: #461A42;
+  color: #461a42;
   font-weight: 800;
   padding-left: 20px;
   text-decoration: none;
@@ -44,7 +44,6 @@ body {
   justify-content: center;
   border-radius: 12px;
   padding: 32px 42px;
-  
 }
 .title {
   text-align: center;
@@ -61,7 +60,6 @@ body {
   font-weight: 400;
   color: #ff652f;
   margin-bottom: 10px;
-
 }
 .btn-login {
   color: #6d6d6d;
@@ -162,7 +160,7 @@ body {
 .feedbackmessage {
   font-size: 14px;
   font-weight: bold;
-  color: red;
+  color: #e4ff00;
   margin-bottom: 10px;
   text-align: center;
 }
@@ -180,4 +178,3 @@ body {
 .linkSignup {
   color: #ff652f;
 }
-
