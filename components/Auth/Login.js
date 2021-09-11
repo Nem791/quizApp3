@@ -4,6 +4,7 @@ import { LoginGoogle } from "./LoginGoogle.js";
 import { Register } from "./Register.js";
 
 class Login {
+  $main;
   $container;
   $title;
   $desctitle;
@@ -22,11 +23,14 @@ class Login {
   $linkhrepSingup;
 
   constructor() {
+    this.$main = document.createElement("div");
+    this.$main.classList.add("main");
+
     this.$container = document.createElement("div");
     this.$container.classList.add("container");
 
     this.$title = document.createElement("h1");
-    this.$title.innerHTML = "Login to Quizizzz";
+    this.$title.innerHTML = "Login to Quizizz";
     this.$title.classList.add("title");
 
     this.$desctitle = document.createElement("p");
@@ -47,6 +51,7 @@ class Login {
       "email",
       "email"
     );
+
 
     this.$inputGroupPassword = new InputGroup(
       "Password",
@@ -108,6 +113,7 @@ class Login {
   };
 
   render() {
+    this.$main.appendChild(this.$container)
     this.$container.appendChild(this.$title);
     this.$container.appendChild(this.$desctitle);
     this.$container.appendChild(this.$btnGroupGoogle.render());
@@ -125,7 +131,7 @@ class Login {
 
     this.$container.appendChild(this.$singuplink);
 
-    return this.$container;
+    return this.$main;
   }
 }
 export { Login };
