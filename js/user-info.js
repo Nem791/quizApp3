@@ -45,7 +45,11 @@ const profile = document.getElementById("profile");
 profile.addEventListener("click", () => {
   window.location.href = "./profile.html";
 });
-const mylibrary = document.getElementById("leaderboard");
-mylibrary.addEventListener("click", () => {
-  window.location.href = "./myLibrary.html";
+
+/// opensilbar
+const sildbar = document.querySelector(".main-navigation-inner");
+const menuBar = document.querySelector(".menu-bar");
+menuBar.addEventListener("click", () => {
+  menuBar.classList.toggle("fa-times");
+  sildbar.classList.toggle("active");
 });

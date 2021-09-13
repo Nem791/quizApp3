@@ -134,8 +134,8 @@ hr.hr-section {
 }
 
 .page-inner {
-  margin-top: 70px;
   width: 1200px;
+  margin: 70px auto;
 }
 .row-profile-header {
   box-shadow: 0 1px 3px 0 rgb(0 0 0 / 10%), 0 4px 6px 0 rgb(0 0 0 / 11%);
@@ -282,4 +282,29 @@ hr.hr-section {
   border-radius: 4px 4px 0 0;
   background-color: #7d72ec;
   transition: 0.2s all ease-in-out;
+}
+
+/* reponseve */
+@media (max-width: 1023px) {
+  .row-top {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .col-middle {
+    width: 100%;
+    text-align: center;
+  }
+  .col-right {
+    width: 100%;
+    text-align: center;
+  }
+  .field-fullname input,
+  .field-email input,
+  .field-fb input {
+    width: 100%;
+  }
+}
+@media (max-width: 766px) {
 }

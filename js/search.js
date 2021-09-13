@@ -26,3 +26,9 @@ fetch("http://localhost:3000/quizzes")
       contentSearch.push(data[element]);
     });
   });
+const searchMobile = document.getElementById("search-mobile");
+const btnSearch = document.querySelector(".btn-search");
+btnSearch.addEventListener("click", () => {
+  btnSearch.classList.toggle("fa-times");
+  searchMobile.classList.toggle("active");
+});

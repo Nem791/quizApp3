@@ -65,7 +65,7 @@
 }
 
 .page-inner {
-  margin: auto;
+  margin: 0 auto 50px;
   width: 100%;
   overflow: hidden;
   max-width: 1200px;
@@ -301,4 +301,17 @@
 
 .no-absolute {
   position: initial;
+}
+@media (max-width: 1023px) {
+  .bottom-header-container {
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    margin-left: 0px;
+  }
+  .my-quizizz-container {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 24px 12px 12px 24px;
+  }
 }

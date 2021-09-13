@@ -66,5 +66,15 @@ fetch("http://localhost:3000/quizzes")
       infinite: true,
       slidesToShow: 3,
       slidesToScroll: 1,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          },
+        },
+      ],
     });
   });
