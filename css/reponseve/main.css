@@ -1,0 +1,126 @@
+#main {
+  display: flex;
+  min-height: calc(100vh - 40vh);
+}
+@media (max-width: 1023px) {
+  .main-header .top-header .top-header-box {
+    width: 92%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .menu-bar {
+    display: block;
+    padding-left: 15px;
+    font-size: 30px;
+  }
+  .main-header .top-header .logo a {
+    font-family: "Montserrat", sans-serif;
+    margin: 0 20px;
+    font-size: 30px;
+    color: #ffffff;
+    font-weight: 800;
+    padding-left: 0px;
+  }
+  .main-navigation .main-navigation-inner {
+    position: fixed;
+    left: -200px;
+    width: 200px;
+    box-sizing: border-box;
+    z-index: 997;
+    height: 100%;
+    color: #292a3a;
+    background: #ffffff;
+    box-shadow: 1px 0px 0px rgb(9 9 9 / 10%);
+    transition: all 0.2s linear;
+  }
+  .main-navigation .main-navigation-inner.active {
+    position: fixed;
+    left: 0px;
+    width: 200px;
+    box-sizing: border-box;
+    z-index: 997;
+    height: 100%;
+    color: #292a3a;
+    background: #ffffff;
+    box-shadow: 1px 0px 0px rgb(9 9 9 / 10%);
+  }
+
+  .main-header .top-header .tray {
+    height: 56px;
+    display: flex;
+    flex: 1;
+  }
+  button.slick-next.slick-arrow::before {
+    color: #000;
+    font-size: 0px;
+  }
+  footer {
+    padding-left: 0;
+  }
+}
+@media (max-width: 767px) {
+  #main,
+  .aside {
+    background-color: unset;
+  }
+  .main-header .top-header .top-header-box {
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .welcome h3 {
+    text-align: center;
+    font-size: 22px;
+    margin-top: 50px;
+  }
+  .main-header .top-header .tray {
+    display: none;
+  }
+  #search {
+    display: none;
+  }
+  .content-text {
+    overflow-x: auto;
+  }
+  .btn-search {
+    padding: 0 15px;
+    background: #ff3d00;
+    border: none;
+    cursor: pointer;
+    font-size: 17px;
+    color: #fff;
+    border-radius: 2px;
+    height: 40px;
+  }
+  #search-mobile {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    transform: translateY(-100px);
+    transition: all 0.2s linear;
+    background-color: #ffdc9c;
+  }
+  #search-mobile.active {
+    transform: translateY(0px);
+  }
+  .search-data {
+    flex: 1;
+    height: 45px;
+    padding: 0 10px;
+    color: #000;
+    font-weight: 500;
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 16px;
+  }
+  .btn-search-mobile {
+    width: 50px;
+    background-color: #ff5647;
+  }
+  .btn-search {
+    display: block;
+  }
+}

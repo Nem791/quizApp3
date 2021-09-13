@@ -14,6 +14,20 @@ searchBar.addEventListener("submit", (e) => {
   localStorage.setItem("search", JSON.stringify(filtersearch));
   window.location.href = `./search.html?search=${valuesearch}`;
 });
+const btnsearchMobile = document.querySelector(".btn-search-mobile");
+if (btnsearchMobile) {
+  btnsearchMobile.addEventListener("click", () => {
+    const valuesearch = document
+      .querySelector('input[name="search-mobile"]')
+      .value.toLowerCase();
+    const filtersearch = contentSearch.filter((value) => {
+      return value[0].questionTitle.toLowerCase().includes(valuesearch);
+    });
+    localStorage.setItem("search", JSON.stringify(filtersearch));
+    window.location.href = `./search.html?search=${valuesearch}`;
+  });
+} else {
+}
 
 fetch("http://localhost:3000/quizzes")
   .then((response) => {
@@ -26,3 +40,11 @@ fetch("http://localhost:3000/quizzes")
       contentSearch.push(data[element]);
     });
   });
+const searchMobile = document.getElementById("search-mobile");
+const btnSearch = document.querySelector(".btn-search");
+if (searchMobile && btnSearch) {
+  btnSearch.addEventListener("click", () => {
+    btnSearch.classList.toggle("fa-times");
+    searchMobile.classList.toggle("active");
+  });
+}

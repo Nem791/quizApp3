@@ -4,14 +4,10 @@
   font-family: "Montserrat", sans-serif;
   box-sizing: border-box;
 }
-#welcome {
-  width: 1200px;
-}
-.main-header {
-  position: fixed;
-  width: 100%;
-  z-index: 997;
-  max-height: 56px;
+
+#main {
+  display: flex;
+  min-height: calc(100vh - 40vh);
 }
 
 .main-header .top-header {
@@ -166,6 +162,12 @@ a:hover {
   width: 162px;
   height: 40px;
 }
+.btn-search {
+  display: none;
+}
+#search-mobile {
+  display: none;
+}
 
 .main-header .top-header .tray {
   height: 56px;
@@ -202,8 +204,9 @@ a:hover {
 /* CONTAINER */
 
 .test {
-  margin-top: 50px;
-  width: calc(100% - 200px);
+  padding-top: 50px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .welcome h3 {
@@ -342,32 +345,19 @@ footer .footer_info .footer_width.link ul a {
   color: #ffff;
   margin-bottom: 15px;
   font-size: 20px;
-  text-decoration: overline;
   margin-right: 5px;
 }
 
 footer .footer_info .footer_width.link ul a:hover {
   color: #ff3d00;
 }
-
-footer .footer_info .footer_width.contact ul li {
+.contact_item {
   display: flex;
   align-items: center;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
-
-footer .footer_info .footer_width.contact ul li:hover {
-  background: #461a42;
-}
-
-footer .footer_info .footer_width.contact ul li span {
-  margin-right: 15px;
-  text-align: center;
-}
-
-footer .footer_info .footer_width.contact ul li p {
-  display: flex;
-  align-items: center;
+.contact_item span {
+  margin-left: 30px;
 }
 
 .copy-rigth {

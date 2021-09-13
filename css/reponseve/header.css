@@ -1,0 +1,83 @@
+@media (max-width: 1023px) {
+  .main-header .top-header .top-header-box {
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .menu-bar {
+    display: block;
+    padding-left: 15px;
+    font-size: 30px;
+  }
+  .main-header .top-header .logo a {
+    font-family: "Montserrat", sans-serif;
+    margin: 0 20px;
+    font-size: 30px;
+    color: #ffffff;
+    font-weight: 800;
+    padding-left: 0px;
+  }
+  .main-navigation {
+    width: 0px;
+  }
+  #main > nav {
+    flex: 0;
+  }
+  .main-navigation .main-navigation-inner {
+    position: fixed;
+    left: -200px;
+    width: 200px;
+    box-sizing: border-box;
+    z-index: 997;
+    height: 100%;
+    color: #292a3a;
+    background: #ffffff;
+    box-shadow: 1px 0px 0px rgb(9 9 9 / 10%);
+    transition: all 0.2s linear;
+  }
+  .main-navigation .main-navigation-inner.active {
+    position: fixed;
+    left: 0px;
+    width: 200px;
+    box-sizing: border-box;
+    z-index: 997;
+    height: 100%;
+    color: #292a3a;
+    background: #ffffff;
+    box-shadow: 1px 0px 0px rgb(9 9 9 / 10%);
+  }
+
+  .main-header .top-header .tray {
+    height: 56px;
+    display: flex;
+    flex: 1;
+  }
+}
+@media (max-width: 767px) {
+  #main,
+  .aside {
+    background-color: unset;
+  }
+  .main-header .top-header .top-header-box {
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .welcome h3 {
+    text-align: center;
+    font-size: 22px;
+    margin-top: 70px;
+  }
+  .main-header .top-header .tray {
+    height: 56px;
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    margin-right: -25px;
+  }
+  #search {
+    display: none;
+  }
+}
