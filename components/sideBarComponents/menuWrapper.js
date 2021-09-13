@@ -13,6 +13,7 @@ class MenuWrapper {
 
         this.$createBtn = document.createElement('button');
         this.$createBtn.classList.add('create-btn');
+        this.$createBtn.addEventListener('click', () => { location.href = './create.html'; })
 
         this.$plusCircle = document.createElement('i');
         this.$plusCircle.classList.add('far', 'fa-plus-circle');

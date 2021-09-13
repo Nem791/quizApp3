@@ -179,6 +179,15 @@
         padding-left: 5px;
     }
   }
+
+@media screen and (max-width: 460px) {
+    .timer {
+        width: 120px;
+    }
+    .count-set-questions {
+        width: min-content;
+    }
+}
   
 @media screen and (max-width: 400px) {
     .article {

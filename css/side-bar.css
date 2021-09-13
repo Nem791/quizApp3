@@ -12,6 +12,7 @@
 .article {
   /* background-color: wheat; */
   padding-top: 34px;
+  max-width: 720px;
 }
 
 .mt-5 {
