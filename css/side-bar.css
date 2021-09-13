@@ -6,13 +6,12 @@
 
 #main,
 .aside {
-  background-color: #f2f2f2 !important;
+  /* background-color: #f2f2f2; */
 }
 
 .article {
   /* background-color: wheat; */
   padding-top: 34px;
-  max-width: 720px;
 }
 
 .mt-5 {

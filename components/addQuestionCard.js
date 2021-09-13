@@ -28,6 +28,7 @@ class Question {
         this.$btnDelete = document.createElement('div');
         this.$btnDelete.classList.add('btn-delete');
         this.$btnDelete.innerHTML = '<i class="fas fa-trash-alt"></i>';
+        this.$btnDelete.addEventListener('click', () => {this.$container.remove()});
 
         this.$body = document.createElement('div');
         this.$body.classList.add('body');
@@ -36,13 +37,14 @@ class Question {
         this.$bodyFull.classList.add('body-full');
 
         this.$titleBody = document.createElement('div');
-        this.$titleBody.classList.add('title');
+        this.$titleBody.classList.add('title', 'question-input');
 
         this.$divider = document.createElement('div');
         this.$divider.classList.add('divider');
 
         this.$dividerText = document.createElement('div');
         this.$dividerText.classList.add('divider-text');
+        this.$dividerText.innerText = 'answer choices';
 
         this.$answer = document.createElement('div');
         this.$answer.classList.add('answer');

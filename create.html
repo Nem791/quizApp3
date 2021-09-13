@@ -49,14 +49,14 @@
             </div> 
             <div class="questions-body">
                 <div class="questions">
-                    <div class="question">
+                    <!-- <div class="question">
                         <div class="question-header">
                             <div class="title">Question</div>
                             <div class="btn-delete"><i class="fas fa-trash-alt"></i></div>
                         </div>
                         <div class="body">
                             <div class="body-full">
-                                <div class="title">Ahihi</div>
+                                <div class="title question-input">Ahihi</div>
                                 <div class="divider">
                                     <div class="divider-text">answer choices</div>
                                 </div>
@@ -80,7 +80,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div> 
             <div class="quiz-info">
@@ -124,32 +124,32 @@
 
                     <div class="modal_answer">
                         <div class="answer1">
-                            <button><i class="fas fa-check "></i></button>
+                            <button class="check-right-answer-button"><i class="fas fa-check "></i></button>
                             <div class="input-answer">
-                                <input type="text" id="question" class="form__input" autocomplete="off" placeholder=" Answer option 1">
+                                <input type="text" id="question" class="form__input form-option-input" autocomplete="off" placeholder=" Answer option 1">
 
                             </div>
                         </div>
                         <div class="answer1">
-                            <button><i class="fas fa-check "></i></button>
+                            <button class="check-right-answer-button"><i class="fas fa-check "></i></button>
                             <div class="input-answer">
-                                <input type="text" id="question" class="form__input" autocomplete="off" placeholder=" Answer option 2">
-
-                            </div>
-                        </div>
-
-                        <div class="answer1">
-                            <button><i class="fas fa-check "></i></button>
-                            <div class="input-answer">
-                                <input type="text" id="question" class="form__input" autocomplete="off" placeholder=" Answer option 3">
+                                <input type="text" id="question" class="form__input form-option-input" autocomplete="off" placeholder=" Answer option 2">
 
                             </div>
                         </div>
 
                         <div class="answer1">
-                            <button><i class="fas fa-check "></i></button>
+                            <button class="check-right-answer-button"><i class="fas fa-check "></i></button>
                             <div class="input-answer">
-                                <input type="text" id="question" class="form__input" autocomplete="off" placeholder=" Answer option 4">
+                                <input type="text" id="question" class="form__input form-option-input" autocomplete="off" placeholder=" Answer option 3">
+
+                            </div>
+                        </div>
+
+                        <div class="answer1">
+                            <button class="check-right-answer-button"><i class="fas fa-check "></i></button>
+                            <div class="input-answer">
+                                <input type="text" id="question" class="form__input form-option-input" autocomplete="off" placeholder=" Answer option 4">
 
                             </div>
                         </div>
@@ -165,6 +165,7 @@
                     <div class="footer-box">
                         <a href="#"><button class="cancel">CANCEL</button></a>
                         <button class="ad"><i class="fas fa-save"></i> SAVE</button>
+                        <p class="error-notify" style="margin-top: 10px;"></p>
                     </div>
                 </div>
 
@@ -172,6 +173,10 @@
         </div>
     </div>
 </body>
+
+
+<!-- Thu vien sweet alert  -->
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 <script type="module" src="./js/createQuiz.js"></script>
 </html>
