@@ -76,11 +76,7 @@
     margin-top: 50px;
   }
   .main-header .top-header .tray {
-    height: 56px;
-    display: flex;
-    flex: 1;
-    justify-content: flex-end;
-    margin-right: -25px;
+    display: none;
   }
   #search {
     display: none;
@@ -109,9 +105,9 @@
   #search-mobile.active {
     transform: translateY(0px);
   }
-  form .search-data {
+  .search-data {
     flex: 1;
-    height: 40px;
+    height: 45px;
     padding: 0 10px;
     color: #000;
     font-weight: 500;
@@ -120,8 +116,9 @@
     outline: none;
     font-size: 16px;
   }
-  form .btn-search-mobile {
-    width: 30px;
+  .btn-search-mobile {
+    width: 50px;
+    background-color: #ff5647;
   }
   .btn-search {
     display: block;
