@@ -26,7 +26,7 @@ firebase.auth().onAuthStateChanged((user) => {
 </button>
 <div class="user-details">
     <div class="name">Have an account?</div>
-    <button class="login-btn">Log in now</button>
+    <button class="login-btn">Log in now <i class="fas fa-sign-in-alt"></i></button>
 </div>
     `;
     const btnLogin = document.querySelector(".login-btn");

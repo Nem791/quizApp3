@@ -126,13 +126,15 @@ class Register {
             displayName: fullName,
           });
         }
-        // firebase.auth().currentUser.updateProfile({
-        //   displayName: fullName,
-        // });
       })
       .then(() => {
-        this.$feedbackmessage.innerHTML = "Đăng ký thành công";
-        // window.location.href = "./login.html";
+        Swal.fire({
+          icon: "success",
+          title: "Thông báo",
+          text: "Đăng ký thành công",
+        }).then(() => {
+          window.location.href = "./login.html";
+        });
       })
 
       .catch((error) => {
