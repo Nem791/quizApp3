@@ -361,9 +361,9 @@
     box-sizing: border-box;
   }
   .click-show {
-    position: absolute;
+    position: fixed;
     right: 15px;
-    top: 35px;
+    top: 160px;
 
     font-size: 30px;
     color: #dab33f;
