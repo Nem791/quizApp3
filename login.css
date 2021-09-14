@@ -9,7 +9,7 @@ body {
   font-family: "Open Sans", sans-serif;
   text-decoration: none;
 
-  background-image: url(./img/bg.jpg);
+  background-color: #461a42;
   width: 100%;
   object-fit: cover;
 }
@@ -25,10 +25,10 @@ body {
 
 .logo a {
   position: absolute;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Kaushan Script", cursive;
   margin: 0 20px;
   font-size: 40px;
-  color: #461a42;
+  color: #fff;
   font-weight: 800;
   padding-left: 20px;
   text-decoration: none;
@@ -37,7 +37,7 @@ body {
   z-index: 1;
 }
 .container {
-  background-color: rgba(17, 17, 17, 0.672);
+  background-color: #fff;
   width: 460px;
   display: flex;
   flex-direction: column;
@@ -46,20 +46,18 @@ body {
   padding: 32px 42px;
 }
 .title {
-  text-align: center;
-
-  font-weight: 700;
   font-size: 20px;
-  color: #ff652f;
-  padding: 0;
-  margin: 0;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #424242;
+  text-align: center;
 }
 .desctitle {
   text-align: center;
   font-size: 12px;
   font-weight: 400;
-  color: #ff652f;
-  margin-bottom: 10px;
+  color: #6d6d6d;
+  margin-bottom: 32px;
 }
 .btn-login {
   color: #6d6d6d;
@@ -116,10 +114,10 @@ body {
 .input-container > label {
   display: flex;
   flex-direction: column;
-  font-size: 14px;
   font-weight: 600;
-  color: #fff;
   margin-bottom: 8px;
+  font-size: 12px;
+  color: #6d6d6d;
 }
 .input-container > label > input {
   margin-top: 8px;
@@ -131,6 +129,7 @@ body {
   padding: 10px 16px;
 }
 .error-msg {
+  font-weight: 600;
   margin-left: 4px;
   margin-bottom: 4px;
   font-size: 12px;
@@ -145,22 +144,22 @@ body {
   font-weight: 600;
   border-radius: 4px;
   font-size: 14px;
-  background-color: #e5e5e5;
-  color: rgba(41, 42, 58, 0.34);
+  background-color: #461a42;
+  color: #fff;
   border: none;
   transition: all 0.2s ease-out;
   margin-bottom: 20px;
   cursor: pointer;
 }
 .btn-submit:hover {
-  background-color: #ff652f;
   box-shadow: 0 4px 0 0 rgb(0 0 0 / 10%), 0 4px 0 0 rgba(255, 255, 255, 0.227);
   color: #fff;
+  transform: scale(1.05);
 }
 .feedbackmessage {
   font-size: 14px;
   font-weight: bold;
-  color: #e4ff00;
+  color: red;
   margin-bottom: 10px;
   text-align: center;
 }
@@ -177,4 +176,11 @@ body {
 }
 .linkSignup {
   color: #ff652f;
+}
+@media (max-width: 767px) {
+  .container {
+    max-width: 400px;
+    width: calc(100% - 16px);
+    border-radius: 4px;
+  }
 }

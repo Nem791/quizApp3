@@ -16,6 +16,6 @@ body {
   flex: 0 0 18vw;
   background: beige;
 }
-/* #main > nav {
+#main > nav {
   order: -1;
-} */
+}

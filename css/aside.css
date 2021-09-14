@@ -1,39 +1,35 @@
 .aside {
-    padding: 30px;
+  padding: 30px;
 }
 
 .ad-container {
-    position: fixed;
+  position: fixed;
+  margin-top: 65px;
+  margin-right: 10px;
 }
 
 .ad-group-content {
-    border: solid;
+  border: solid;
 }
 
 .ad-image {
-    width: 336px;
+  width: 100%;
 }
 
 .remove-ads-btn-container {
-    padding: 20px;
-    display: flex;
-    justify-content: center;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
 }
 
 .remove-ads-btn {
-    border: solid;
-    color: white;
-    background-color: peru;
-    padding: 4px;
-    border-radius: 9px;
+  border: solid;
+  color: white;
+  background-color: peru;
+  padding: 4px;
+  border-radius: 9px;
 }
 
 .remove-ads-btn:hover {
-    background-color: orange;
-    
+  background-color: orange;
 }
-
-
-
-
-

@@ -92,6 +92,7 @@ class Login {
       .auth()
       .signInWithEmailAndPassword(email, password)
       .then((userCredential) => {
+        console.log(userCredential);
         var user = userCredential.user;
         if (user.photoURL === null) {
           user.updateProfile({
@@ -100,7 +101,6 @@ class Login {
           });
         }
 
-        console.log(user);
         // Hien thong bao
         Swal.fire({
           icon: "success",

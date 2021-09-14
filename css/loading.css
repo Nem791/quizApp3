@@ -1,5 +1,5 @@
 .loader-wrapper {
-  position: fixed;
+  position: fixed !important;
   width: 100%;
   height: 100%;
   background-color: #242f3f;
@@ -12,7 +12,6 @@
   display: inline-block;
   width: 30px;
   height: 30px;
-
   position: relative;
   top: 50%;
   border: 4px solid #fff;

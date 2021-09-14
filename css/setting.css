@@ -103,3 +103,6 @@
   background-color: #ec0b43;
   color: #fff;
 }
+.btn-disabled {
+  background-color: #e0dfec;
+}
