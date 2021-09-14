@@ -10,7 +10,7 @@ function renderSlideByCategory(myArray, slider) {
 let basicArray = [];
 let otherArray = [];
 
-fetch("http://localhost:3000/quizzes")
+fetch("https://apiquizizz.herokuapp.com/quizzes")
   .then((response) => {
     return response.json();
   })

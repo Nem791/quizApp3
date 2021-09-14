@@ -6,7 +6,7 @@
 
 #main,
 .aside {
-  /* background-color: #f2f2f2; */
+  background-color: #f2f2f2;
 }
 
 .article {
@@ -47,7 +47,14 @@
 }
 
 .name {
-  font-size: 14px;
+  font-size: 13px;
+  font-weight: 600;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
 }
 
 .user-img {
@@ -164,13 +171,16 @@ ul {
 }
 
 .user-details button {
-  padding: 5px 0px;
+  padding: 5px 2px;
   border-radius: 5px;
-  font-size: 16px;
+  font-size: 12px;
+  font-weight: 600;
+  transition: 0.2s linear;
 }
 .user-details button:hover {
   color: white;
   background: #6c4298;
+  transform: scale(1.1);
 }
 
 .main nav .main-navigation-inner .create-menu-wrapper button:hover {

@@ -4,9 +4,9 @@ const setting = document.querySelector(".select");
 const user = firebase.auth().currentUser;
 
 firebase.auth().onAuthStateChanged((user) => {
-console.log(typeof user.emailVerified);
-if (!user.emailVerified) {
-setting.innerHTML = `
+  console.log(typeof user.emailVerified);
+  if (!user.emailVerified) {
+    setting.innerHTML = `
 <div class="signup-header"><img class="settings-logo" src="https://cf.quizizz.com/img/gears_icon.png" alt="">
   <h1 class="title">Settings</h1>
 </div>
@@ -60,10 +60,9 @@ setting.innerHTML = `
 
 
 `;
-} else {
-setting.innerHTML = `
-<div>Bạn đang đăng nhập bằng Google. Tính năng đổi thông tin đang phát triển</div>
-<div>Hãy đăng nhập bằng tài khoản để được trải nghiệm tốt hơn</div>
+  } else {
+    setting.innerHTML = `
+<div>Tính năng đổi thông tin đang phát triển với dạng đăng nhập Googole</div>
 <div class="signup-header"><img class="settings-logo" src="https://cf.quizizz.com/img/gears_icon.png" alt="">
   <h1 class="title">Settings</h1>
 </div>
@@ -117,111 +116,111 @@ setting.innerHTML = `
 
 
 `;
-}
+  }
 
-//// Change Email Người dùng
-const updateEmail = document.getElementById("update-email");
-updateEmail.addEventListener("click", () => {
-const user = firebase.auth().currentUser;
-const newEmail = document.querySelector('input[name ="email"]').value;
-const confirmPassword = document.querySelector(
-'input[name ="confirmPassword"]'
-).value;
-const credential = firebase.auth.EmailAuthProvider.credential(
-user.email,
-confirmPassword
-);
-console.log(credential);
+  //// Change Email Người dùng
+  const updateEmail = document.getElementById("update-email");
+  updateEmail.addEventListener("click", () => {
+    const user = firebase.auth().currentUser;
+    const newEmail = document.querySelector('input[name ="email"]').value;
+    const confirmPassword = document.querySelector(
+      'input[name ="confirmPassword"]'
+    ).value;
+    const credential = firebase.auth.EmailAuthProvider.credential(
+      user.email,
+      confirmPassword
+    );
+    console.log(credential);
 
-// TODO(you): prompt the user to re-provide their sign-in credential
+    // TODO(you): prompt the user to re-provide their sign-in credential
 
-user
-.reauthenticateWithCredential(credential)
-.then(() => {
-// User re-authenticated.
-user
-.updateEmail(newEmail)
-.then(() => {
-// Update successful
-Swal.fire({
-icon: "success",
-title: "Thông báo",
-text: "Đổi thành công",
-}).then(() => {
-window.location.href = "./profile.html";
-});
+    user
+      .reauthenticateWithCredential(credential)
+      .then(() => {
+        // User re-authenticated.
+        user
+          .updateEmail(newEmail)
+          .then(() => {
+            // Update successful
+            Swal.fire({
+              icon: "success",
+              title: "Thông báo",
+              text: "Đổi thành công",
+            }).then(() => {
+              window.location.href = "./profile.html";
+            });
 
-// alert("Đổi thành công");
-// window.location.href = "./profile.html";
-// ...
-})
-.catch((error) => {
-// An error occurred
-// ...
-alert("loi");
-});
-})
-.catch((error) => {
-Swal.fire({
-icon: "error",
-title: "Oh Có Lỗi Xảy Ra",
-text: `${error}`,
-});
-});
-});
+            // alert("Đổi thành công");
+            // window.location.href = "./profile.html";
+            // ...
+          })
+          .catch((error) => {
+            // An error occurred
+            // ...
+            alert("loi");
+          });
+      })
+      .catch((error) => {
+        Swal.fire({
+          icon: "error",
+          title: "Oh Có Lỗi Xảy Ra",
+          text: `${error}`,
+        });
+      });
+  });
 
-//// Change Password người dùng
+  //// Change Password người dùng
 
-const updatePassword = document.getElementById("update-password");
-updatePassword.addEventListener("click", () => {
-const user = firebase.auth().currentUser;
-const newPassword = document.querySelector('input[name="password"]').value;
-const aginPassword = document.querySelector(
-'input[name ="aginpassword"]'
-).value;
-const confirmPassword = document.querySelector(
-'input[name ="oldpassword"]'
-).value;
-const credential = firebase.auth.EmailAuthProvider.credential(
-user.email,
-confirmPassword
-);
-console.log(credential);
+  const updatePassword = document.getElementById("update-password");
+  updatePassword.addEventListener("click", () => {
+    const user = firebase.auth().currentUser;
+    const newPassword = document.querySelector('input[name="password"]').value;
+    const aginPassword = document.querySelector(
+      'input[name ="aginpassword"]'
+    ).value;
+    const confirmPassword = document.querySelector(
+      'input[name ="oldpassword"]'
+    ).value;
+    const credential = firebase.auth.EmailAuthProvider.credential(
+      user.email,
+      confirmPassword
+    );
+    console.log(credential);
 
-// TODO(you): prompt the user to re-provide their sign-in credential
+    // TODO(you): prompt the user to re-provide their sign-in credential
 
-user
-.reauthenticateWithCredential(credential)
-.then(() => {
-// User re-authenticated.
-if (newPassword === aginPassword) {
-user
-.updatePassword(newPassword)
-.then(() => {
-Swal.fire({
-icon: "success",
-title: "Thông báo",
-text: "Đổi thành công",
-}).then(() => {
-window.location.href = "./profile.html";
-});
-// ...
-})
-.catch((error) => {
-// An error occurred
-// ...
-alert("Mật khẩu mới không được để trống");
-});
-} else {
-alert("Mật khẩu chưa trùng khớp");
-}
-})
-.catch((error) => {
-Swal.fire({
-icon: "error",
-title: "Oh Có Lỗi Xảy Ra",
-text: `${error}`,
-});
-});
-});
+    user
+      .reauthenticateWithCredential(credential)
+      .then(() => {
+        // User re-authenticated.
+        if (newPassword === aginPassword) {
+          user
+            .updatePassword(newPassword)
+            .then(() => {
+              Swal.fire({
+                icon: "success",
+                title: "Thông báo",
+                text: "Đổi thành công",
+              }).then(() => {
+                window.location.href = "./profile.html";
+              });
+              // ...
+            })
+            .catch((error) => {
+              // An error occurred
+              // ...
+              alert("Mật khẩu mới không được để trống");
+            });
+        } else {
+          alert("Mật khẩu chưa trùng khớp");
+        }
+      })
+      .catch((error) => {
+        Swal.fire({
+          icon: "error",
+          title: "Oh Có Lỗi Xảy Ra",
+          text: `${error}`,
+        });
+      });
+  });
 });
