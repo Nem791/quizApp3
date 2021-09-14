@@ -110,7 +110,7 @@ class Register {
       this.$inputGroupFullName.setError(null);
     }
     if (!password) {
-      this.$inputGroupPassword.setError("Mật khẩu quá ngắn");
+      this.$inputGroupPassword.setError("Bạn chưa nhập mật khẩu");
     }
     if (password != confirmPassword) {
       this.$inputGroupConfirmPassWord.setError("Mật khẩu không trùng khớp");
@@ -118,21 +118,30 @@ class Register {
     firebase
       .auth()
       .createUserWithEmailAndPassword(email, password)
-      .then(() => {
-        firebase.auth().currentUser.updateProfile({
-          displayName: fullName,
-        });
-        this.$feedbackmessage.innerHTML = "Đăng ký thành công";
-        window.location.href = "./login.html";
-        // this.$inputGroupEmail.setInputValue("");
+      .then((userCredential) => {
+        var user = userCredential.user;
+        console.log(user);
+        if (user.displayName === null) {
+          user.updateProfile({
+            displayName: fullName,
+          });
+        }
+        // firebase.auth().currentUser.updateProfile({
+        //   displayName: fullName,
+        // });
       })
+      .then(() => {
+        this.$feedbackmessage.innerHTML = "Đăng ký thành công";
+        // window.location.href = "./login.html";
+      })
+
       .catch((error) => {
         this.$feedbackmessage.innerHTML = error.toString();
       });
   };
 
   render() {
-    this.$main.appendChild(this.$container)
+    this.$main.appendChild(this.$container);
 
     this.$container.appendChild(this.$title);
     this.$container.appendChild(this.$desctitle);
