@@ -114,32 +114,33 @@ class Register {
     }
     if (password != confirmPassword) {
       this.$inputGroupConfirmPassWord.setError("Mật khẩu không trùng khớp");
-    }
-    firebase
-      .auth()
-      .createUserWithEmailAndPassword(email, password)
-      .then((userCredential) => {
-        var user = userCredential.user;
-        console.log(user);
-        if (user.displayName === null) {
-          user.updateProfile({
-            displayName: fullName,
+    } else {
+      firebase
+        .auth()
+        .createUserWithEmailAndPassword(email, confirmPassword)
+        .then((userCredential) => {
+          var user = userCredential.user;
+          console.log(user);
+          if (user.displayName === null) {
+            user.updateProfile({
+              displayName: fullName,
+            });
+          }
+        })
+        .then(() => {
+          Swal.fire({
+            icon: "success",
+            title: "Thông báo",
+            text: "Đăng ký thành công",
+          }).then(() => {
+            window.location.href = "./login.html";
           });
-        }
-      })
-      .then(() => {
-        Swal.fire({
-          icon: "success",
-          title: "Thông báo",
-          text: "Đăng ký thành công",
-        }).then(() => {
-          window.location.href = "./login.html";
-        });
-      })
+        })
 
-      .catch((error) => {
-        this.$feedbackmessage.innerHTML = error.toString();
-      });
+        .catch((error) => {
+          this.$feedbackmessage.innerHTML = error.toString();
+        });
+    }
   };
 
   render() {

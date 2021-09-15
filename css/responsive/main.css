@@ -98,8 +98,8 @@
     width: 100%;
     display: flex;
     flex-direction: row;
-    transform: translateY(-100px);
-    transition: all 0.2s linear;
+    transform: translateY(-200px);
+    transition: transform 0.5s linear;
     background-color: #ffdc9c;
   }
   #search-mobile.active {

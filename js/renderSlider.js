@@ -77,4 +77,7 @@ fetch("https://apiquizizz.herokuapp.com/quizzes")
         },
       ],
     });
+  })
+  .catch((error) => {
+    console.log("loi");
   });
