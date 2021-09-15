@@ -10,7 +10,7 @@ publishBtn.addEventListener('click', () => {
             icon: 'warning',
             title: 'Thông báo',
             text: 'Bạn chưa tạo câu hỏi hoặc chưa đặt tên cho quiz!',
-            footer: '<p>Tên quiz không được để là Question</p>'
+            footer: '<p>Tên quiz không được để là Question, phải có link ảnh</p>'
         })
     } else {
 
@@ -37,21 +37,48 @@ publishBtn.addEventListener('click', () => {
         console.log(storedArray);
         let id = "quiz" + Math.random().toString(16).slice(10);
 
-        
+
         let user = localStorage.getItem('tempUserInfo');
         let docRefCreate = db.collection("userCreatedQuiz").doc(JSON.parse(user).email);
 
-        
-        return docRefCreate.update({
-            [id]: storedArray
+        const swalWithBootstrapButtons = Swal.mixin({
+            customClass: {
+                confirmButton: 'btn btn-success',
+                cancelButton: 'btn btn-danger'
+            },
+            buttonsStyling: false
         })
-            .then(() => {
-                console.log("Document successfully updated!");
-            })
-            .catch((error) => {
-                // The document probably doesn't exist.
-                console.error("Error updating document: ", error);
-            });
+
+        swalWithBootstrapButtons.fire({
+            title: 'Đã tạo quiz thành công!',
+            text: `Code của quiz là: ${id}`,
+            icon: 'success',
+            showCancelButton: false,
+            confirmButtonText: 'Quay về trang chính',
+            reverseButtons: true,
+            allowOutsideClick: false,
+            allowEnterKey:false
+        }).then((result) => {
+            if (result.isConfirmed) {
+                return docRefCreate.update({
+                    [id]: storedArray
+                })
+                    .then(() => {
+                        console.log("Document successfully updated!");
+                    })
+                    .then(() => {
+                        location.href = './main.html';
+                    })
+                    .catch((error) => {
+                        // The document probably doesn't exist.
+                        console.error("Error updating document: ", error);
+                    });
+            } 
+        })
+
+
+        
+
 
 
     }

@@ -29,7 +29,7 @@ if (btnsearchMobile) {
 } else {
 }
 
-fetch("http://localhost:3000/quizzes")
+fetch("https://apiquizizz.herokuapp.com/quizzes")
   .then((response) => {
     return response.json();
   })

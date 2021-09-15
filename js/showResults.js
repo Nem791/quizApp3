@@ -4,7 +4,8 @@ function showResults() {
     let showAnswersBtn = document.querySelector('.show-answers-btn');
     showAnswersBtn.addEventListener('click', () => {
         const answerList = [];
-        quizData.html.forEach(element => {
+        let id = window.location.search.split('=').pop();
+        quizData[id].forEach(element => {
             answerList.push(element.rightAnswer);
         });
         if (document.getElementById('submit-score').hidden == false) {
