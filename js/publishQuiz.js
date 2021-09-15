@@ -49,6 +49,14 @@ publishBtn.addEventListener('click', () => {
             buttonsStyling: false
         })
 
+        var userCreate = db.collection("userQuizInfo").doc(JSON.parse(user).email);
+
+        // Atomically add a new region to the "regions" array field.
+        userCreate.update({
+            createdQuiz: firebase.firestore.FieldValue.arrayUnion(id)
+        });
+
+        // Them quiz vao Firebase
         swalWithBootstrapButtons.fire({
             title: 'Đã tạo quiz thành công!',
             text: `Code của quiz là: ${id}`,
@@ -57,7 +65,7 @@ publishBtn.addEventListener('click', () => {
             confirmButtonText: 'Quay về trang chính',
             reverseButtons: true,
             allowOutsideClick: false,
-            allowEnterKey:false
+            allowEnterKey: false
         }).then((result) => {
             if (result.isConfirmed) {
                 return docRefCreate.update({
@@ -73,11 +81,11 @@ publishBtn.addEventListener('click', () => {
                         // The document probably doesn't exist.
                         console.error("Error updating document: ", error);
                     });
-            } 
+            }
         })
 
 
-        
+
 
 
 
