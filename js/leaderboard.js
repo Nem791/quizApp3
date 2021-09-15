@@ -14,7 +14,7 @@ function createATag(quizName, quizId) {
 }
 
 function renderLeaderboard(setQuizId) {
-  fetch("http://localhost:3000/quizzes")
+  fetch("https://apiquizizz.herokuapp.com/quizzes")
     .then((response) => {
       return response.json();
     })

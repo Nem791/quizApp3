@@ -67,7 +67,8 @@ function saveUserCreatedQuiz(currentInfo) {
   db.collection("userCreatedQuiz")
     .doc(currentInfo.email)
     .set({
-      email: currentInfo.email
+      email: currentInfo.email,
+      displayName: currentInfo.displayName
     })
     .then(() => {
       console.log("Document successfully written!");

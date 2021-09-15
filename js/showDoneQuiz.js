@@ -34,29 +34,65 @@ function renderList(category) {
 
 
 function renderSavedQuiz(idArray) {
-    fetch('http://localhost:3000/quizzes')
-        .then(response => {
-            return response.json();
-        })
-        .then((data) => {
-            idArray.forEach((element, index) => {
-                let resultItems = document.querySelectorAll('.search-results-item');
 
-                // Count 
-                document.querySelector('.count').innerText = resultItems.length;
+    let APIArray = ['html', 'css', 'java', 'javascript', 'python', 'sql', 'javascriptnc', 'C', 'code', 'networkingbasic'];
+    let resultItems = document.querySelectorAll('.search-results-item');
 
-                // Render image 
-                resultItems[index].firstElementChild.style.backgroundImage = `url('${data[element][0].image}')`;
-                // Render ten quiz 
-                resultItems[index].querySelector('.content-type-title').innerText = data[element][0].questionTitle;
-                // Render so cau hoi 
-                resultItems[index].querySelector('.questions-length').innerHTML += data[element].length + ' questions';
-                // Render email 
-                resultItems[index].querySelector('.username').innerText = userObject.email;
-                // Render profile pic 
-                resultItems[index].querySelector('.user-img').style.backgroundImage = `url(${userObject.photoURL})`;
-            })
-        })
+    idArray.forEach((element, index) => {
+        if (APIArray.includes(element)) {
+            fetch('https://apiquizizz.herokuapp.com/quizzes')
+                .then(response => {
+                    return response.json();
+                })
+                .then((data) => {
+
+                    // Count 
+                    document.querySelector('.count').innerText = resultItems.length;
+
+                    // Render image 
+                    resultItems[index].firstElementChild.style.backgroundImage = `url('${data[element][0].image}')`;
+                    // Render ten quiz 
+                    resultItems[index].querySelector('.content-type-title').innerText = data[element][0].questionTitle;
+                    // Render so cau hoi 
+                    resultItems[index].querySelector('.questions-length').innerHTML += data[element].length + ' questions';
+                    // Render email 
+                    resultItems[index].querySelector('.username').innerText = userObject.email;
+                    // Render profile pic 
+                    resultItems[index].querySelector('.user-img').style.backgroundImage = `url(${userObject.photoURL})`;
+
+                })
+        } else {
+            var docRef = db.collection("userCreatedQuiz").doc(userObject.email);
+
+            docRef.get().then((doc) => {
+                if (doc.exists) {
+                    console.log("Document data:", doc.data());
+                    let data = doc.data();
+
+                    // Count 
+                    document.querySelector('.count').innerText = resultItems.length;
+
+                    // Render image 
+                    resultItems[index].firstElementChild.style.backgroundImage = `url('${data[element][0].image}')`;
+                    // Render ten quiz 
+                    resultItems[index].querySelector('.content-type-title').innerText = data[element][0].questionTitle;
+                    // Render so cau hoi 
+                    resultItems[index].querySelector('.questions-length').innerHTML += data[element].length + ' questions';
+                    // Render email 
+                    resultItems[index].querySelector('.username').innerText = userObject.email;
+                    // Render profile pic 
+                    resultItems[index].querySelector('.user-img').style.backgroundImage = `url(${userObject.photoURL})`;
+                } else {
+                    // doc.data() will be undefined in this case
+                    console.log("No such document!");
+                }
+            }).catch((error) => {
+                console.log("Error getting document:", error);
+            });
+        }
+    })
+
+
 }
 
-export {renderList};
+export { renderList };

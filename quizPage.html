@@ -28,10 +28,15 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style2.css">
     <link rel="stylesheet" href="./css/responsive/header.css">
+    <link rel="stylesheet" href="./css/loading.css">
+
     <title>Document</title>
 </head>
 
 <body>
+    <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
     <header class="main-header">
         <div class="top-header">
             <div class="top-header-box">
@@ -260,11 +265,15 @@
 
 <!-- Thu vien sweet alert  -->
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 
 <script type="module" src="./components/sideBar.js"></script>
 <script type="module" src="./js/createTest.js"></script>
 <script type="module" src="./js/report.js"></script>
-<script src="./js/likeAndShare.js"></script>
+<!-- <script src="./js/likeAndShare.js"></script> -->
+<script src="./js/loading.js"></script>
+
 <script type="module" src="./js/entercode.js"></script>
 <script type="module" src="./js/suggestion.js"></script>
 <script type="module" src="./js/user-info.js"></script>
