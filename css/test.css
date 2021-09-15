@@ -14,7 +14,7 @@ body {
 #main > nav,
 #main > aside {
   flex: 0 0 18vw;
-  background: beige;
+  /* background: beige; */
 }
 #main > nav {
   order: -1;

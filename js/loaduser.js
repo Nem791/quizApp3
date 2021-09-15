@@ -2,9 +2,13 @@ const welcomename = document.querySelector(".welcome-name");
 console.log(welcomename);
 firebase.auth().onAuthStateChanged((user) => {
   if (user) {
-    welcomename.innerHTML = `Welcome ${user.displayName} <i class="far fa-hand-paper"></i>`;
+    welcomename.innerHTML = `Welcome ${user.displayName} <i class="fas fa-heart icon-heart" style="
+    color: red;
+"></i>`;
   } else {
-    welcomename.innerHTML = `Welcome <i class="far fa-hand-paper"></i>`;
+    welcomename.innerHTML = `Welcome <i class="fas fa-heart icon-heart" style="
+    color: red;
+"></i>`;
   }
   localStorage.setItem("tempUserInfo", JSON.stringify(user));
 
@@ -28,7 +32,6 @@ firebase.auth().onAuthStateChanged((user) => {
       console.log("Error getting document:", error);
     });
 
-
   docRefCreate
     .get()
     .then((doc) => {
@@ -44,7 +47,6 @@ firebase.auth().onAuthStateChanged((user) => {
       console.log("Error getting document:", error);
     });
 });
-
 
 // Tao 1 doc luu so quiz nguoi dung da lam
 function saveUserInfo(currentInfo) {
@@ -62,12 +64,12 @@ function saveUserInfo(currentInfo) {
     });
 }
 
-// Tao 1 doc luu so quiz nguoi dung da tao 
+// Tao 1 doc luu so quiz nguoi dung da tao
 function saveUserCreatedQuiz(currentInfo) {
   db.collection("userCreatedQuiz")
     .doc(currentInfo.email)
     .set({
-      email: currentInfo.email
+      email: currentInfo.email,
     })
     .then(() => {
       console.log("Document successfully written!");
