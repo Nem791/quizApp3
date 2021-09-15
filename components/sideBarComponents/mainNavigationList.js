@@ -20,6 +20,7 @@ class NavigationList {
         this.$explore.id = 'explore';
         this.$explore.innerHTML = `<i aria-hidden="true" class="fas fa-map-marked-alt"></i><span
         role="link" tabindex="0">Explore</span>`;
+        this.$explore.addEventListener('click', () => { location.href = './main.html' })
 
         this.$myQuizzes = document.createElement('li');
         this.$myQuizzes.id = 'my-quizzes';
