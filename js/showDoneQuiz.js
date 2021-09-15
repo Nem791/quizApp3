@@ -75,7 +75,7 @@ function renderSavedQuiz(idArray) {
                     // Render image 
                     resultItems[index].firstElementChild.style.backgroundImage = `url('${data[element][0].image}')`;
                     // Render ten quiz 
-                    resultItems[index].querySelector('.content-type-title').innerText = data[element][0].questionTitle;
+                    resultItems[index].querySelector('.content-type-title').innerText = data[element][0].questionTitle + `(code: ${element})`;
                     // Render so cau hoi 
                     resultItems[index].querySelector('.questions-length').innerHTML += data[element].length + ' questions';
                     // Render email 
