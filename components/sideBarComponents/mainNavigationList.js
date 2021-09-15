@@ -49,7 +49,8 @@ class NavigationList {
         this.$collections = document.createElement('li');
         this.$collections.id = 'collections';
         this.$collections.innerHTML = `<i class="fas fa-bookmark"></i><span role="link" tabindex="0"
-        aria-hidden="false">Collections</span>`;
+        aria-hidden="false">About</span>`;
+        this.$collections.addEventListener('click', () => { location.href = './about.html?id=html' })
     }
 
     render() {
